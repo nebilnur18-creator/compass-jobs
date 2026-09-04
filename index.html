@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compass Jobs — Powered by Groq AI</title>
+<style>
+  :root {
+    --bg: #0b0d10;
+    --card: #14171b;
+    --border: #23272e;
+    --text: #f2f3f5;
+    --muted: #9aa3ad;
+    --accent: #22c55e;
+    --accent-dim: #16391f;
+    --danger: #ef4444;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    padding: 28px 20px 18px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+  }
+  header h1 {
+    margin: 0 0 4px;
+    font-size: 1.6rem;
+    letter-spacing: -0.5px;
+  }
+  header h1 span { color: var(--accent); }
+  header p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  .badge {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: var(--accent-dim);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .controls {
+    max-width: 900px;
+    margin: 18px auto 0;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  #search {
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    font-size: 0.95rem;
+  }
+  #search:focus { outline: 1px solid var(--accent); }
+  .filters {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+  .filters::-webkit-scrollbar { display: none; }
+  .chip {
+    flex: 0 0 auto;
+    padding: 7px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--muted);
+    font-size: 0.82rem;
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+  }
+  .chip.active {
+    background: var(--accent-dim);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  main {
+    max-width: 900px;
+    margin: 20px auto 60px;
+    padding: 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .job {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 16px;
+  }
+  .job-top {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .job-logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 10px;
+    object-fit: cover;
+    background: #1f2329;
+    flex-shrink: 0;
+  }
+  .job-company {
+    font-weight: 700;
+    font-size: 1.02rem;
+    line-height: 1.3;
+  }
+  .job-tags {
+    margin-top: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .tag {
+    font-size: 0.72rem;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #1c2128;
+    color: var(--muted);
+  }
+  .job-positions {
+    margin: 12px 0 0;
+    padding-left: 18px;
+    font-size: 0.88rem;
+    color: var(--text);
+  }
+  .job-positions li { margin-bottom: 3px; }
+  .job-meta {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .deadline {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .deadline.soon { color: var(--danger); font-weight: 600; }
+  .apply-btn {
+    background: var(--accent);
+    color: #05130a;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.82rem;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  .empty, .loading {
+    text-align: center;
+    color: var(--muted);
+    padding: 60px 20px;
+    font-size: 0.9rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.78rem;
+    padding: 20px;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🧭 Compass <span>Jobs</span></h1>
+  <p>Ethiopia's job vacancies, collected and filtered in one place</p>
+  <div class="badge">🤖 Powered by Groq AI</div>
+</header>
+
+<div class="controls">
+  <input id="search" type="text" placeholder="Search by company or position...">
+  <div class="filters" id="filters"></div>
+</div>
+
+<main id="jobs">
+  <div class="loading">Loading jobs...</div>
+</main>
+
+<footer>
+  Compass Jobs by Groq AI · <a href="https://t.me/compass_jobs_official" style="color:var(--accent)">Join our Telegram channel</a>
+</footer>
+
+<script>
+const GITHUB_USERNAME = "YOUR_GITHUB_USERNAME";
+const REPO = "compass-jobs";
+const JOBS_URL = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO}/main/jobs.json?t=${Date.now()}`;
+
+let allJobs = [];
+let activeCategory = "All";
+
+function daysLeft(deadlineStr) {
+  if (!deadlineStr) return null;
+  const d = new Date(deadlineStr);
+  if (isNaN(d)) return null;
+  const diff = Math.ceil((d - new Date()) / (1000 * 60 * 60 * 24));
+  return diff;
+}
+
+function renderFilters(categories) {
+  const el = document.getElementById("filters");
+  const cats = ["All", ...categories];
+  el.innerHTML = cats.map(c =>
+    `<div class="chip ${c === activeCategory ? "active" : ""}" data-cat="${c}">${c}</div>`
+  ).join("");
+  el.querySelectorAll(".chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      activeCategory = chip.dataset.cat;
+      renderFilters(categories);
+      renderJobs();
+    });
+  });
+}
+
+function renderJobs() {
+  const container = document.getElementById("jobs");
+  const query = document.getElementById("search").value.trim().toLowerCase();
+
+  let filtered = allJobs.filter(job => {
+    const matchesCategory = activeCategory === "All" ||
+      (job.category || []).includes(activeCategory);
+    const haystack = (job.company + " " + (job.positions || []).join(" ")).toLowerCase();
+    const matchesSearch = !query || haystack.includes(query);
+    return matchesCategory && matchesSearch;
+  });
+
+  if (filtered.length === 0) {
+    container.innerHTML = `<div class="empty">No jobs match your filters right now.</div>`;
+    return;
+  }
+
+  container.innerHTML = filtered.map(job => {
+    const dleft = daysLeft(job.deadline);
+    let deadlineHtml = "";
+    if (job.deadline) {
+      if (dleft === null) {
+        deadlineHtml = `📅 ${job.deadline}`;
+      } else if (dleft < 0) {
+        deadlineHtml = `<span class="deadline soon">Closed</span>`;
+      } else if (dleft <= 3) {
+        deadlineHtml = `<span class="deadline soon">⏰ ${dleft} day${dleft === 1 ? "" : "s"} left</span>`;
+      } else {
+        deadlineHtml = `📅 ${dleft} days left`;
+      }
+    }
+
+    const logo = job.image
+      ? `<img class="job-logo" src="${job.image}" onerror="this.style.display='none'">`
+      : `<div class="job-logo"></div>`;
+
+    const tags = (job.category || []).map(c => `<span class="tag">${c}</span>`).join("");
+    const positions = (job.positions || []).slice(0, 6)
+      .map(p => `<li>${p}</li>`).join("");
+
+    return `
+      <div class="job">
+        <div class="job-top">
+          ${logo}
+          <div>
+            <div class="job-company">${job.company || "Unknown Company"}</div>
+            <div class="job-tags">${tags}</div>
+          </div>
+        </div>
+        ${positions ? `<ul class="job-positions">${positions}</ul>` : ""}
+        <div class="job-meta">
+          <div class="deadline">${deadlineHtml}</div>
+          ${job.link ? `<a class="apply-btn" href="${job.link}" target="_blank" rel="noopener">Apply →</a>` : ""}
+        </div>
+      </div>
+    `;
+  }).join("");
+}
+
+async function loadJobs() {
+  try {
+    const res = await fetch(JOBS_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error("Failed to load jobs.json");
+    const data = await res.json();
+    allJobs = data.jobs || [];
+
+    const categorySet = new Set();
+    allJobs.forEach(j => (j.category || []).forEach(c => categorySet.add(c)));
+    renderFilters([...categorySet].sort());
+    renderJobs();
+  } catch (e) {
+    document.getElementById("jobs").innerHTML =
+      `<div class="empty">No jobs posted yet. Check back soon!</div>`;
+  }
+}
+
+document.getElementById("search").addEventListener("input", renderJobs);
+loadJobs();
+setInterval(loadJobs, 60000);
+</script>
+
+</body>
+  </html>
