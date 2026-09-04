@@ -6,14 +6,17 @@
 <title>Compass Jobs — Powered by Groq AI</title>
 <style>
   :root {
-    --bg: #0b0d10;
-    --card: #14171b;
-    --border: #23272e;
-    --text: #f2f3f5;
-    --muted: #9aa3ad;
-    --accent: #22c55e;
-    --accent-dim: #16391f;
-    --danger: #ef4444;
+    --bg: #0b0b0d;
+    --card: #16151a;
+    --border: #2a2830;
+    --text: #f2f2f4;
+    --muted: #9d9aa3;
+    --red: #d21f2f;
+    --red-dim: #3a1418;
+    --yellow: #f2c230;
+    --yellow-dim: #3a3013;
+    --green: #1f8a3d;
+    --green-dim: #142a1a;
   }
   * { box-sizing: border-box; }
   body {
@@ -26,13 +29,22 @@
     padding: 28px 20px 18px;
     text-align: center;
     border-bottom: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(210,31,47,0.06), transparent 70%);
+  }
+  .logo-img {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid var(--border);
   }
   header h1 {
     margin: 0 0 4px;
     font-size: 1.6rem;
     letter-spacing: -0.5px;
   }
-  header h1 span { color: var(--accent); }
+  header h1 span { color: var(--red); }
   header p {
     margin: 0;
     color: var(--muted);
@@ -43,10 +55,15 @@
     margin-top: 10px;
     padding: 4px 12px;
     border-radius: 999px;
-    background: var(--accent-dim);
-    color: var(--accent);
+    background: var(--green-dim);
+    color: var(--green);
     font-size: 0.75rem;
     font-weight: 600;
+  }
+  .flag-strip {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--green) 0 33%, var(--yellow) 33% 66%, var(--red) 66% 100%);
   }
   .controls {
     max-width: 900px;
@@ -65,7 +82,7 @@
     color: var(--text);
     font-size: 0.95rem;
   }
-  #search:focus { outline: 1px solid var(--accent); }
+  #search:focus { outline: 1px solid var(--red); }
   .filters {
     display: flex;
     gap: 8px;
@@ -86,9 +103,9 @@
     user-select: none;
   }
   .chip.active {
-    background: var(--accent-dim);
-    border-color: var(--accent);
-    color: var(--accent);
+    background: var(--red-dim);
+    border-color: var(--red);
+    color: var(--red);
   }
   main {
     max-width: 900px;
@@ -103,6 +120,7 @@
     border: 1px solid var(--border);
     border-radius: 14px;
     padding: 16px;
+    border-left: 3px solid var(--green);
   }
   .job-top {
     display: flex;
@@ -132,8 +150,8 @@
     font-size: 0.72rem;
     padding: 2px 8px;
     border-radius: 999px;
-    background: #1c2128;
-    color: var(--muted);
+    background: var(--yellow-dim);
+    color: var(--yellow);
   }
   .job-positions {
     margin: 12px 0 0;
@@ -154,10 +172,10 @@
     font-size: 0.8rem;
     color: var(--muted);
   }
-  .deadline.soon { color: var(--danger); font-weight: 600; }
+  .deadline.soon { color: var(--red); font-weight: 700; }
   .apply-btn {
-    background: var(--accent);
-    color: #05130a;
+    background: var(--red);
+    color: #fff;
     text-decoration: none;
     font-weight: 700;
     font-size: 0.82rem;
@@ -177,15 +195,18 @@
     padding: 20px;
     border-top: 1px solid var(--border);
   }
+  footer a { color: var(--green); }
 </style>
 </head>
 <body>
 
 <header>
-  <h1>🧭 Compass <span>Jobs</span></h1>
+  <img class="logo-img" src="logo.png" alt="Compass Jobs Logo" onerror="this.style.display='none'">
+  <h1>Compass <span>Jobs</span></h1>
   <p>Ethiopia's job vacancies, collected and filtered in one place</p>
   <div class="badge">🤖 Powered by Groq AI</div>
 </header>
+<div class="flag-strip"></div>
 
 <div class="controls">
   <input id="search" type="text" placeholder="Search by company or position...">
@@ -197,7 +218,7 @@
 </main>
 
 <footer>
-  Compass Jobs by Groq AI · <a href="https://t.me/compass_jobs_official" style="color:var(--accent)">Join our Telegram channel</a>
+  Compass Jobs by Groq AI · <a href="https://t.me/compass_jobs_official">Join our Telegram channel</a>
 </footer>
 
 <script>
@@ -313,4 +334,4 @@ setInterval(loadJobs, 60000);
 </script>
 
 </body>
-  </html>
+</html>
