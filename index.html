@@ -226,6 +226,10 @@ const GITHUB_USERNAME = "nebilnur18-creator";
 const REPO = "compass-jobs";
 const JOBS_URL = `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO}/main/jobs.json?t=${Date.now()}`;
 
+// Every job card uses the Compass Jobs brand logo — no per-company
+// logo lookup anymore, so this never falls back to a blank box.
+const COMPASS_LOGO = "logo.png";
+
 let allJobs = [];
 let activeCategory = "All";
 
@@ -284,9 +288,7 @@ function renderJobs() {
       }
     }
 
-    const logo = job.image
-      ? `<img class="job-logo" src="${job.image}" onerror="this.style.display='none'">`
-      : `<div class="job-logo"></div>`;
+    const logo = `<img class="job-logo" src="${COMPASS_LOGO}" alt="Compass Jobs" onerror="this.style.display='none'">`;
 
     const tags = (job.category || []).map(c => `<span class="tag">${c}</span>`).join("");
     const positions = (job.positions || []).slice(0, 6)
