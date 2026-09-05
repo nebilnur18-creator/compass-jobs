@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-05T06:04:02.711853Z",
+  "updated": "2026-09-05T06:04:15.812272Z",
   "jobs": [
+    {
+      "id": "4bcd774c81d75cc16bebf3f8acd9f52ca5fb69851f01bc89fc8610bc0fa7254d",
+      "company": "Hydrogen Pharmaceutical PLC",
+      "about": "A private company operating in the pharmaceutical sector in Ethiopia.",
+      "positions": [
+        "biomedical engineer"
+      ],
+      "category": [
+        "Healthcare",
+        "Construction & Engineering"
+      ],
+      "deadline": "September 5, 2026",
+      "link": "",
+      "contact": "vacancy@hydrogenpplc.com",
+      "image": null,
+      "text": "🏷️ Healthcare | Private Sector\n\n🏢 Company: Hydrogen Pharmaceutical PLC  \n🏬 About: A private company operating in the pharmaceutical sector in Ethiopia.  \n\n💼 Positions:  \n1. Biomedical Engineer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Biomedical, Medical or Electrical Engineering or related field  \n   - 0‑5 years relevant experience  \n   - Ability to install, commission and maintain medical/laboratory equipment  \n\n📅 Deadline: September 5, 2026  \n📞 Contact: vacancy@hydrogenpplc.com  \n\n📝 Application Method: Submit CV via email",
+      "posted": "2026-09-05T06:04:14.559888Z"
+    },
     {
       "id": "6e2715eb34abcedbe1cd50850789c1db40ebc0bab26bd5f5a35a133461eadedb",
       "company": "AAU - College of Health Science - AI",
