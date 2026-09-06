@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-06T10:25:58.874290Z",
+  "updated": "2026-09-06T10:26:42.557668Z",
   "jobs": [
+    {
+      "id": "86fa7f8b3e89fc4a154f2e4268b5b9ed21fe3a9a99cfe4a602ba11bbdba356b7",
+      "company": "ZamZam Bank",
+      "about": "A private commercial bank in Ethiopia offering retail and corporate banking services.",
+      "positions": [
+        "senior application management officer"
+      ],
+      "category": [
+        "Banking & Finance",
+        "Construction & Engineering"
+      ],
+      "deadline": "Sep 10, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Technology & IT | Private Sector\n\n🏢 Company: ZamZam Bank  \n🏬 About: A private commercial bank in Ethiopia offering retail and corporate banking services.  \n\n💼 Positions:  \n1. Senior Application Management Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Computer Science, Engineering or related field  \n   - Minimum 4 years relevant experience  \n   - Knowledge of FlexCube core banking, Swift, Oracle DB and SQL  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Sep 10, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-06T10:26:36.589578Z"
+    },
     {
       "id": "1e0ff6e511e0532fe03042681ac95093d3bc8994a61a03a229415ac0ef660132",
       "company": "AZ Pipe Manufacturing",
