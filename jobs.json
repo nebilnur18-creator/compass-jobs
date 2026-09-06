@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-06T10:35:34.260917Z",
+  "updated": "2026-09-06T10:41:18.112308Z",
   "jobs": [
+    {
+      "id": "ef66c5e627b9ba842c6c549f72e4d51efd4054249357652f17a47f457610d1d4",
+      "company": "ZamZam Bank",
+      "about": "A private bank operating in Ethiopia's financial sector.",
+      "positions": [
+        "cyber security grc officer i"
+      ],
+      "category": [
+        "Banking & Finance",
+        "Construction & Engineering"
+      ],
+      "deadline": "Sep 10, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Technology & IT | Banking & Finance\n\n🏢 Company: ZamZam Bank  \n🏬 About: A private bank operating in Ethiopia's financial sector.  \n\n💼 Positions:  \n1. Cyber Security GRC Officer I  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Cyber Security, Computer Science, IT or related field  \n   - Minimum 2 years experience in IT/cyber security risk management or compliance  \n   - Knowledge of ISO 27001, NIST, PCI DSS, COBIT frameworks  \n\n📅 Deadline: Sep 10, 2026  \n📊 Vacancy Count: 1  \n\n📝 Description: Oversees governance, risk and compliance for the bank’s cyber security program.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-06T10:41:16.253192Z"
+    },
     {
       "id": "39c56af7215179e92bdc00b48dafb201313f774ee6c27d3c4b2fb9672652230e",
       "company": "YADAM Foundation",
