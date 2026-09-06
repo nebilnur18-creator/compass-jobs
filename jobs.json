@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-06T15:46:31.651855Z",
+  "updated": "2026-09-06T15:47:59.694635Z",
   "jobs": [
+    {
+      "id": "84e0b4701ef841d8e3141d2d35bf5899ce8e4d678d855ee67ca446f992513f72",
+      "company": "Habesha Cement S.C.",
+      "about": "A leading cement manufacturing company in Ethiopia.",
+      "positions": [
+        "it administrator"
+      ],
+      "category": [
+        "Construction & Engineering",
+        "Technology & IT"
+      ],
+      "deadline": "Sep 11, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Technology & IT\n\n🏢 Company: Habesha Cement S.C.\n🏬 About: A leading cement manufacturing company in Ethiopia.\n\n💼 Positions:\n1. IT Administrator\n   📍 Location: Holota\n   🎓 Requirements:\n   - BSc/MSc in Computer Engineering, CS, Software Engineering or IT\n   - 5–8 years relevant IT administration experience\n   - Proven senior‑level technical and management skills\n\n📊 Vacancy Count: 1\n📅 Deadline: Sep 11, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-06T15:47:53.851088Z"
+    },
     {
       "id": "80097ae784529508bb8258adf2138fb9096f25f5200e289cbc1b6861cfa6fb07",
       "company": "HaHuJobs",
