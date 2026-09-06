@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-06T10:41:18.112308Z",
+  "updated": "2026-09-06T10:41:34.315126Z",
   "jobs": [
+    {
+      "id": "8f1235404639e3547dcd8a2c778a14f7c40fae225e512fab21697476890aeb47",
+      "company": "ZamZam Bank",
+      "about": "A private bank operating in Ethiopia, offering a range of financial services.",
+      "positions": [
+        "soc analyst i"
+      ],
+      "category": [
+        "Banking & Finance",
+        "Construction & Engineering"
+      ],
+      "deadline": "Sep 10 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Technology & IT\n\n🏢 Company: ZamZam Bank  \n🏬 About: A private bank operating in Ethiopia, offering a range of financial services.  \n\n💼 Positions:  \n1. SOC Analyst I  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Cyber Security, Computer Science, IT or related field  \n   - ≥2 years experience in SOC monitoring, SIEM, EDR/XDR  \n   - Knowledge of network security, incident triage and MITRE ATT&CK  \n\n📅 Deadline: Sep 10 2026  \n📊 Vacancy Count: 1  \n\n📝 Description: Monitor security events and respond to incidents in the bank’s Security Operations Center.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-06T10:41:32.577499Z"
+    },
     {
       "id": "ef66c5e627b9ba842c6c549f72e4d51efd4054249357652f17a47f457610d1d4",
       "company": "ZamZam Bank",
