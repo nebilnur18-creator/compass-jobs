@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-06T10:26:42.557668Z",
+  "updated": "2026-09-06T10:28:04.985508Z",
   "jobs": [
+    {
+      "id": "c1fee052b2b14ff06b9b8bc5cc8c1e44977d6b75ade0faf8d06e3b1a8d767254",
+      "company": "ZamZam Bank",
+      "about": "A private bank operating in Ethiopia, providing retail and corporate banking services.",
+      "positions": [
+        "junior it application support engineer"
+      ],
+      "category": [
+        "Banking & Finance",
+        "Construction & Engineering"
+      ],
+      "deadline": "Sep 10 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Technology & IT | Banking & Finance\n\n🏢 Company: ZamZam Bank  \n🏬 About: A private bank operating in Ethiopia, providing retail and corporate banking services.  \n\n💼 Positions:  \n1. Junior IT Application Support Engineer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Computer Science or related field  \n   - Minimum 1 year experience  \n   - Knowledge of Flexcube core banking system and SQL/Linux  \n\n📅 Deadline: Sep 10 2026  \n📊 Vacancy Count: 1  \n\n📝 Description: Provide application support for banking software and ensure system reliability.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-06T10:27:57.163364Z"
+    },
     {
       "id": "86fa7f8b3e89fc4a154f2e4268b5b9ed21fe3a9a99cfe4a602ba11bbdba356b7",
       "company": "ZamZam Bank",
