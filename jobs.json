@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-07T09:39:36.083353Z",
+  "updated": "2026-09-07T09:40:40.120455Z",
   "jobs": [
+    {
+      "id": "2127d78cb3fed47e38b32fdff5b9d9e8530c006571e9be0563e9860ed0abd8b4",
+      "company": "Arbasa Bakery",
+      "about": "A local bakery serving the Arbasa area in Addis Ababa.",
+      "positions": [
+        "bakery cashier (female, contract)",
+        "bakery cleaner (female, contract)"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "+251 93 910 9110",
+      "text": "🏷️ Private Sector\n\n🏢 Company: Arbasa Bakery\n🏬 About: A local bakery serving the Arbasa area in Addis Ababa.\n\n💼 Positions:\n1. Bakery Cashier (female, contract)\n   📍 Location: Arbasa, Shale (Tankar)\n\n2. Bakery Cleaner (female, contract)\n   📍 Location: Arbasa, Shale (Tankar)\n\n💼 Employment Type: Contract\n📞 Contact: +251 93 910 9110",
+      "posted": "2026-09-07T09:40:35.703416Z"
+    },
     {
       "id": "e24854239129ec055efd5d0a916daef08b441978745fa319f52b05c77f8cd4d8",
       "company": "Ayat Share Company",
