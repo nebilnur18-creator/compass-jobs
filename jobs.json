@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-07T15:59:42.985057Z",
+  "updated": "2026-09-07T16:00:54.248001Z",
   "jobs": [
+    {
+      "id": "0bd2851bd87ff358edd3cbdbc9d5749bdccca7c56d47b1381f9c56afda6d312c",
+      "company": "BGI Ethiopia",
+      "about": "A private engineering firm delivering construction and infrastructure solutions in Ethiopia.",
+      "positions": [
+        "method officer"
+      ],
+      "category": [
+        "Construction & Engineering",
+        "Technology & IT"
+      ],
+      "deadline": "Sep 20, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Construction & Engineering\n\n🏢 Company: BGI Ethiopia  \n🏬 About: A private engineering firm delivering construction and infrastructure solutions in Ethiopia.  \n\n💼 Positions:  \n1. Method Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Mechanical/Electrical/Industrial Engineering or related field  \n   - Minimum 3 years relevant experience  \n   - Proficiency in CAD software  \n\n📝 Description: Develop and manage engineering methods and related documentation.  \n📊 Vacancy Count: 1  \n📅 Deadline: Sep 20, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-07T16:00:51.091498Z"
+    },
     {
       "id": "99d052b7d52275ed150eee39325dc4797e8ab04ed2c30a0f11a1f239672a7eca",
       "company": "Organization For Welfare and Development in Action (OWDA)",
