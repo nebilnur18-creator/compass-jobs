@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-08T11:59:32.471510Z",
+  "updated": "2026-09-08T12:00:01.843819Z",
   "jobs": [
+    {
+      "id": "4e8dca16372774bf710adacd4b932876b02109fb93b129caab61dc96394dbf48",
+      "company": "Reality Share Company",
+      "about": "A private company operating in the construction sector in Ethiopia.",
+      "positions": [
+        "general forman"
+      ],
+      "category": [
+        "Construction & Engineering",
+        "Education"
+      ],
+      "deadline": "Sep 18 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Construction & Engineering | Executive\n\n🏢 Company: Reality Share Company  \n🏬 About: A private company operating in the construction sector in Ethiopia.  \n\n💼 Positions:  \n1. General Forman  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Technical School Diploma in construction  \n   - Minimum 7 years relevant experience  \n   - Experience on multistory building projects (advantageous)  \n\n📊 Vacancy Count: 1  \n💼 Employment Type: Executive  \n📅 Deadline: Sep 18 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-08T11:59:46.191320Z"
+    },
     {
       "id": "e02be9b421b20a9d9a79b6151dd29f374601ba25f188ad49e90d32ce4ea15b68",
       "company": "Premier Switch Solutions S. Co.",
@@ -5119,21 +5136,6 @@
       "image": null,
       "text": "🏷️ Healthcare\n\n🏢 Company: New Leaf Medical Complex (NLMC)  \n\n💼 Positions:  \n1. Junior Laboratory Technologist (Phlebotomy)  \n   📍 Location: Lebu Musica Sefer  \n   🎓 Requirements:  \n   - BSc Degree in Medical Laboratory Science/Laboratory Technology or related field  \n   - Valid professional license/registration  \n   - 1–3 years of relevant laboratory experience  \n   - Strong practical experience in phlebotomy, venipuncture, and specimen collection  \n   - Hospital or medical laboratory experience preferred  \n   - Good knowledge of infection prevention, laboratory safety, and specimen handling  \n\n2. Senior Laboratory Technologist  \n   📍 Location: Lebu Musica Sefer  \n   🎓 Requirements:  \n   - MSc Degree in Medical Laboratory Science/Laboratory Technology or related field  \n   - Valid professional license/registration  \n   - 3–4 years of relevant laboratory experience  \n   - Strong clinical laboratory testing and quality management experience  \n\n📍 Location: Lebu Musica Sefer  \n📅 Deadline: Oct 05, 2026  \n📊 Vacancy Count: 3",
       "posted": "2026-09-04T07:11:18.436209Z"
-    },
-    {
-      "id": "4b3dbcd2a4494cf95abb377888b7c4396b95eee4fd2a0c8b9e67cecbc6131a69",
-      "company": "Blue Elephant Fiberboard Manufacturing Plc",
-      "positions": [
-        "senior customs clearance officer"
-      ],
-      "category": [
-        "Logistics & Supply Chain"
-      ],
-      "deadline": "Oct 05, 2026",
-      "link": "",
-      "image": null,
-      "text": "🏷️ Logistics & Supply Chain\n\n🏢 Company: Blue Elephant Fiberboard Manufacturing Plc\n\n💼 Positions:\n1. Senior Customs Clearance Officer\n   📍 Location: Addis Ababa\n   🎓 Requirements:\n   - Bachelor’s degree in Logistics, Supply Chain, or related field\n   - Minimum 5 years’ experience in customs clearance, preferably in manufacturing or import/export companies\n   - Strong knowledge of Ethiopian customs laws and procedures\n   - Excellent communication and negotiation skills\n   - Ability to work under pressure and meet deadlines\n\n📊 Vacancy Count: 1\n📅 Deadline: Oct 05, 2026",
-      "posted": "2026-09-04T07:11:12.740700Z"
     }
   ]
 }
