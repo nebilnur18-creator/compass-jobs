@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-08T12:00:01.843819Z",
+  "updated": "2026-09-08T12:00:47.348473Z",
   "jobs": [
+    {
+      "id": "b3d516fc28f1db21c1cf58e9397d8b0fee5fcf92e27c09819441ff7d73567d10",
+      "company": "Tibeb Design & Build PLC",
+      "about": "A private company operating in the construction and design sector in Ethiopia.",
+      "positions": [
+        "architect"
+      ],
+      "category": [
+        "Construction & Engineering"
+      ],
+      "deadline": "Oct 09, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Construction & Engineering\n\n🏢 Company: Tibeb Design & Build PLC  \n🏬 About: A private company operating in the construction and design sector in Ethiopia.  \n\n💼 Positions:  \n1. Architect  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Minimum 2 years professional architectural experience.  \n   - Proficiency in Revit and D5 Render.  \n   - Ability to develop projects from concept to detailed design and coordinate BIM models.  \n\n📊 Vacancy Count: 3  \n📅 Deadline: Oct 09, 2026  \n📝 Description: Responsible for architectural design, documentation, and BIM coordination.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-08T12:00:30.025301Z"
+    },
     {
       "id": "4e8dca16372774bf710adacd4b932876b02109fb93b129caab61dc96394dbf48",
       "company": "Reality Share Company",
@@ -5120,22 +5136,6 @@
       "image": null,
       "text": "🏷️ Construction & Engineering | Technology & IT\n\n🏢 Company: Strong Non Basic Chemical Manufacturing PLC\n\n💼 Positions:\n1. Senior Sales\n   📍 Location: Addis Ababa\n   🎓 Requirements:\n   - Bachelor's degree in Business, Marketing, or related field\n   - Minimum 4 years sales and marketing management experience\n   - Proven leadership and team management skills\n   - Excellent communication and interpersonal abilities\n   - Track record of meeting/exceeding sales and marketing targets\n   - Strong problem‑solving and decision‑making capabilities\n   - Proficiency with sales/marketing software and CRM tools\n   - Sales experience in construction, real estate, concrete admixtures, building materials, or related sectors\n   - Ability to travel for client meetings and business development\n   - Good knowledge of the local construction market (advantage)\n\n📊 Vacancy Count: 2\n📅 Deadline: Sep 30, 2026",
       "posted": "2026-09-04T07:11:24.371925Z"
-    },
-    {
-      "id": "11cb1ea05265e677075471420568f54b4c794e3c9b6a3ab4480e3819f337227c",
-      "company": "New Leaf Medical Complex (NLMC)",
-      "positions": [
-        "junior laboratory technologist (phlebotomy)",
-        "senior laboratory technologist"
-      ],
-      "category": [
-        "Healthcare"
-      ],
-      "deadline": "Oct 05, 2026",
-      "link": "",
-      "image": null,
-      "text": "🏷️ Healthcare\n\n🏢 Company: New Leaf Medical Complex (NLMC)  \n\n💼 Positions:  \n1. Junior Laboratory Technologist (Phlebotomy)  \n   📍 Location: Lebu Musica Sefer  \n   🎓 Requirements:  \n   - BSc Degree in Medical Laboratory Science/Laboratory Technology or related field  \n   - Valid professional license/registration  \n   - 1–3 years of relevant laboratory experience  \n   - Strong practical experience in phlebotomy, venipuncture, and specimen collection  \n   - Hospital or medical laboratory experience preferred  \n   - Good knowledge of infection prevention, laboratory safety, and specimen handling  \n\n2. Senior Laboratory Technologist  \n   📍 Location: Lebu Musica Sefer  \n   🎓 Requirements:  \n   - MSc Degree in Medical Laboratory Science/Laboratory Technology or related field  \n   - Valid professional license/registration  \n   - 3–4 years of relevant laboratory experience  \n   - Strong clinical laboratory testing and quality management experience  \n\n📍 Location: Lebu Musica Sefer  \n📅 Deadline: Oct 05, 2026  \n📊 Vacancy Count: 3",
-      "posted": "2026-09-04T07:11:18.436209Z"
     }
   ]
 }
