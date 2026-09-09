@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-09T10:59:22.696123Z",
+  "updated": "2026-09-09T15:29:31.255233Z",
   "jobs": [
+    {
+      "id": "cfe1bc056b12537a3fc66c62083a6cf9ab9e401c7ad70a3bb8e688a2a9d3bed3",
+      "company": "EthioChicken",
+      "about": "Leading Ethiopian chicken distributor serving rural farmers.",
+      "positions": [
+        "reporting analyst",
+        "senior reporting analyst",
+        "data & reporting manager"
+      ],
+      "category": [
+        "Executive"
+      ],
+      "deadline": "15 Sep 2026",
+      "link": "https://ethiojobshub.com/ethiochicken-job-vacancy-2/",
+      "contact": "careers@ethiochicken.com",
+      "text": "🏷️ Technology & IT | Private Sector\n\n🏢 Company: EthioChicken  \n🏬 About: Leading Ethiopian chicken distributor serving rural farmers.  \n\n💼 Positions:  \n1. Reporting Analyst  \n   📍 Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s in relevant field  \n   - 1‑2 yrs reporting  \n   - Python analysis  \n\n2. Senior Reporting Analyst  \n   📍 Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s in relevant field  \n   - 2‑4 yrs analytics  \n   - Advanced Python  \n\n3. Data & Reporting Manager  \n   📍 Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s in IT/CS  \n   - 5+ yrs analytics, 2+ yrs lead  \n   - Python & Azure/GCP pipelines  \n\n📅 Deadline: 15 Sep 2026  \n📞 Contact: careers@ethiochicken.com  \n\n📝 Application Method: Email cover letter & CV, subject = position  \n🔗 Link: https://ethiojobshub.com/ethiochicken-job-vacancy-2/",
+      "posted": "2026-09-09T15:29:25.696671Z"
+    },
     {
       "id": "bcafb63665b6917285170376cc9a257d628d683462e4914193ceb0878574e04a",
       "company": "Kerchanshe Trading Company",
@@ -5045,24 +5063,6 @@
       "image": null,
       "text": "🏷️ Private Sector | Fresh Graduate\n\n🏢 Company: Classical Village PLC  \n🏬 About: Classical Village PLC is a private company operating in the retail sector in Ethiopia.  \n\n💼 Positions:  \n1. Showroom Sales Person  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - 12th completed, diploma or degree in marketing, business or related field  \n   - Experience in retail or direct sales  \n   - Strong communication and negotiation skills  \n\n📅 Deadline: Sep 11, 2026  \n📊 Vacancy Count: 10  \n\n📝 Description: Handles showroom sales, customer service and achieves sales targets.\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=Classical%20Village%20PLC%20showroom%20sales%20person%20Ethiopia%20job%20vacancy",
       "posted": "2026-09-05T06:04:30.657465Z"
-    },
-    {
-      "id": "4bcd774c81d75cc16bebf3f8acd9f52ca5fb69851f01bc89fc8610bc0fa7254d",
-      "company": "Hydrogen Pharmaceutical PLC",
-      "about": "A private company operating in the pharmaceutical sector in Ethiopia.",
-      "positions": [
-        "biomedical engineer"
-      ],
-      "category": [
-        "Healthcare",
-        "Construction & Engineering"
-      ],
-      "deadline": "September 5, 2026",
-      "link": "",
-      "contact": "vacancy@hydrogenpplc.com",
-      "image": null,
-      "text": "🏷️ Healthcare | Private Sector\n\n🏢 Company: Hydrogen Pharmaceutical PLC  \n🏬 About: A private company operating in the pharmaceutical sector in Ethiopia.  \n\n💼 Positions:  \n1. Biomedical Engineer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Biomedical, Medical or Electrical Engineering or related field  \n   - 0‑5 years relevant experience  \n   - Ability to install, commission and maintain medical/laboratory equipment  \n\n📅 Deadline: September 5, 2026  \n📞 Contact: vacancy@hydrogenpplc.com  \n\n📝 Application Method: Submit CV via email",
-      "posted": "2026-09-05T06:04:14.559888Z"
     }
   ]
 }
