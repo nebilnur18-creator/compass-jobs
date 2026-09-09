@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-09T15:29:31.255233Z",
+  "updated": "2026-09-09T15:30:49.723199Z",
   "jobs": [
+    {
+      "id": "d1803d41f9a1c12032f4dc4352ba21a82467f5cb2ba25969431b1619ba6985de",
+      "company": "Boston Coffee",
+      "about": "A private coffee shop operating in Ethiopia.",
+      "positions": [
+        "pastry chef / cake specialist"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "@HKBoston",
+      "text": "🏷️ Private Sector\n\n🏢 Company: Boston Coffee  \n🏬 About: A private coffee shop operating in Ethiopia.  \n\n💼 Positions:  \n1. Pastry Chef / Cake Specialist  \n   📍 Location: Bole, Addis Ababa  \n   🎓 Requirements:  \n   - Proven pastry experience  \n   - Skilled in cake preparation  \n   - Ability to work independently  \n\n💰 Salary: Negotiable  \n📝 Application Method: Apply via Telegram  \n📞 Contact: @HKBoston",
+      "posted": "2026-09-09T15:30:46.454091Z"
+    },
     {
       "id": "cfe1bc056b12537a3fc66c62083a6cf9ab9e401c7ad70a3bb8e688a2a9d3bed3",
       "company": "EthioChicken",
@@ -5046,23 +5062,6 @@
       "image": null,
       "text": "🏷️ Government\n\n🏢 Company: National Election Board of Ethiopia (NEBE)  \n🏬 About: Ethiopia’s independent authority responsible for organizing and supervising elections nationwide.  \n\n💼 Positions:  \n1. Senior Research and Learning Expert  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BA/Master in Economics, Statistics, Math, Management or related field with 7‑8 years experience.  \n   - Knowledge of PMEA/MEAL systems and election cycle management.  \n   - Proficiency in quantitative & qualitative data analysis and knowledge management.  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Sep 12, 2026\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=National%20Election%20Board%20of%20Ethiopia%20%28NEBE%29%20senior%20research%20and%20learning%20expert%20Ethiopia%20job%20vacancy",
       "posted": "2026-09-05T06:04:43.564596Z"
-    },
-    {
-      "id": "66698e9d2ed523f3ba6f8b8f3e8b02c63085f2d23a9d97354056d52605f4c447",
-      "company": "Classical Village PLC",
-      "about": "Classical Village PLC is a private company operating in the retail sector in Ethiopia.",
-      "positions": [
-        "showroom sales person"
-      ],
-      "category": [
-        "Private Sector"
-      ],
-      "deadline": "Sep 11, 2026",
-      "link": "https://www.google.com/search?q=Classical%20Village%20PLC%20showroom%20sales%20person%20Ethiopia%20job%20vacancy",
-      "contact": "",
-      "image": null,
-      "text": "🏷️ Private Sector | Fresh Graduate\n\n🏢 Company: Classical Village PLC  \n🏬 About: Classical Village PLC is a private company operating in the retail sector in Ethiopia.  \n\n💼 Positions:  \n1. Showroom Sales Person  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - 12th completed, diploma or degree in marketing, business or related field  \n   - Experience in retail or direct sales  \n   - Strong communication and negotiation skills  \n\n📅 Deadline: Sep 11, 2026  \n📊 Vacancy Count: 10  \n\n📝 Description: Handles showroom sales, customer service and achieves sales targets.\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=Classical%20Village%20PLC%20showroom%20sales%20person%20Ethiopia%20job%20vacancy",
-      "posted": "2026-09-05T06:04:30.657465Z"
     }
   ]
 }
