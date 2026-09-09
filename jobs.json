@@ -1,6 +1,22 @@
 {
-  "updated": "2026-09-09T10:58:16.170282Z",
+  "updated": "2026-09-09T10:59:22.696123Z",
   "jobs": [
+    {
+      "id": "bcafb63665b6917285170376cc9a257d628d683462e4914193ceb0878574e04a",
+      "company": "Kerchanshe Trading Company",
+      "about": "A private trading company operating in Ethiopia.",
+      "positions": [
+        "internal auditor"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "Sep 16 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Banking & Finance | Private Sector\n\n🏢 Company: Kerchanshe Trading Company  \n🏬 About: A private trading company operating in Ethiopia.  \n\n💼 Positions:  \n1. Internal Auditor  \n   📍 Location: Jimma  \n   🎓 Requirements:  \n   - BA or MA in Accounting & Finance  \n   - Minimum 3 years internal audit experience  \n   - Strong analytical and communication skills  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Sep 16 2026  \n\n📝 Description: Evaluates internal controls and ensures compliance with company policies.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-09T10:58:56.489962Z"
+    },
     {
       "id": "39ce7fa9a89dd8057aa3cdf95db121e835931c070447fd8301552fc08e935496",
       "company": "Selam Hawassa Business Group PLC",
@@ -5047,23 +5063,6 @@
       "image": null,
       "text": "🏷️ Healthcare | Private Sector\n\n🏢 Company: Hydrogen Pharmaceutical PLC  \n🏬 About: A private company operating in the pharmaceutical sector in Ethiopia.  \n\n💼 Positions:  \n1. Biomedical Engineer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Biomedical, Medical or Electrical Engineering or related field  \n   - 0‑5 years relevant experience  \n   - Ability to install, commission and maintain medical/laboratory equipment  \n\n📅 Deadline: September 5, 2026  \n📞 Contact: vacancy@hydrogenpplc.com  \n\n📝 Application Method: Submit CV via email",
       "posted": "2026-09-05T06:04:14.559888Z"
-    },
-    {
-      "id": "6e2715eb34abcedbe1cd50850789c1db40ebc0bab26bd5f5a35a133461eadedb",
-      "company": "AAU - College of Health Science - AI",
-      "about": "A college of Addis Ababa University dedicated to health science research and AI‑driven solutions.",
-      "positions": [
-        "ai / data science officer"
-      ],
-      "category": [
-        "Education"
-      ],
-      "deadline": "October 5th, 2026",
-      "link": "https://elelanajobs.com/2026/09/04/aau-college-of-health-science-ai/",
-      "contact": "",
-      "image": "https://www.google.com/s2/favicons?domain=elelanajobs.com&sz=256",
-      "text": "🏷️ Education | Technology & IT\n\n🏢 Company: AAU - College of Health Science - AI  \n🏬 About: A college of Addis Ababa University dedicated to health science research and AI‑driven solutions.  \n\n💼 Positions:  \n1. AI / Data Science Officer  \n   📍 Location: Addis Ababa, Ethiopia  \n   🎓 Requirements:  \n   - Degree in data science, computer science, biostatistics or related field  \n   - Experience in machine learning / time‑series modeling with Python  \n   - Experience with health or surveillance data (preferred)  \n\n📅 Deadline: October 5th, 2026  \n📝 Application Method: Submit application letter, CV and credentials to the Human Resource Administration Office, AAU College of Health Sciences, Tikur Anbessa Specialized Hospital, Room #118  \n🔗 Link: https://elelanajobs.com/2026/09/04/aau-college-of-health-science-ai/",
-      "posted": "2026-09-05T06:04:01.583930Z"
     }
   ]
 }
