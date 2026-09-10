@@ -1,6 +1,20 @@
 {
-  "updated": "2026-09-10T10:09:10.737807Z",
+  "updated": "2026-09-10T10:09:38.114224Z",
   "jobs": [
+    {
+      "id": "04f4cfbcf7a80509049d28d8f80bd492945ec1cc9593397ff85a7abe3fdc62ce",
+      "company": "Hahu Jobs",
+      "about": "Hahu Jobs is an Ethiopian online platform that aggregates job listings across various sectors.",
+      "positions": [],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "https://www.hahu.jobs/",
+      "contact": "",
+      "text": "🏷️ Private Sector\n\n🏢 Company: Hahu Jobs\n🏬 About: Hahu Jobs is an Ethiopian online platform that aggregates job listings across various sectors.\n\n💼 Positions:\n…and 0 more positions — full list on our website.\n\n📝 Application Method: Apply via source job page\n🔗 Link: https://www.hahu.jobs/",
+      "posted": "2026-09-10T10:09:35.209824Z"
+    },
     {
       "id": "d9395459337fb3ac906a478ee199a7aa26260799160aaf35bcbe259bbf863d4a",
       "company": "Kelem International School",
@@ -5058,22 +5072,6 @@
       "contact": "",
       "text": "🏷️ Private Sector\n\n🏢 Company: Globe MFG  \n🏬 About: Globe MFG is a manufacturing company operating in Ethiopia.  \n\n💼 Positions:  \n1. Telecaller  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Excellent verbal communication in Amharic, pleasant telephone manner  \n   - Ability to make high‑volume calls and meet sales targets  \n   - Basic computer skills (MS Excel, WhatsApp, CRM)  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 06, 2026  \n\n📝 Description: Conduct outbound calls to promote products and provide customer service.\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=Globe%20MFG%20telecaller%20Ethiopia%20job%20vacancy",
       "posted": "2026-09-05T11:59:53.937510Z"
-    },
-    {
-      "id": "a5571b01eebe0b755608e85f2800ac6766df79f0543170f32350a6c63b6da682",
-      "company": "Yemlktegnal Charity Organization",
-      "about": "A charitable organization operating in the healthcare sector in Ethiopia.",
-      "positions": [
-        "pharmacy technician"
-      ],
-      "category": [
-        "Healthcare"
-      ],
-      "deadline": "Oct 03, 2026",
-      "link": "https://www.google.com/search?q=Yemlktegnal%20Charity%20Organization%20pharmacy%20technician%20Ethiopia%20job%20vacancy",
-      "contact": "",
-      "text": "🏷️ Healthcare | NGO / International\n\n🏢 Company: Yemlktegnal Charity Organization  \n🏬 About: A charitable organization operating in the healthcare sector in Ethiopia.  \n\n💼 Positions:  \n1. Pharmacy Technician  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Diploma in Pharmacy Technology or related field with certification  \n   - Skills in medication preparation, inventory management, record keeping  \n   - Experience in healthcare or rehabilitation setting (advantage)  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 03, 2026  \n📝 Description: Handles medication preparation, stock monitoring and pharmacy operations.\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=Yemlktegnal%20Charity%20Organization%20pharmacy%20technician%20Ethiopia%20job%20vacancy",
-      "posted": "2026-09-05T11:57:18.289944Z"
     }
   ]
 }
