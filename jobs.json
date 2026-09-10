@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-10T09:49:11.888733Z",
+  "updated": "2026-09-10T09:50:43.912833Z",
   "jobs": [
+    {
+      "id": "0b6c74268203378359970241c55f0c93851be6cf1e74cf7c6300043f7d512cff",
+      "company": "Merq Consultancy PLC",
+      "about": "A consultancy firm delivering digital solutions and IT services in Ethiopia.",
+      "positions": [
+        "junior software engineer – digital health & ai solutions"
+      ],
+      "category": [
+        "Fresh Graduate",
+        "Construction & Engineering"
+      ],
+      "deadline": "Sep 18, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Technology & IT | Fresh Graduate\n\n🏢 Company: Merq Consultancy PLC  \n🏬 About: A consultancy firm delivering digital solutions and IT services in Ethiopia.  \n\n💼 Positions:  \n1. Junior Software Engineer – Digital Health & AI Solutions  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Computer Science, Software Engineering or related field  \n   - 0–2 years software development experience or strong academic projects/GitHub work  \n   - Knowledge of frontend & backend development, REST APIs and system integration  \n\n📅 Deadline: Sep 18, 2026  \n📊 Vacancy Count: 2  \n📝 Description: Develop and maintain software for digital health and AI applications.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-10T09:50:41.118296Z"
+    },
     {
       "id": "3534b6ea33a55116ecaebfccfd6f34d011007f3d3379664b78041dcab015ee57",
       "company": "Lion Heart Academy",
@@ -5066,22 +5083,6 @@
       "contact": "",
       "text": "🏷️ NGO / International | Healthcare\n\n🏢 Company: GOAL Ethiopia  \n🏬 About: An international NGO implementing health and development programs across Ethiopia.  \n\n💼 Positions:  \n1. Clinical Nurse  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor of Science in Nursing and a valid EFDA license.  \n   - At least 3 years experience in OPD, adult or MCH clinical settings.  \n   - Ability to address psychosocial needs and provide counseling.  \n\n📅 Deadline: September 14th, 2026  \n\n📝 Application Method: Apply via provided link  \n🔗 Link: https://ethiojobs.net/job/PjH4p1yHU7-clinical-nurse\n\nSOURCE JOB PAGE:  \nhttps://elelanajobs.com/2026/09/05/goal-ethiopia-5/",
       "posted": "2026-09-05T11:24:39.363352Z"
-    },
-    {
-      "id": "62465e18971251da87744091a1147a1ced36f452caa52809bf75d4e31d5bf6e2",
-      "company": "Refugees and Returnees Service (RRS)",
-      "about": "A governmental agency delivering assistance and services to refugees and returnees across Ethiopia.",
-      "positions": [
-        "junior mechanic"
-      ],
-      "category": [
-        "Government"
-      ],
-      "deadline": "September 11, 2026",
-      "link": "https://effoysira.com/refugees-and-returnees-service-job-vacancy/",
-      "contact": "",
-      "text": "🏷️ Government\n\n🏢 Company: Refugees and Returnees Service (RRS)  \n🏬 About: A governmental agency delivering assistance and services to refugees and returnees across Ethiopia.  \n\n💼 Positions:  \n1. Junior Mechanic  \n   📍 Location: Melkadida Branch Office  \n   🎓 Requirements:  \n   - Bachelor’s degree in automotive or general mechanics (or diploma with 2 years experience)  \n   - Valid driving license (Category 3, Public‑1, Dry‑1, Taxi‑2 or Special)  \n   - Willingness to travel for field work and overtime  \n\n💰 Salary: ETB 38,000 per month  \n📝 Description: Performs mechanical maintenance and repairs to support RRS operations.  \n📅 Deadline: September 11, 2026  \n📝 Application Method: Apply via source job page  \n🔗 Link: https://effoysira.com/refugees-and-returnees-service-job-vacancy/",
-      "posted": "2026-09-05T11:24:05.514743Z"
     }
   ]
 }
