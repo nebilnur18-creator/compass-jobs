@@ -1,6 +1,21 @@
 {
-  "updated": "2026-09-10T09:53:48.236595Z",
+  "updated": "2026-09-10T09:54:03.841199Z",
   "jobs": [
+    {
+      "id": "95c34c8a982520b807b98da8df38fdc48cba83b12081c355b6f576533e8d2e2c",
+      "company": "Mag School",
+      "about": "Mag School is an educational institution in Ethiopia offering primary and secondary education.",
+      "positions": [],
+      "category": [
+        "Education",
+        "Executive"
+      ],
+      "deadline": "Oct 10, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Education | Executive\n\n🏢 Company: Mag School  \n🏬 About: Mag School is an educational institution in Ethiopia offering primary and secondary education.  \n\n💼 Positions:  \n1️⃣ Human Resources (HR) Manager  \n📍 Location: Addis Ababa (Estimated)  \n🎓 Requirements: Minimum 5 years of HR experience; experience in a school or educational institution preferred; proven recruitment and staff‑management skills.  \n\n2️⃣ Managing Director  \n📍 Location: Addis Ababa (Estimated)  \n🎓 Requirements: Minimum 10 years experience in the school/education sector; strong leadership and school‑management experience; 8‑12 years overall professional experience.  \n\n📅 Deadline: Oct 10, 2026  \n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-10T09:54:00.922261Z"
+    },
     {
       "id": "390a64bb3c0be7693bd42a19601077d117efefa5fd17ed52d0057dcf209d058f",
       "company": "Gses General Trading plc",
@@ -5062,23 +5077,6 @@
       "contact": "",
       "text": "🏷️ Technology & IT | Executive\n\n🏢 Company: I Data Technologies PLC  \n🏬 About: A private Ethiopian company delivering IT solutions and software development services.  \n\n💼 Positions:  \n1. Senior Software Developer  \n   📍 Location: Addis Ababa, Jimma, Project Locations  \n   🎓 Requirements:  \n   - Bachelor’s degree in Computer Science or related field  \n   - 8+ years full‑stack development experience (Python, Java, Node.js)  \n   - Strong knowledge of databases, APIs, micro‑services and cloud platforms  \n\n📅 Deadline: Sep 12, 2026  \n📊 Vacancy Count: 1  \n📝 Description: Lead full‑stack development and oversee software projects.\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=I%20Data%20Technologies%20PLC%20senior%20software%20developer%20Ethiopia%20job%20vacancy",
       "posted": "2026-09-05T11:29:15.023529Z"
-    },
-    {
-      "id": "f4c97c2efaa0dac117a7ba8899940c9166c5093826f8397a6c802ecbc11a9dca",
-      "company": "LESSO Ethiopia Trading PLC",
-      "about": "A private trading company in Ethiopia that imports, exports, and distributes various goods.",
-      "positions": [
-        "supply chain management department manager"
-      ],
-      "category": [
-        "Logistics & Supply Chain",
-        "Executive"
-      ],
-      "deadline": "Oct 04, 2026",
-      "link": "https://www.google.com/search?q=LESSO%20Ethiopia%20Trading%20PLC%20supply%20chain%20management%20department%20manager%20Ethiopia%20job%20vacancy",
-      "contact": "",
-      "text": "🏷️ Logistics & Supply Chain | Private Sector\n\n🏢 Company: LESSO Ethiopia Trading PLC  \n🏬 About: A private trading company in Ethiopia that imports, exports, and distributes various goods.  \n\n💼 Positions:  \n1. Supply Chain Management Department Manager  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - MA/BA in Supply Chain, Business Management, Economics, Accounting or related field  \n   - 5‑8 years relevant experience in supply chain management  \n   - At least 4 years in managerial positions  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 04, 2026  \n📝 Description: Lead and optimize the company’s supply chain operations.\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=LESSO%20Ethiopia%20Trading%20PLC%20supply%20chain%20management%20department%20manager%20Ethiopia%20job%20vacancy",
-      "posted": "2026-09-05T11:28:31.336224Z"
     }
   ]
 }
