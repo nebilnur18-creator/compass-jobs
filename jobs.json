@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-10T09:54:03.841199Z",
+  "updated": "2026-09-10T09:54:46.561133Z",
   "jobs": [
+    {
+      "id": "bb2cc66c5d222da63687130bd2b620cce888da462a36b7470c21a25734a12627",
+      "company": "Mag School",
+      "about": "Mag School is an educational institution providing primary and secondary education in Ethiopia.",
+      "positions": [
+        "finance manager"
+      ],
+      "category": [
+        "Education",
+        "Executive"
+      ],
+      "deadline": "Oct 10, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Education\n\n🏢 Company: Mag School  \n🏬 About: Mag School is an educational institution providing primary and secondary education in Ethiopia.  \n\n💼 Positions:  \n1. Finance Manager  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Degree in Accounting, Finance, or related field.  \n   - 3‑5 years experience in financial management.  \n   - Proven ability in accounting and budgeting.  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 10, 2026  \n📝 Description: Oversees financial operations and ensures accurate accounting.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-10T09:54:31.730445Z"
+    },
     {
       "id": "95c34c8a982520b807b98da8df38fdc48cba83b12081c355b6f576533e8d2e2c",
       "company": "Mag School",
@@ -5060,23 +5077,6 @@
       "contact": "",
       "text": "🏷️ Fresh Graduate | Private Sector\n\n🏢 Company: I Data Technologies PLC  \n🏬 About: I Data Technologies PLC is a private technology company operating in Ethiopia.  \n\n💼 Positions:  \n1. Finance Officer / Senior Accountant  \n   📍 Location: Addis Ababa, Jimma, Project Locations  \n   🎓 Requirements:  \n   - Bachelor’s degree in Accounting, Finance or related field  \n   - 0–3 years relevant accounting experience  \n   - Experience in a PLC environment (preferred)  \n\n💰 Salary: Attractive as per company salary scale  \n📝 Description: Handles financial reporting and accounting functions.  \n📊 Vacancy Count: 1  \n💼 Employment Type: Entry Level  \n📅 Deadline: Sep 12, 2026\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=I%20Data%20Technologies%20PLC%20finance%20officer%20%2F%20senior%20accountant%20Ethiopia%20job%20vacancy",
       "posted": "2026-09-05T11:29:55.459381Z"
-    },
-    {
-      "id": "4ff2b005f93634896017917155b07d5044232c04bb92333031d3b72f54ab9ec4",
-      "company": "I Data Technologies PLC",
-      "about": "A private Ethiopian company delivering IT solutions and software development services.",
-      "positions": [
-        "senior software developer"
-      ],
-      "category": [
-        "NGO / International",
-        "Construction & Engineering"
-      ],
-      "deadline": "Sep 12, 2026",
-      "link": "https://www.google.com/search?q=I%20Data%20Technologies%20PLC%20senior%20software%20developer%20Ethiopia%20job%20vacancy",
-      "contact": "",
-      "text": "🏷️ Technology & IT | Executive\n\n🏢 Company: I Data Technologies PLC  \n🏬 About: A private Ethiopian company delivering IT solutions and software development services.  \n\n💼 Positions:  \n1. Senior Software Developer  \n   📍 Location: Addis Ababa, Jimma, Project Locations  \n   🎓 Requirements:  \n   - Bachelor’s degree in Computer Science or related field  \n   - 8+ years full‑stack development experience (Python, Java, Node.js)  \n   - Strong knowledge of databases, APIs, micro‑services and cloud platforms  \n\n📅 Deadline: Sep 12, 2026  \n📊 Vacancy Count: 1  \n📝 Description: Lead full‑stack development and oversee software projects.\n\n📝 Application Method: Search this position online\n🔗 Link: https://www.google.com/search?q=I%20Data%20Technologies%20PLC%20senior%20software%20developer%20Ethiopia%20job%20vacancy",
-      "posted": "2026-09-05T11:29:15.023529Z"
     }
   ]
 }
