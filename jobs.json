@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-10T09:47:42.521984Z",
+  "updated": "2026-09-10T09:49:11.888733Z",
   "jobs": [
+    {
+      "id": "3534b6ea33a55116ecaebfccfd6f34d011007f3d3379664b78041dcab015ee57",
+      "company": "Lion Heart Academy",
+      "about": "A private educational institution in Ethiopia offering K‑12 programs.",
+      "positions": [
+        "speech & language therapist"
+      ],
+      "category": [
+        "Technology & IT",
+        "Education"
+      ],
+      "deadline": "Sep 16 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "text": "🏷️ Education | Private Sector\n\n🏢 Company: Lion Heart Academy  \n🏬 About: A private educational institution in Ethiopia offering K‑12 programs.  \n\n💼 Positions:  \n1. Speech & Language Therapist  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Speech & Language Therapy, ≥3 years experience  \n   - Proficiency in MS Excel and related software  \n   - Strong knowledge of special‑needs education  \n\n📅 Deadline: Sep 16 2026  \n📊 Vacancy Count: 1  \n\n📝 Description: Join a mission‑driven school providing a supportive, value‑based environment and growth opportunities.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-10T09:49:08.915417Z"
+    },
     {
       "id": "32b9d038e00e2bde13958b33daf3ca602770af24c1f977f177a897cbd517e1a5",
       "company": "BGS Poultry Farm",
@@ -5065,22 +5082,6 @@
       "contact": "",
       "text": "🏷️ Government\n\n🏢 Company: Refugees and Returnees Service (RRS)  \n🏬 About: A governmental agency delivering assistance and services to refugees and returnees across Ethiopia.  \n\n💼 Positions:  \n1. Junior Mechanic  \n   📍 Location: Melkadida Branch Office  \n   🎓 Requirements:  \n   - Bachelor’s degree in automotive or general mechanics (or diploma with 2 years experience)  \n   - Valid driving license (Category 3, Public‑1, Dry‑1, Taxi‑2 or Special)  \n   - Willingness to travel for field work and overtime  \n\n💰 Salary: ETB 38,000 per month  \n📝 Description: Performs mechanical maintenance and repairs to support RRS operations.  \n📅 Deadline: September 11, 2026  \n📝 Application Method: Apply via source job page  \n🔗 Link: https://effoysira.com/refugees-and-returnees-service-job-vacancy/",
       "posted": "2026-09-05T11:24:05.514743Z"
-    },
-    {
-      "id": "d1906586ed6d28fc94715fc47ae088db1b4cbe0738810f6c5efd0106dcf3b631",
-      "company": "Enku Animal Feed Processing Company",
-      "about": "A private company that processes animal feed for the Ethiopian market.",
-      "positions": [
-        "factory worker (laborer)"
-      ],
-      "category": [
-        "Private Sector"
-      ],
-      "deadline": "September 11 2026",
-      "link": "",
-      "contact": "@abreshassefa",
-      "text": "🏷️ Private Sector\n\n🏢 Company: Enku Animal Feed Processing Company  \n🏬 About: A private company that processes animal feed for the Ethiopian market.  \n\n💼 Positions:  \n1. Factory Worker (Laborer)  \n   🎓 Requirements:  \n   - Ability to read and write  \n   - Prior experience as a factory laborer  \n\n💰 Salary: 7,000 ETB plus overtime and grain bonuses  \n📅 Deadline: September 11 2026  \n📞 Contact: @abreshassefa  \n\n📝 Application Method: Apply via Telegram",
-      "posted": "2026-09-05T11:23:33.143424Z"
     }
   ]
 }
