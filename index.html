@@ -2372,22 +2372,37 @@
 
       const description = getShortDescription(job);
 
-      const applyHtml = link
+      const jobId = String(job.id ?? "").trim();
+
+      const detailsUrl = jobId
+        ? `job.html?id=${encodeURIComponent(jobId)}`
+        : "";
+
+      const applyHtml = detailsUrl
         ? `
           <a
             class="apply-button"
-            href="${safeText(link)}"
-            target="_blank"
-            rel="noopener"
+            href="${safeText(detailsUrl)}"
           >
-            View application ↗
+            View details →
           </a>
         `
-        : `
-          <span class="job-deadline closed">
-            Application link unavailable
-          </span>
-        `;
+        : link
+          ? `
+            <a
+              class="apply-button"
+              href="${safeText(link)}"
+              target="_blank"
+              rel="noopener"
+            >
+              View application ↗
+            </a>
+          `
+          : `
+            <span class="job-deadline closed">
+              Job details unavailable
+            </span>
+          `;
 
       return `
         <article class="job-card ${expired ? "expired" : ""}">
