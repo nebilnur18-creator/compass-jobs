@@ -1,155 +1,2565 @@
-function renderJobCard(job) {
-  const categories = getCategories(job);
-  const positions = getPositions(job);
-  const expired = isExpired(job);
-  const deadline = formatDeadline(job);
-  const link = safeUrl(job.link);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
 
-  const title = getJobTitle(job);
-  const company = job.company || "Unknown company";
-  const location = getLocation(job);
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
-  const locationText = Array.isArray(location)
-    ? location.join(", ")
-    : String(location || "");
+  <title>Compass Jobs | Find Your Direction</title>
 
-  const tags = categories
-    .slice(0, 4)
-    .map(category => `
-      <span class="job-tag">
-        ${safeText(category)}
-      </span>
-    `)
-    .join("");
+  <meta
+    name="description"
+    content="Find fresh Ethiopian job vacancies from private companies, NGOs, government organizations, banks, and more. Organized by Compass Jobs using Groq AI."
+  >
 
-  const positionsHtml = positions
-    .slice(0, 6)
-    .map(position => `
-      <li>${safeText(position)}</li>
-    `)
-    .join("");
+  <meta
+    name="keywords"
+    content="Ethiopia jobs, Addis Ababa jobs, NGO jobs Ethiopia, fresh graduate jobs, vacancy Ethiopia, Compass Jobs"
+  >
 
-  const description = getShortDescription(job);
+  <meta name="author" content="Compass Jobs">
 
-  /*
-    STEP 2:
-    Every job card now opens job.html first.
+  <meta property="og:title" content="Compass Jobs | Find Your Direction">
+  <meta
+    property="og:description"
+    content="Discover fresh Ethiopian job vacancies in one place. Find your next opportunity with Compass Jobs."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://compass-jobs.vercel.app">
+  <meta property="og:image" content="https://compass-jobs.vercel.app/logo.png">
 
-    Example:
-    job.html?id=12345
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Compass Jobs | Find Your Direction">
+  <meta
+    name="twitter:description"
+    content="Fresh Ethiopian job vacancies, organized in one place."
+  >
+  <meta name="twitter:image" content="https://compass-jobs.vercel.app/logo.png">
 
-    The original application link remains available
-    on the job details page.
-  */
+  <link rel="icon" type="image/png" href="logo.png">
 
-  const jobId = String(job.id ?? "").trim();
+  <style>
+    :root {
+      --navy: #071525;
+      --navy-light: #10263e;
+      --navy-soft: #18344f;
 
-  const detailsUrl = jobId
-    ? `job.html?id=${encodeURIComponent(jobId)}`
-    : "";
+      --green: #16a34a;
+      --green-dark: #087f3c;
+      --green-soft: #e8f7ee;
 
-  const applyHtml = detailsUrl
-    ? `
-      <a
-        class="apply-button"
-        href="${safeText(detailsUrl)}"
-      >
-        View details →
-      </a>
-    `
-    : link
-      ? `
-        <a
-          class="apply-button"
-          href="${safeText(link)}"
-          target="_blank"
-          rel="noopener"
-        >
-          View application ↗
-        </a>
-      `
-      : `
-        <span class="job-deadline closed">
-          Job details unavailable
-        </span>
-      `;
+      --yellow: #f5c542;
+      --red: #d92d3b;
 
-  return `
-    <article class="job-card ${expired ? "expired" : ""}">
-      <div class="job-header">
+      --background: #f5f8fb;
+      --surface: #ffffff;
+      --border: #e4eaf0;
+
+      --text: #142333;
+      --muted: #68788a;
+      --white: #ffffff;
+
+      --shadow: 0 12px 35px rgba(7, 21, 37, 0.07);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--background);
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .top-strip {
+      height: 4px;
+      background:
+        linear-gradient(
+          90deg,
+          #078c43 0 33.33%,
+          #f5c542 33.33% 66.66%,
+          #d92d3b 66.66% 100%
+        );
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.96);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      min-width: 0;
+    }
+
+    .brand img {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 13px;
+      border: 1px solid var(--border);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-name {
+      font-size: 1.2rem;
+      font-weight: 850;
+      letter-spacing: -0.5px;
+      color: var(--navy);
+    }
+
+    .brand-name span {
+      color: var(--green);
+    }
+
+    .brand-subtitle {
+      color: var(--muted);
+      font-size: 0.68rem;
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      color: #45576a;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 650;
+    }
+
+    .nav-links a:hover {
+      color: var(--green-dark);
+    }
+
+    .nav-telegram {
+      color: var(--white) !important;
+      background: var(--navy);
+      padding: 10px 15px;
+      border-radius: 10px;
+    }
+
+    .nav-telegram:hover {
+      background: var(--green-dark);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(22, 163, 74, 0.16),
+          transparent 28%
+        ),
+        linear-gradient(135deg, var(--navy), #0d2943);
+      color: var(--white);
+      padding: 76px 0 88px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 260px;
+      height: 260px;
+      right: -100px;
+      bottom: -150px;
+      border: 45px solid rgba(255, 255, 255, 0.04);
+      border-radius: 50%;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #d8f9e4;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 750;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      background: #4ade80;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px rgba(74, 222, 128, 0.12);
+    }
+
+    .hero h1 {
+      margin: 0;
+      max-width: 650px;
+      font-size: clamp(2.2rem, 5vw, 4.4rem);
+      line-height: 1.08;
+      letter-spacing: -2px;
+      font-weight: 900;
+    }
+
+    .hero h1 span {
+      color: #66e69a;
+    }
+
+    .hero-description {
+      max-width: 570px;
+      color: #c3d1df;
+      font-size: 1.05rem;
+      margin: 22px 0 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      min-height: 45px;
+      padding: 11px 17px;
+      border-radius: 11px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: var(--white);
+    }
+
+    .button-primary:hover {
+      background: #12833c;
+      transform: translateY(-1px);
+    }
+
+    .button-light {
+      background: var(--white);
+      color: var(--navy);
+    }
+
+    .button-light:hover {
+      background: #eaf1f6;
+    }
+
+    .button-outline {
+      border-color: var(--border);
+      background: var(--surface);
+      color: var(--text);
+    }
+
+    .button-outline:hover {
+      border-color: var(--green);
+      color: var(--green-dark);
+    }
+
+    .hero-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 22px;
+      padding: 25px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.16);
+    }
+
+    .hero-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      margin-bottom: 22px;
+    }
+
+    .hero-card-title {
+      font-weight: 800;
+      font-size: 1rem;
+    }
+
+    .live-badge {
+      background: rgba(74, 222, 128, 0.13);
+      color: #86efac;
+      border: 1px solid rgba(134, 239, 172, 0.25);
+      padding: 4px 9px;
+      border-radius: 999px;
+      font-size: 0.68rem;
+      font-weight: 800;
+    }
+
+    .mini-job {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 14px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .mini-job-icon {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      border-radius: 11px;
+      background: rgba(255, 255, 255, 0.1);
+      font-size: 1.15rem;
+      flex-shrink: 0;
+    }
+
+    .mini-job strong {
+      display: block;
+      font-size: 0.86rem;
+    }
+
+    .mini-job small {
+      display: block;
+      color: #b7c8d7;
+      font-size: 0.73rem;
+      margin-top: 3px;
+    }
+
+    .stats {
+      margin-top: -30px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+    }
+
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 21px;
+      box-shadow: var(--shadow);
+    }
+
+    .stat-number {
+      font-size: 1.7rem;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.1;
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-top: 7px;
+      font-weight: 650;
+    }
+
+    .section {
+      padding: 78px 0;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .section-kicker {
+      color: var(--green-dark);
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .section-title {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      font-weight: 900;
+    }
+
+    .section-description {
+      max-width: 620px;
+      color: var(--muted);
+      margin: 12px 0 0;
+      font-size: 0.95rem;
+    }
+
+    .section-link {
+      color: var(--green-dark);
+      font-size: 0.84rem;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .search-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    .search-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 12px;
+    }
+
+    .field {
+      width: 100%;
+      min-width: 0;
+      min-height: 46px;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      background: #fbfcfd;
+      color: var(--text);
+      padding: 11px 13px;
+      outline: none;
+    }
+
+    .field:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.1);
+    }
+
+    .search-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+
+    .filter-chips {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 3px;
+      scrollbar-width: thin;
+    }
+
+    .chip {
+      flex: 0 0 auto;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--muted);
+      border-radius: 999px;
+      padding: 8px 13px;
+      font-size: 0.76rem;
+      font-weight: 750;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .chip.active,
+    .chip:hover {
+      color: var(--green-dark);
+      border-color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .results-info {
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 650;
+    }
+
+    .jobs-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 285px;
+      gap: 24px;
+      align-items: start;
+    }
+
+    .jobs-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .job-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 21px;
+      box-shadow: 0 5px 18px rgba(7, 21, 37, 0.035);
+      border-left: 4px solid var(--green);
+      transition: 0.2s ease;
+    }
+
+    .job-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .job-card.expired {
+      border-left-color: #a8b2bd;
+      opacity: 0.78;
+    }
+
+    .job-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+    }
+
+    .job-logo {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      object-fit: cover;
+      border-radius: 13px;
+      border: 1px solid var(--border);
+      background: #edf2f6;
+    }
+
+    .job-heading {
+      min-width: 0;
+      flex: 1;
+    }
+
+    .job-company {
+      color: var(--muted);
+      font-size: 0.77rem;
+      font-weight: 750;
+      margin-bottom: 3px;
+    }
+
+    .job-title {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1.04rem;
+      line-height: 1.35;
+      font-weight: 850;
+    }
+
+    .job-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 10px;
+    }
+
+    .job-tag {
+      background: #f0f5f8;
+      color: #526477;
+      border-radius: 999px;
+      padding: 4px 8px;
+      font-size: 0.67rem;
+      font-weight: 750;
+    }
+
+    .job-tag.green {
+      background: var(--green-soft);
+      color: var(--green-dark);
+    }
+
+    .job-positions {
+      margin: 17px 0 0;
+      padding-left: 18px;
+      color: #34495c;
+      font-size: 0.85rem;
+    }
+
+    .job-positions li {
+      margin-bottom: 5px;
+    }
+
+    .job-description {
+      margin-top: 13px;
+      color: var(--muted);
+      font-size: 0.83rem;
+    }
+
+    .job-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border);
+      margin-top: 18px;
+      padding-top: 15px;
+    }
+
+    .job-deadline {
+      color: var(--muted);
+      font-size: 0.77rem;
+      font-weight: 700;
+    }
+
+    .job-deadline.soon {
+      color: var(--red);
+    }
+
+    .job-deadline.closed {
+      color: #7b8794;
+    }
+
+    .apply-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      padding: 9px 14px;
+      background: var(--navy);
+      color: var(--white);
+      text-decoration: none;
+      border-radius: 9px;
+      font-size: 0.77rem;
+      font-weight: 850;
+    }
+
+    .apply-button:hover {
+      background: var(--green-dark);
+    }
+
+    .side-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+
+    .side-card h3 {
+      color: var(--navy);
+      margin: 0 0 13px;
+      font-size: 1rem;
+      font-weight: 850;
+    }
+
+    .category-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .category-button {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      width: 100%;
+      padding: 10px 11px;
+      background: #f8fafc;
+      color: #506276;
+      border: 1px solid transparent;
+      border-radius: 9px;
+      cursor: pointer;
+      text-align: left;
+      font-size: 0.78rem;
+      font-weight: 750;
+    }
+
+    .category-button:hover {
+      background: var(--green-soft);
+      color: var(--green-dark);
+      border-color: #bce8cb;
+    }
+
+    .category-count {
+      color: #8a98a7;
+      font-size: 0.7rem;
+    }
+
+    .telegram-card {
+      background:
+        linear-gradient(
+          145deg,
+          #0d2943,
+          #071525
+        );
+      color: var(--white);
+      border: none;
+    }
+
+    .telegram-card h3 {
+      color: var(--white);
+    }
+
+    .telegram-card p {
+      color: #c2d1df;
+      font-size: 0.82rem;
+      margin: 0 0 17px;
+    }
+
+    .empty-state,
+    .loading-state {
+      background: var(--surface);
+      border: 1px dashed #cbd6df;
+      border-radius: var(--radius);
+      padding: 55px 20px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .empty-state strong,
+    .loading-state strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .category-tile {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      padding: 21px;
+      cursor: pointer;
+      text-align: left;
+      transition: 0.2s ease;
+    }
+
+    .category-tile:hover {
+      border-color: var(--green);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .category-icon {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      background: var(--green-soft);
+      font-size: 1.25rem;
+      margin-bottom: 13px;
+    }
+
+    .category-tile strong {
+      display: block;
+      color: var(--navy);
+      font-size: 0.88rem;
+      line-height: 1.35;
+    }
+
+    .category-tile span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.73rem;
+      margin-top: 5px;
+    }
+
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .how-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 17px;
+      padding: 25px;
+    }
+
+    .step-number {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      background: var(--navy);
+      color: var(--white);
+      border-radius: 13px;
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .how-card h3 {
+      margin: 0;
+      color: var(--navy);
+      font-size: 1.03rem;
+    }
+
+    .how-card p {
+      color: var(--muted);
+      font-size: 0.84rem;
+      margin-bottom: 0;
+    }
+
+    .trust-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .trust-section .section-title {
+      color: var(--white);
+    }
+
+    .trust-section .section-description {
+      color: #bdccda;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 17px;
+    }
+
+    .trust-item {
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      background: rgba(255, 255, 255, 0.055);
+      border-radius: 15px;
+      padding: 22px;
+    }
+
+    .trust-item-icon {
+      font-size: 1.35rem;
+      margin-bottom: 13px;
+    }
+
+    .trust-item strong {
+      display: block;
+      font-size: 0.9rem;
+    }
+
+    .trust-item p {
+      color: #b9cbd9;
+      font-size: 0.78rem;
+      margin-bottom: 0;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+      align-items: stretch;
+    }
+
+    .about-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .about-card h3 {
+      color: var(--navy);
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+    }
+
+    .about-card p {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin: 0 0 13px;
+    }
+
+    .about-list {
+      margin: 17px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .about-list li {
+      color: #506276;
+      font-size: 0.83rem;
+      margin: 9px 0;
+    }
+
+    .about-list li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 900;
+      margin-right: 9px;
+    }
+
+    .employer-banner {
+      background:
+        linear-gradient(
+          115deg,
+          #e9f7ee,
+          #f8fbfd
+        );
+      border: 1px solid #ccebd6;
+      border-radius: 22px;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .employer-banner h2 {
+      color: var(--navy);
+      margin: 0 0 8px;
+      font-size: 1.55rem;
+      line-height: 1.2;
+    }
+
+    .employer-banner p {
+      color: var(--muted);
+      margin: 0;
+      max-width: 650px;
+      font-size: 0.87rem;
+    }
+
+    .faq-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+
+    details {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 16px 18px;
+    }
+
+    summary {
+      color: var(--navy);
+      cursor: pointer;
+      font-weight: 800;
+      font-size: 0.86rem;
+    }
+
+    details p {
+      color: var(--muted);
+      font-size: 0.82rem;
+      margin: 12px 0 0;
+    }
+
+    .final-cta {
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 58px 0;
+    }
+
+    .final-cta h2 {
+      margin: 0;
+      font-size: clamp(1.7rem, 4vw, 2.6rem);
+      line-height: 1.15;
+      letter-spacing: -1px;
+    }
+
+    .final-cta p {
+      color: #d9fbe5;
+      max-width: 550px;
+      margin: 14px auto 24px;
+      font-size: 0.92rem;
+    }
+
+    .footer {
+      background: #05101d;
+      color: #aebdca;
+      padding: 45px 0 25px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 900;
+    }
+
+    .footer-brand span {
+      color: #66e69a;
+    }
+
+    .footer p {
+      font-size: 0.8rem;
+      max-width: 380px;
+    }
+
+    .footer h4 {
+      color: var(--white);
+      font-size: 0.85rem;
+      margin: 0 0 12px;
+    }
+
+    .footer a {
+      display: block;
+      color: #aebdca;
+      text-decoration: none;
+      font-size: 0.8rem;
+      margin: 7px 0;
+    }
+
+    .footer a:hover {
+      color: #66e69a;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: 30px;
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      flex-wrap: wrap;
+      font-size: 0.73rem;
+    }
+
+    .footer-bottom a {
+      display: inline;
+      margin: 0;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-card {
+        max-width: 560px;
+      }
+
+      .jobs-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .side-card {
+        margin-bottom: 0;
+      }
+
+      .category-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .container {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .nav-inner {
+        min-height: 67px;
+      }
+
+      .nav-links a:not(.nav-telegram) {
+        display: none;
+      }
+
+      .nav-telegram {
+        padding: 9px 11px;
+        font-size: 0.75rem !important;
+      }
+
+      .hero {
+        padding: 53px 0 70px;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .hero-description {
+        font-size: 0.92rem;
+      }
+
+      .hero-card {
+        padding: 20px;
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stat-card {
+        padding: 17px;
+      }
+
+      .section {
+        padding: 55px 0;
+      }
+
+      .section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .search-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .search-panel {
+        padding: 15px;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .how-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .employer-banner {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 25px;
+      }
+
+      .faq-list {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
+    }
+
+    @media (max-width: 430px) {
+      .brand-subtitle {
+        display: none;
+      }
+
+      .brand-name {
+        font-size: 1.05rem;
+      }
+
+      .brand img {
+        width: 40px;
+        height: 40px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+
+      .category-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+      .category-tile {
+        padding: 15px;
+      }
+
+      .job-card {
+        padding: 16px;
+      }
+
+      .job-footer {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .apply-button {
+        width: 100%;
+      }
+
+      .trust-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-strip"></div>
+
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
         <img
-          class="job-logo"
-          src="${COMPASS_LOGO}"
-          alt="Compass Jobs"
+          src="logo.png"
+          alt="Compass Jobs logo"
           onerror="this.style.display='none'"
         >
 
-        <div class="job-heading">
-          <div class="job-company">
-            ${safeText(company)}
-          </div>
+        <span class="brand-text">
+          <span class="brand-name">
+            Compass <span>Jobs</span>
+          </span>
+          <span class="brand-subtitle">
+            Find Your Direction
+          </span>
+        </span>
+      </a>
 
-          <h3 class="job-title">
-            ${safeText(title)}
-          </h3>
+      <div class="nav-links">
+        <a href="#jobs-section">Find Jobs</a>
+        <a href="#categories">Categories</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#about">About</a>
+        <a
+          class="nav-telegram"
+          href="https://t.me/compass_jobs_official"
+          target="_blank"
+          rel="noopener"
+        >
+          Join Telegram ↗
+        </a>
+      </div>
+    </div>
+  </nav>
 
-          <div class="job-tags">
-            ${tags}
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">
+          <span class="eyebrow-dot"></span>
+          Powered by Groq AI
+        </div>
 
-            ${
-              locationText
-                ? `
-                  <span class="job-tag green">
-                    📍 ${safeText(locationText)}
-                  </span>
-                `
-                : ""
-            }
+        <h1>
+          Find your next
+          <span>opportunity.</span>
+        </h1>
 
-            ${
-              expired
-                ? `
-                  <span class="job-tag">
-                    Closed
-                  </span>
-                `
-                : `
-                  <span class="job-tag green">
-                    Active
-                  </span>
-                `
-            }
-          </div>
+        <p class="hero-description">
+          Discover fresh Ethiopian job vacancies from private companies,
+          NGOs, banks, government organizations, and more — organized in
+          one trusted place.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#jobs-section">
+            Explore Latest Jobs →
+          </a>
+
+          <a class="button button-light" href="#how-it-works">
+            How Compass Works
+          </a>
         </div>
       </div>
 
-      ${
-        positionsHtml
-          ? `
-            <ul class="job-positions">
-              ${positionsHtml}
-            </ul>
-          `
-          : ""
-      }
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <div class="hero-card-title">
+            Your career direction starts here
+          </div>
 
-      ${
-        description
-          ? `
-            <div class="job-description">
-              ${safeText(description)}
+          <div class="live-badge">
+            ● LIVE FEED
+          </div>
+        </div>
+
+        <div class="mini-job">
+          <div class="mini-job-icon">🔎</div>
+          <div>
+            <strong>Search smarter</strong>
+            <small>Find jobs by title, company, or location.</small>
+          </div>
+        </div>
+
+        <div class="mini-job">
+          <div class="mini-job-icon">🤖</div>
+          <div>
+            <strong>AI-organized vacancies</strong>
+            <small>Clear job information without unnecessary noise.</small>
+          </div>
+        </div>
+
+        <div class="mini-job">
+          <div class="mini-job-icon">🚀</div>
+          <div>
+            <strong>Apply directly</strong>
+            <small>Follow the original employer application source.</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-jobs">—</div>
+          <div class="stat-label">Active vacancies</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number" id="stat-companies">—</div>
+          <div class="stat-label">Companies listed</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number" id="stat-categories">—</div>
+          <div class="stat-label">Job categories</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Free for job seekers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section" id="jobs-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Fresh opportunities</div>
+            <h2 class="section-title">Latest job vacancies</h2>
+            <p class="section-description">
+              Search and explore job announcements collected from available
+              vacancy sources. Always confirm important details with the
+              original employer before applying.
+            </p>
+          </div>
+
+          <a class="section-link" href="#categories">
+            Browse categories →
+          </a>
+        </div>
+
+        <div class="search-panel">
+          <div class="search-grid">
+            <input
+              class="field"
+              id="search"
+              type="search"
+              placeholder="Search job title, company, skill..."
+              autocomplete="off"
+            >
+
+            <select class="field" id="location-filter">
+              <option value="All">All locations</option>
+            </select>
+
+            <select class="field" id="sort-filter">
+              <option value="latest">Latest added</option>
+              <option value="deadline">Deadline soonest</option>
+              <option value="company">Company A–Z</option>
+            </select>
+          </div>
+
+          <div class="search-bottom">
+            <div class="filter-chips" id="filters">
+              <button class="chip active" data-category="All">
+                All jobs
+              </button>
             </div>
-          `
-          : ""
-      }
 
-      <div class="job-footer">
-        <div class="job-deadline ${deadline.className}">
-          ${deadline.html}
+            <div class="results-info" id="results-info">
+              Loading jobs...
+            </div>
+          </div>
         </div>
 
-        ${applyHtml}
+        <div class="jobs-layout">
+          <div>
+            <div class="jobs-list" id="jobs">
+              <div class="loading-state">
+                <strong>Loading vacancies...</strong>
+                Please wait while Compass loads the latest jobs.
+              </div>
+            </div>
+          </div>
+
+          <aside>
+            <div class="side-card">
+              <h3>Browse by category</h3>
+              <div class="category-list" id="side-categories">
+                <div class="results-info">
+                  Loading categories...
+                </div>
+              </div>
+            </div>
+
+            <div class="side-card telegram-card">
+              <h3>Never miss a vacancy</h3>
+              <p>
+                Join the Compass Jobs Telegram channel for fresh Ethiopian
+                job announcements and updates.
+              </p>
+
+              <a
+                class="button button-primary"
+                href="https://t.me/compass_jobs_official"
+                target="_blank"
+                rel="noopener"
+              >
+                Join Telegram ↗
+              </a>
+            </div>
+          </aside>
+        </div>
       </div>
-    </article>
-  `;
-}
+    </section>
+
+    <section class="section" id="categories">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Explore opportunities</div>
+            <h2 class="section-title">Browse by industry</h2>
+            <p class="section-description">
+              Start with the area that matches your skills, education,
+              and career direction.
+            </p>
+          </div>
+        </div>
+
+        <div class="category-grid" id="category-grid">
+          <button class="category-tile" data-category-tile="Fresh Graduate">
+            <div class="category-icon">🎓</div>
+            <strong>Fresh Graduate</strong>
+            <span>Entry-level opportunities</span>
+          </button>
+
+          <button class="category-tile" data-category-tile="NGO">
+            <div class="category-icon">🌍</div>
+            <strong>NGO & International</strong>
+            <span>Development and humanitarian work</span>
+          </button>
+
+          <button class="category-tile" data-category-tile="Banking">
+            <div class="category-icon">🏦</div>
+            <strong>Banking & Finance</strong>
+            <span>Bank, finance, and accounting jobs</span>
+          </button>
+
+          <button class="category-tile" data-category-tile="Technology">
+            <div class="category-icon">💻</div>
+            <strong>Technology & IT</strong>
+            <span>Digital and technical careers</span>
+          </button>
+
+          <button class="category-tile" data-category-tile="Government">
+            <div class="category-icon">🏛️</div>
+            <strong>Government</strong>
+            <span>Public-sector opportunities</span>
+          </button>
+
+          <button class="category-tile" data-category-tile="Private">
+            <div class="category-icon">🏢</div>
+            <strong>Private Sector</strong>
+            <span>Companies and businesses</span>
+          </button>
+
+          <button class="category-tile" data-category-tile="Healthcare">
+            <div class="category-icon">🩺</div>
+            <strong>Healthcare</strong>
+            <span>Medical and health-related jobs</span>
+          </button>
+
+          <button class="category-tile" data-category-tile="Education">
+            <div class="category-icon">📚</div>
+            <strong>Education</strong>
+            <span>Teaching and academic roles</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Simple and useful</div>
+            <h2 class="section-title">How Compass works</h2>
+            <p class="section-description">
+              We make the job-search process easier by collecting,
+              organizing, and presenting vacancy information clearly.
+            </p>
+          </div>
+        </div>
+
+        <div class="how-grid">
+          <div class="how-card">
+            <div class="step-number">1</div>
+            <h3>We scan vacancy sources</h3>
+            <p>
+              Compass monitors available job announcement sources and
+              collects vacancy information for job seekers.
+            </p>
+          </div>
+
+          <div class="how-card">
+            <div class="step-number">2</div>
+            <h3>AI filters and organizes</h3>
+            <p>
+              Groq AI helps organize job details, identify useful
+              information, and reduce unnecessary advertisement noise.
+            </p>
+          </div>
+
+          <div class="how-card">
+            <div class="step-number">3</div>
+            <h3>You apply directly</h3>
+            <p>
+              Open the original application source and follow the
+              employer’s instructions before submitting your application.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section trust-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker" style="color:#86efac;">
+              Built for job seekers
+            </div>
+            <h2 class="section-title">
+              A clearer direction for your career
+            </h2>
+            <p class="section-description">
+              Compass Jobs is designed to make vacancy discovery easier,
+              faster, and more organized.
+            </p>
+          </div>
+        </div>
+
+        <div class="trust-grid">
+          <div class="trust-item">
+            <div class="trust-item-icon">🆓</div>
+            <strong>Free to explore</strong>
+            <p>
+              Job seekers can browse vacancy information without paying
+              to access ordinary listings.
+            </p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item-icon">🤖</div>
+            <strong>AI-organized information</strong>
+            <p>
+              AI helps structure vacancy details into easier-to-read
+              job announcements.
+            </p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item-icon">🔗</div>
+            <strong>Original application sources</strong>
+            <p>
+              Applicants are directed to the available original source
+              or application link.
+            </p>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-item-icon">🛡️</div>
+            <strong>Check before applying</strong>
+            <p>
+              Always confirm deadlines, requirements, and employer
+              instructions before applying.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="section-kicker">About Compass</div>
+            <h3>Find Your Direction</h3>
+
+            <p>
+              Compass Jobs is an Ethiopian job discovery platform created
+              to bring vacancy announcements into one easier-to-search
+              place.
+            </p>
+
+            <p>
+              Instead of checking many channels and websites separately,
+              job seekers can explore organized opportunities through
+              Compass Jobs and the Compass Telegram channel.
+            </p>
+
+            <ul class="about-list">
+              <li>Fresh vacancy discovery</li>
+              <li>Clear job information</li>
+              <li>Searchable categories and locations</li>
+              <li>Direct access to application sources</li>
+              <li>Free access for job seekers</li>
+            </ul>
+          </div>
+
+          <div class="about-card">
+            <div class="section-kicker">Important note</div>
+            <h3>What AI does — and does not do</h3>
+
+            <p>
+              Groq AI helps Compass organize and format vacancy
+              information. AI formatting does not automatically mean
+              that an employer or vacancy has been officially verified.
+            </p>
+
+            <p>
+              Before applying, check the original source, deadline,
+              employer identity, requirements, and application method.
+            </p>
+
+            <p>
+              If you find a suspicious listing, expired link, incorrect
+              information, or possible scam, contact the Compass team
+              through Telegram.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="employer-banner">
+          <div>
+            <h2>Are you an employer?</h2>
+            <p>
+              Want your vacancy featured on Compass Jobs? Contact us
+              through Telegram to discuss vacancy promotion and future
+              employer services.
+            </p>
+          </div>
+
+          <a
+            class="button button-primary"
+            href="https://t.me/CompassJobsBot"
+            target="_blank"
+            rel="noopener"
+          >
+            Contact Compass ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <div class="section-kicker">Questions answered</div>
+            <h2 class="section-title">Frequently asked questions</h2>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details>
+            <summary>Is Compass Jobs free?</summary>
+            <p>
+              Yes. Browsing ordinary job vacancy information is free for
+              job seekers.
+            </p>
+          </details>
+
+          <details>
+            <summary>How often are jobs updated?</summary>
+            <p>
+              The website checks the job data regularly. New vacancies
+              appear when they are processed and published to the data
+              source.
+            </p>
+          </details>
+
+          <details>
+            <summary>How do I apply for a job?</summary>
+            <p>
+              Open the vacancy and use the available application or
+              original source link. Follow the employer’s instructions.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does AI verify every employer?</summary>
+            <p>
+              No. AI helps organize vacancy information. Applicants
+              should still confirm the employer and application details.
+            </p>
+          </details>
+
+          <details>
+            <summary>Can I report a fake or expired vacancy?</summary>
+            <p>
+              Yes. Contact Compass through the Telegram channel or bot
+              and provide the vacancy link and the problem you found.
+            </p>
+          </details>
+
+          <details>
+            <summary>Do I need to create an account?</summary>
+            <p>
+              Not for browsing the current job feed. Future features
+              may include saved jobs, alerts, and user accounts.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="final-cta">
+    <div class="container">
+      <h2>Your next opportunity may be one search away.</h2>
+
+      <p>
+        Explore fresh Ethiopian vacancies and follow Compass Jobs on
+        Telegram for more updates.
+      </p>
+
+      <a
+        class="button button-light"
+        href="https://t.me/compass_jobs_official"
+        target="_blank"
+        rel="noopener"
+      >
+        Join Compass Jobs on Telegram ↗
+      </a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">
+            Compass <span>Jobs</span>
+          </div>
+
+          <p>
+            Ethiopia’s job discovery platform, organized with the help
+            of Groq AI. Find your direction and explore your next
+            opportunity.
+          </p>
+        </div>
+
+        <div>
+          <h4>Explore</h4>
+          <a href="#jobs-section">Find Jobs</a>
+          <a href="#categories">Categories</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#faq">FAQ</a>
+        </div>
+
+        <div>
+          <h4>Connect</h4>
+          <a
+            href="https://t.me/compass_jobs_official"
+            target="_blank"
+            rel="noopener"
+          >
+            Telegram Channel
+          </a>
+
+          <a
+            href="https://t.me/CompassJobsBot"
+            target="_blank"
+            rel="noopener"
+          >
+            Compass Jobs Bot
+          </a>
+
+          <a href="#about">About Compass</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          © <span id="year"></span> Compass Jobs by Groq AI
+        </span>
+
+        <span>
+          Find Your Direction
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const GITHUB_USERNAME = "nebilnur18-creator";
+    const REPO = "compass-jobs";
+
+    const JOBS_URL =
+      `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO}/main/jobs.json?t=${Date.now()}`;
+
+    const COMPASS_LOGO = "logo.png";
+
+    let allJobs = [];
+    let activeCategory = "All";
+
+    const searchInput = document.getElementById("search");
+    const locationFilter = document.getElementById("location-filter");
+    const sortFilter = document.getElementById("sort-filter");
+    const jobsContainer = document.getElementById("jobs");
+    const filtersContainer = document.getElementById("filters");
+    const resultsInfo = document.getElementById("results-info");
+    const sideCategories = document.getElementById("side-categories");
+
+    function asArray(value) {
+      if (Array.isArray(value)) {
+        return value.filter(Boolean).map(String);
+      }
+
+      if (value === null || value === undefined) {
+        return [];
+      }
+
+      if (typeof value === "string" && value.trim()) {
+        return [value.trim()];
+      }
+
+      return [];
+    }
+
+    function safeText(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function safeUrl(value) {
+      const url = String(value ?? "").trim();
+
+      if (!url) {
+        return "";
+      }
+
+      try {
+        const parsed = new URL(url, window.location.href);
+
+        if (
+          parsed.protocol !== "http:" &&
+          parsed.protocol !== "https:"
+        ) {
+          return "";
+        }
+
+        return parsed.href;
+      } catch {
+        return "";
+      }
+    }
+
+    function getCategories(job) {
+      return asArray(job.category);
+    }
+
+    function getPositions(job) {
+      return asArray(job.positions);
+    }
+
+    function getLocation(job) {
+      return (
+        job.location ||
+        job.locations ||
+        job.city ||
+        job.region ||
+        ""
+      );
+    }
+
+    function getSearchText(job) {
+      return [
+        job.company,
+        job.about,
+        job.location,
+        job.locations,
+        job.city,
+        job.region,
+        job.deadline,
+        job.contact,
+        job.text,
+        ...getCategories(job),
+        ...getPositions(job)
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+    }
+
+    function parseDate(value) {
+      if (!value) {
+        return null;
+      }
+
+      const date = new Date(value);
+
+      if (Number.isNaN(date.getTime())) {
+        return null;
+      }
+
+      return date;
+    }
+
+    function daysLeft(deadline) {
+      const date = parseDate(deadline);
+
+      if (!date) {
+        return null;
+      }
+
+      return Math.ceil(
+        (date.getTime() - Date.now()) /
+        (1000 * 60 * 60 * 24)
+      );
+    }
+
+    function isExpired(job) {
+      const remaining = daysLeft(job.deadline);
+
+      return remaining !== null && remaining < 0;
+    }
+
+    function formatDeadline(job) {
+      if (!job.deadline) {
+        return {
+          html: "Deadline not specified",
+          className: ""
+        };
+      }
+
+      const remaining = daysLeft(job.deadline);
+
+      if (remaining === null) {
+        return {
+          html: `Deadline: ${safeText(job.deadline)}`,
+          className: ""
+        };
+      }
+
+      if (remaining < 0) {
+        return {
+          html: "Closed / deadline passed",
+          className: "closed"
+        };
+      }
+
+      if (remaining === 0) {
+        return {
+          html: "⏰ Deadline today",
+          className: "soon"
+        };
+      }
+
+      if (remaining <= 3) {
+        return {
+          html:
+            `⏰ ${remaining} day${remaining === 1 ? "" : "s"} left`,
+          className: "soon"
+        };
+      }
+
+      return {
+        html:
+          `📅 ${remaining} day${remaining === 1 ? "" : "s"} left`,
+        className: ""
+      };
+    }
+
+    function getJobTitle(job) {
+      const positions = getPositions(job);
+
+      if (positions.length === 0) {
+        return "Job opportunity";
+      }
+
+      if (positions.length === 1) {
+        return positions[0];
+      }
+
+      return `${positions[0]} + ${positions.length - 1} more position${positions.length === 2 ? "" : "s"}`;
+    }
+
+    function getShortDescription(job) {
+      const source =
+        job.about ||
+        job.description ||
+        job.summary ||
+        "";
+
+      if (!source) {
+        return "";
+      }
+
+      const text = String(source).replace(/\s+/g, " ").trim();
+
+      if (text.length <= 210) {
+        return text;
+      }
+
+      return `${text.slice(0, 207)}...`;
+    }
+
+    function renderStats() {
+      const activeJobs = allJobs.filter(job => !isExpired(job));
+
+      const companies = new Set(
+        allJobs
+          .map(job => String(job.company || "").trim())
+          .filter(Boolean)
+      );
+
+      const categories = new Set();
+
+      allJobs.forEach(job => {
+        getCategories(job).forEach(category => {
+          categories.add(category);
+        });
+      });
+
+      document.getElementById("stat-jobs").textContent =
+        activeJobs.length.toLocaleString();
+
+      document.getElementById("stat-companies").textContent =
+        companies.size.toLocaleString();
+
+      document.getElementById("stat-categories").textContent =
+        categories.size.toLocaleString();
+    }
+
+    function collectCategories() {
+      const counts = new Map();
+
+      allJobs.forEach(job => {
+        getCategories(job).forEach(category => {
+          counts.set(
+            category,
+            (counts.get(category) || 0) + 1
+          );
+        });
+      });
+
+      return [...counts.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .map(([name, count]) => ({ name, count }));
+    }
+
+    function renderFilters() {
+      const categories = collectCategories();
+
+      filtersContainer.innerHTML = [
+        `<button class="chip ${activeCategory === "All" ? "active" : ""}" data-category="All">All jobs</button>`,
+        ...categories.map(category => `
+          <button
+            class="chip ${activeCategory === category.name ? "active" : ""}"
+            data-category="${safeText(category.name)}"
+          >
+            ${safeText(category.name)}
+          </button>
+        `)
+      ].join("");
+
+      filtersContainer
+        .querySelectorAll("[data-category]")
+        .forEach(button => {
+          button.addEventListener("click", () => {
+            activeCategory = button.dataset.category;
+            renderFilters();
+            renderJobs();
+          });
+        });
+    }
+
+    function renderLocationFilter() {
+      const locations = new Set();
+
+      allJobs.forEach(job => {
+        const location = getLocation(job);
+
+        if (Array.isArray(location)) {
+          location.forEach(item => {
+            if (item) {
+              locations.add(String(item));
+            }
+          });
+        } else if (location) {
+          locations.add(String(location));
+        }
+      });
+
+      const currentValue = locationFilter.value;
+
+      locationFilter.innerHTML = [
+        `<option value="All">All locations</option>`,
+        ...[...locations]
+          .sort((a, b) => a.localeCompare(b))
+          .map(location => `
+            <option value="${safeText(location)}">
+              ${safeText(location)}
+            </option>
+          `)
+      ].join("");
+
+      if (
+        [...locationFilter.options]
+          .some(option => option.value === currentValue)
+      ) {
+        locationFilter.value = currentValue;
+      }
+    }
+
+    function renderSideCategories() {
+      const categories = collectCategories();
+
+      if (categories.length === 0) {
+        sideCategories.innerHTML =
+          `<div class="results-info">No categories available.</div>`;
+        return;
+      }
+
+      sideCategories.innerHTML = categories
+        .slice(0, 12)
+        .map(category => `
+          <button
+            class="category-button"
+            data-side-category="${safeText(category.name)}"
+          >
+            <span>${safeText(category.name)}</span>
+            <span class="category-count">${category.count}</span>
+          </button>
+        `)
+        .join("");
+
+      sideCategories
+        .querySelectorAll("[data-side-category]")
+        .forEach(button => {
+          button.addEventListener("click", () => {
+            activeCategory = button.dataset.sideCategory;
+            renderFilters();
+            renderJobs();
+
+            document
+              .getElementById("jobs-section")
+              .scrollIntoView({ behavior: "smooth" });
+          });
+        });
+    }
+
+    function renderJobs() {
+      const query = searchInput.value.trim().toLowerCase();
+      const selectedLocation = locationFilter.value;
+      const selectedSort = sortFilter.value;
+
+      let filtered = allJobs.filter(job => {
+        const matchesCategory =
+          activeCategory === "All" ||
+          getCategories(job).includes(activeCategory);
+
+        const matchesSearch =
+          !query ||
+          getSearchText(job).includes(query);
+
+        const location = getLocation(job);
+        const locationText = Array.isArray(location)
+          ? location.join(" ")
+          : String(location || "");
+
+        const matchesLocation =
+          selectedLocation === "All" ||
+          locationText === selectedLocation ||
+          locationText
+            .toLowerCase()
+            .includes(selectedLocation.toLowerCase());
+
+        return (
+          matchesCategory &&
+          matchesSearch &&
+          matchesLocation
+        );
+      });
+
+      if (selectedSort === "company") {
+        filtered.sort((a, b) =>
+          String(a.company || "").localeCompare(
+            String(b.company || "")
+          )
+        );
+      } else if (selectedSort === "deadline") {
+        filtered.sort((a, b) => {
+          const dateA = parseDate(a.deadline);
+          const dateB = parseDate(b.deadline);
+
+          if (!dateA && !dateB) return 0;
+          if (!dateA) return 1;
+          if (!dateB) return -1;
+
+          return dateA - dateB;
+        });
+      } else {
+        filtered.sort((a, b) => {
+          const dateA = parseDate(a.posted);
+          const dateB = parseDate(b.posted);
+
+          if (!dateA && !dateB) return 0;
+          if (!dateA) return 1;
+          if (!dateB) return -1;
+
+          return dateB - dateA;
+        });
+      }
+
+      resultsInfo.textContent =
+        `${filtered.length.toLocaleString()} job${filtered.length === 1 ? "" : "s"} found`;
+
+      if (filtered.length === 0) {
+        jobsContainer.innerHTML = `
+          <div class="empty-state">
+            <strong>No matching jobs found</strong>
+            Try another keyword, location, or category.
+            <br><br>
+            <button class="button button-outline" id="clear-filters">
+              Clear filters
+            </button>
+          </div>
+        `;
+
+        document
+          .getElementById("clear-filters")
+          .addEventListener("click", clearFilters);
+
+        return;
+      }
+
+      jobsContainer.innerHTML = filtered
+        .map(renderJobCard)
+        .join("");
+    }
+
+    function renderJobCard(job) {
+      const categories = getCategories(job);
+      const positions = getPositions(job);
+      const expired = isExpired(job);
+      const deadline = formatDeadline(job);
+      const link = safeUrl(job.link);
+
+      const title = getJobTitle(job);
+      const company = job.company || "Unknown company";
+      const location = getLocation(job);
+
+      const locationText = Array.isArray(location)
+        ? location.join(", ")
+        : String(location || "");
+
+      const tags = categories
+        .slice(0, 4)
+        .map(category => `
+          <span class="job-tag">
+            ${safeText(category)}
+          </span>
+        `)
+        .join("");
+
+      const positionsHtml = positions
+        .slice(0, 6)
+        .map(position => `
+          <li>${safeText(position)}</li>
+        `)
+        .join("");
+
+      const description = getShortDescription(job);
+
+      const applyHtml = link
+        ? `
+          <a
+            class="apply-button"
+            href="${safeText(link)}"
+            target="_blank"
+            rel="noopener"
+          >
+            View application ↗
+          </a>
+        `
+        : `
+          <span class="job-deadline closed">
+            Application link unavailable
+          </span>
+        `;
+
+      return `
+        <article class="job-card ${expired ? "expired" : ""}">
+          <div class="job-header">
+            <img
+              class="job-logo"
+              src="${COMPASS_LOGO}"
+              alt="Compass Jobs"
+              onerror="this.style.display='none'"
+            >
+
+            <div class="job-heading">
+              <div class="job-company">
+                ${safeText(company)}
+              </div>
+
+              <h3 class="job-title">
+                ${safeText(title)}
+              </h3>
+
+              <div class="job-tags">
+                ${tags}
+
+                ${
+                  locationText
+                    ? `
+                      <span class="job-tag green">
+                        📍 ${safeText(locationText)}
+                      </span>
+                    `
+                    : ""
+                }
+
+                ${
+                  expired
+                    ? `
+                      <span class="job-tag">
+                        Closed
+                      </span>
+                    `
+                    : `
+                      <span class="job-tag green">
+                        Active
+                      </span>
+                    `
+                }
+              </div>
+            </div>
+          </div>
+
+          ${
+            positionsHtml
+              ? `
+                <ul class="job-positions">
+                  ${positionsHtml}
+                </ul>
+              `
+              : ""
+          }
+
+          ${
+            description
+              ? `
+                <div class="job-description">
+                  ${safeText(description)}
+                </div>
+              `
+              : ""
+          }
+
+          <div class="job-footer">
+            <div class="job-deadline ${deadline.className}">
+              ${deadline.html}
+            </div>
+
+            ${applyHtml}
+          </div>
+        </article>
+      `;
+    }
+
+    function clearFilters() {
+      searchInput.value = "";
+      locationFilter.value = "All";
+      sortFilter.value = "latest";
+      activeCategory = "All";
+
+      renderFilters();
+      renderJobs();
+    }
+
+    async function loadJobs() {
+      try {
+        const response = await fetch(JOBS_URL, {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error("Unable to load jobs.json");
+        }
+
+        const data = await response.json();
+
+        allJobs = Array.isArray(data)
+          ? data
+          : Array.isArray(data.jobs)
+            ? data.jobs
+            : [];
+
+        renderStats();
+        renderFilters();
+        renderLocationFilter();
+        renderSideCategories();
+        renderJobs();
+      } catch (error) {
+        console.error(error);
+
+        resultsInfo.textContent = "Unable to load jobs";
+
+        jobsContainer.innerHTML = `
+          <div class="empty-state">
+            <strong>Jobs could not be loaded</strong>
+            Please refresh the page or try again later.
+            <br><br>
+            <button class="button button-outline" id="retry-load">
+              Try again
+            </button>
+          </div>
+        `;
+
+        document
+          .getElementById("retry-load")
+          .addEventListener("click", loadJobs);
+      }
+    }
+
+    searchInput.addEventListener("input", renderJobs);
+    locationFilter.addEventListener("change", renderJobs);
+    sortFilter.addEventListener("change", renderJobs);
+
+    document
+      .querySelectorAll("[data-category-tile]")
+      .forEach(button => {
+        button.addEventListener("click", () => {
+          const requestedCategory =
+            button.dataset.categoryTile.toLowerCase();
+
+          const matchingCategory = collectCategories()
+            .find(category =>
+              category.name.toLowerCase().includes(requestedCategory) ||
+              requestedCategory.includes(category.name.toLowerCase())
+            );
+
+          activeCategory = matchingCategory
+            ? matchingCategory.name
+            : button.dataset.categoryTile;
+
+          renderFilters();
+          renderJobs();
+
+          document
+            .getElementById("jobs-section")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    loadJobs();
+
+    setInterval(loadJobs, 60000);
+  </script>
+</body>
+  </html>
