@@ -708,6 +708,8 @@
         `
         : "";
 
+      const method = job.application_method || "";
+
       const sourceButton = link
         ? `
           <a
@@ -719,11 +721,17 @@
             Apply through original source ↗
           </a>
         `
-        : `
-          <span class="button button-outline">
-            Application link unavailable
-          </span>
-        `;
+        : method
+          ? `
+            <span class="button button-outline" style="cursor:default;">
+              📝 ${safeText(method)}
+            </span>
+          `
+          : `
+            <span class="button button-outline">
+              See full details below for how to apply
+            </span>
+          `;
 
       const shareButton = `
         <button class="button button-outline" id="share-button">
