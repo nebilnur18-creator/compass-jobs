@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Job Details | Compass Jobs</title>
+
+  <meta
+    name="description"
+    content="View Ethiopian job vacancy details on Compass Jobs."
+  >
+
+  <meta property="og:title" content="Job Details | Compass Jobs">
+  <meta
+    property="og:description"
+    content="Explore Ethiopian job vacancies and apply through the original source."
+  >
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://compass-jobs.vercel.app/job.html">
+  <meta
+    property="og:image"
+    content="https://compass-jobs.vercel.app/logo.png"
+  >
+
+  <link rel="icon" type="image/png" href="logo.png">
+
+  <style>
+    :root {
+      --navy: #071525;
+      --navy-light: #10263e;
+      --green: #16a34a;
+      --green-dark: #087f3c;
+      --green-soft: #e8f7ee;
+      --yellow: #f5c542;
+      --red: #d92d3b;
+      --background: #f5f8fb;
+      --surface: #ffffff;
+      --border: #e1e8ef;
+      --text: #172738;
+      --muted: #6c7c8d;
+      --shadow: 0 12px 35px rgba(7, 21, 37, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Arial,
+        sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .flag-strip {
+      height: 4px;
+      background:
+        linear-gradient(
+          90deg,
+          #078c43 0 33.33%,
+          #f5c542 33.33% 66.66%,
+          #d92d3b 66.66% 100%
+        );
+    }
+
+    .navbar {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
+
+    .nav-inner {
+      width: min(1100px, calc(100% - 28px));
+      min-height: 72px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .brand img {
+      width: 43px;
+      height: 43px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 1px solid var(--border);
+    }
+
+    .brand-name {
+      font-weight: 900;
+      color: var(--navy);
+      font-size: 1.12rem;
+      line-height: 1.1;
+    }
+
+    .brand-name span {
+      color: var(--green);
+    }
+
+    .brand-subtitle {
+      display: block;
+      color: var(--muted);
+      font-size: 0.68rem;
+      font-weight: 650;
+      margin-top: 4px;
+    }
+
+    .back-link {
+      color: var(--green-dark);
+      font-size: 0.82rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 28px));
+      margin: auto;
+    }
+
+    main {
+      padding: 35px 0 70px;
+    }
+
+    .breadcrumbs {
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-bottom: 20px;
+    }
+
+    .breadcrumbs a {
+      color: var(--green-dark);
+      text-decoration: none;
+      font-weight: 750;
+    }
+
+    .job-hero {
+      background:
+        linear-gradient(
+          135deg,
+          var(--navy),
+          var(--navy-light)
+        );
+      color: white;
+      border-radius: 22px;
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-company {
+      color: #b8cbdc;
+      font-size: 0.88rem;
+      font-weight: 750;
+      margin-bottom: 7px;
+    }
+
+    .hero-title {
+      font-size: clamp(1.7rem, 4vw, 3rem);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin: 0;
+      font-weight: 900;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #dce9f3;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 0.74rem;
+      font-weight: 700;
+    }
+
+    .hero-tag.active {
+      background: rgba(74, 222, 128, 0.15);
+      border-color: rgba(134, 239, 172, 0.3);
+      color: #86efac;
+    }
+
+    .hero-tag.expired {
+      background: rgba(248, 113, 113, 0.15);
+      border-color: rgba(248, 113, 113, 0.3);
+      color: #fca5a5;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 11px;
+      margin-top: 25px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      border: 1px solid transparent;
+      font-size: 0.83rem;
+      font-weight: 850;
+      cursor: pointer;
+    }
+
+    .button-primary {
+      background: var(--green);
+      color: white;
+    }
+
+    .button-primary:hover {
+      background: var(--green-dark);
+    }
+
+    .button-light {
+      background: white;
+      color: var(--navy);
+    }
+
+    .button-outline {
+      background: transparent;
+      color: white;
+      border-color: rgba(255, 255, 255, 0.25);
+    }
+
+    .button-outline:hover {
+      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .content-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 300px;
+      gap: 22px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    .content-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 26px;
+      margin-bottom: 18px;
+    }
+
+    .content-card h2 {
+      margin: 0 0 15px;
+      color: var(--navy);
+      font-size: 1.18rem;
+      font-weight: 900;
+    }
+
+    .job-text {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      color: #405366;
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+
+    .job-about {
+      color: #526679;
+      font-size: 0.9rem;
+      line-height: 1.75;
+    }
+
+    .meta-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 23px;
+      margin-bottom: 18px;
+    }
+
+    .meta-card h3 {
+      margin: 0 0 17px;
+      color: var(--navy);
+      font-size: 1rem;
+      font-weight: 900;
+    }
+
+    .meta-row {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .meta-row:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .meta-label {
+      color: var(--muted);
+      font-size: 0.72rem;
+      font-weight: 750;
+      margin-bottom: 3px;
+    }
+
+    .meta-value {
+      color: var(--text);
+      font-size: 0.83rem;
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .warning-card {
+      background: #fff9e8;
+      border: 1px solid #f4df9a;
+      color: #765b13;
+      border-radius: 15px;
+      padding: 17px;
+      font-size: 0.78rem;
+      line-height: 1.6;
+    }
+
+    .warning-card strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .related-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .related-job {
+      display: block;
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      padding: 12px;
+      text-decoration: none;
+      background: #fbfcfd;
+    }
+
+    .related-job:hover {
+      border-color: var(--green);
+    }
+
+    .related-job strong {
+      display: block;
+      color: var(--navy);
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+
+    .related-job span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.72rem;
+      margin-top: 4px;
+    }
+
+    .loading,
+    .error {
+      background: white;
+      border: 1px dashed #c8d4df;
+      border-radius: 18px;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .error strong,
+    .loading strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #05101d;
+      color: #aebdca;
+      padding: 35px 0;
+      text-align: center;
+      font-size: 0.78rem;
+    }
+
+    footer a {
+      color: #86efac;
+      text-decoration: none;
+    }
+
+    @media (max-width: 820px) {
+      .content-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .side-column {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        align-items: start;
+      }
+
+      .meta-card,
+      .warning-card {
+        margin-bottom: 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .brand-subtitle {
+        display: none;
+      }
+
+      .job-hero {
+        padding: 23px;
+        border-radius: 17px;
+      }
+
+      .content-card {
+        padding: 20px;
+      }
+
+      .side-column {
+        display: block;
+      }
+
+      .meta-card,
+      .warning-card {
+        margin-bottom: 18px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .hero-actions .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flag-strip"></div>
+
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <img
+          src="logo.png"
+          alt="Compass Jobs logo"
+          onerror="this.style.display='none'"
+        >
+
+        <span>
+          <span class="brand-name">
+            Compass <span>Jobs</span>
+          </span>
+          <span class="brand-subtitle">
+            Find Your Direction
+          </span>
+        </span>
+      </a>
+
+      <a class="back-link" href="index.html">
+        ← Back to jobs
+      </a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Compass Jobs</a>
+      <span> / Job Details</span>
+    </div>
+
+    <div id="page">
+      <div class="loading">
+        <strong>Loading job details...</strong>
+        Please wait.
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Compass Jobs by Groq AI ·
+    <a
+      href="https://t.me/compass_jobs_official"
+      target="_blank"
+      rel="noopener"
+    >
+      Join our Telegram channel
+    </a>
+  </footer>
+
+  <script>
+    const GITHUB_USERNAME = "nebilnur18-creator";
+    const REPO = "compass-jobs";
+
+    const JOBS_URL =
+      `https://raw.githubusercontent.com/${GITHUB_USERNAME}/${REPO}/main/jobs.json?t=${Date.now()}`;
+
+    const page = document.getElementById("page");
+
+    let allJobs = [];
+    let currentJob = null;
+
+    function safeText(value) {
+      return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function safeUrl(value) {
+      const url = String(value ?? "").trim();
+
+      if (!url) {
+        return "";
+      }
+
+      try {
+        const parsed = new URL(url, window.location.href);
+
+        if (
+          parsed.protocol !== "http:" &&
+          parsed.protocol !== "https:"
+        ) {
+          return "";
+        }
+
+        return parsed.href;
+      } catch {
+        return "";
+      }
+    }
+
+    function asArray(value) {
+      if (Array.isArray(value)) {
+        return value.filter(Boolean).map(String);
+      }
+
+      if (value === null || value === undefined) {
+        return [];
+      }
+
+      if (String(value).trim()) {
+        return [String(value).trim()];
+      }
+
+      return [];
+    }
+
+    function parseDate(value) {
+      if (!value) {
+        return null;
+      }
+
+      const date = new Date(value);
+
+      return Number.isNaN(date.getTime())
+        ? null
+        : date;
+    }
+
+    function daysLeft(deadline) {
+      const date = parseDate(deadline);
+
+      if (!date) {
+        return null;
+      }
+
+      return Math.ceil(
+        (date.getTime() - Date.now()) /
+        (1000 * 60 * 60 * 24)
+      );
+    }
+
+    function isExpired(job) {
+      const remaining = daysLeft(job.deadline);
+
+      return remaining !== null && remaining < 0;
+    }
+
+    function getTitle(job) {
+      const positions = asArray(job.positions);
+
+      if (positions.length === 0) {
+        return "Job opportunity";
+      }
+
+      if (positions.length === 1) {
+        return positions[0];
+      }
+
+      return `${positions[0]} + ${positions.length - 1} more position${positions.length === 2 ? "" : "s"}`;
+    }
+
+    function getLocation(job) {
+      return (
+        job.location ||
+        job.locations ||
+        job.city ||
+        job.region ||
+        ""
+      );
+    }
+
+    function locationText(job) {
+      const location = getLocation(job);
+
+      return Array.isArray(location)
+        ? location.join(", ")
+        : String(location || "");
+    }
+
+    function deadlineText(job) {
+      if (!job.deadline) {
+        return "Deadline not specified";
+      }
+
+      const remaining = daysLeft(job.deadline);
+
+      if (remaining === null) {
+        return job.deadline;
+      }
+
+      if (remaining < 0) {
+        return `Closed — ${job.deadline}`;
+      }
+
+      if (remaining === 0) {
+        return "Deadline today";
+      }
+
+      return `${job.deadline} — ${remaining} day${remaining === 1 ? "" : "s"} left`;
+    }
+
+    function getShareUrl() {
+      return window.location.href;
+    }
+
+    function renderJob(job) {
+      const categories = asArray(job.category);
+      const positions = asArray(job.positions);
+      const expired = isExpired(job);
+      const link = safeUrl(job.link);
+      const title = getTitle(job);
+      const location = locationText(job);
+
+      document.title =
+        `${title} — ${job.company || "Compass Jobs"}`;
+
+      const categoryTags = categories
+        .map(category => `
+          <span class="hero-tag">
+            ${safeText(category)}
+          </span>
+        `)
+        .join("");
+
+      const locationTag = location
+        ? `
+          <span class="hero-tag">
+            📍 ${safeText(location)}
+          </span>
+        `
+        : "";
+
+      const statusTag = expired
+        ? `<span class="hero-tag expired">Closed / expired</span>`
+        : `<span class="hero-tag active">● Active vacancy</span>`;
+
+      const positionsHtml = positions.length
+        ? `
+          <div class="content-card">
+            <h2>Available positions</h2>
+            <div class="job-text">${safeText(positions.map((p, i) => `${i + 1}. ${p}`).join("\n"))}</div>
+          </div>
+        `
+        : "";
+
+      const sourceButton = link
+        ? `
+          <a
+            class="button button-primary"
+            href="${safeText(link)}"
+            target="_blank"
+            rel="noopener"
+          >
+            Apply through original source ↗
+          </a>
+        `
+        : `
+          <span class="button button-outline">
+            Application link unavailable
+          </span>
+        `;
+
+      const shareButton = `
+        <button class="button button-outline" id="share-button">
+          Share vacancy
+        </button>
+      `;
+
+      const reportButton = `
+        <a
+          class="button button-outline"
+          href="https://t.me/CompassJobsBot"
+          target="_blank"
+          rel="noopener"
+        >
+          Report issue
+        </a>
+      `;
+
+      const related = allJobs
+        .filter(item =>
+          item.id !== job.id &&
+          (
+            String(item.company || "").toLowerCase() ===
+            String(job.company || "").toLowerCase() ||
+            asArray(item.category).some(category =>
+              categories.includes(category)
+            )
+          )
+        )
+        .slice(0, 5);
+
+      const relatedHtml = related.length
+        ? `
+          <div class="meta-card">
+            <h3>Related vacancies</h3>
+
+            <div class="related-list">
+              ${related.map(item => `
+                <a
+                  class="related-job"
+                  href="job.html?id=${encodeURIComponent(item.id)}"
+                >
+                  <strong>${safeText(getTitle(item))}</strong>
+                  <span>${safeText(item.company || "Unknown company")}</span>
+                </a>
+              `).join("")}
+            </div>
+          </div>
+        `
+        : "";
+
+      page.innerHTML = `
+        <section class="job-hero">
+          <div class="hero-company">
+            ${safeText(job.company || "Unknown company")}
+          </div>
+
+          <h1 class="hero-title">
+            ${safeText(title)}
+          </h1>
+
+          <div class="hero-tags">
+            ${statusTag}
+            ${locationTag}
+            ${categoryTags}
+          </div>
+
+          <div class="hero-actions">
+            ${sourceButton}
+            ${shareButton}
+            ${reportButton}
+          </div>
+        </section>
+
+        <div class="content-layout">
+          <div>
+            ${
+              job.about
+                ? `
+                  <div class="content-card">
+                    <h2>About the vacancy</h2>
+                    <div class="job-about">
+                      ${safeText(job.about)}
+                    </div>
+                  </div>
+                `
+                : ""
+            }
+
+            ${positionsHtml}
+
+            ${
+              job.text
+                ? `
+                  <div class="content-card">
+                    <h2>Full vacancy information</h2>
+                    <div class="job-text">${safeText(job.text)}</div>
+                  </div>
+                `
+                : ""
+            }
+
+            ${
+              job.contact
+                ? `
+                  <div class="content-card">
+                    <h2>Contact information</h2>
+                    <div class="job-text">${safeText(job.contact)}</div>
+                  </div>
+                `
+                : ""
+            }
+
+            ${
+              link
+                ? `
+                  <div class="content-card">
+                    <h2>Original application source</h2>
+                    <div class="job-text">${safeText(link)}</div>
+                    <br>
+                    <a
+                      class="button button-primary"
+                      href="${safeText(link)}"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Open application source ↗
+                    </a>
+                  </div>
+                `
+                : ""
+            }
+          </div>
+
+          <aside class="side-column">
+            <div class="meta-card">
+              <h3>Vacancy summary</h3>
+
+              <div class="meta-row">
+                <div class="meta-label">Company</div>
+                <div class="meta-value">
+                  ${safeText(job.company || "Not specified")}
+                </div>
+              </div>
+
+              <div class="meta-row">
+                <div class="meta-label">Location</div>
+                <div class="meta-value">
+                  ${safeText(location || "Not specified")}
+                </div>
+              </div>
+
+              <div class="meta-row">
+                <div class="meta-label">Deadline</div>
+                <div class="meta-value">
+                  ${safeText(deadlineText(job))}
+                </div>
+              </div>
+
+              <div class="meta-row">
+                <div class="meta-label">Category</div>
+                <div class="meta-value">
+                  ${safeText(categories.join(", ") || "Not specified")}
+                </div>
+              </div>
+
+              <div class="meta-row">
+                <div class="meta-label">Published</div>
+                <div class="meta-value">
+                  ${safeText(job.posted || "Not specified")}
+                </div>
+              </div>
+            </div>
+
+            <div class="warning-card">
+              <strong>Important application notice</strong>
+              Compass Jobs organizes vacancy information. Always confirm
+              the employer, deadline, requirements, and application method
+              through the original source before applying.
+            </div>
+
+            ${relatedHtml}
+          </aside>
+        </div>
+      `;
+
+      document
+        .getElementById("share-button")
+        .addEventListener("click", async () => {
+          const shareData = {
+            title: `${title} — ${job.company || "Compass Jobs"}`,
+            text: `Check this vacancy on Compass Jobs: ${title}`,
+            url: getShareUrl()
+          };
+
+          if (
+            navigator.share &&
+            typeof navigator.share === "function"
+          ) {
+            try {
+              await navigator.share(shareData);
+              return;
+            } catch {
+              // User cancelled or sharing is unavailable.
+            }
+          }
+
+          window.prompt(
+            "Copy this vacancy link:",
+            getShareUrl()
+          );
+        });
+    }
+
+    async function loadJob() {
+      const params = new URLSearchParams(
+        window.location.search
+      );
+
+      const jobId = params.get("id");
+
+      if (!jobId) {
+        page.innerHTML = `
+          <div class="error">
+            <strong>Job not specified</strong>
+            Please return to the jobs page and select a vacancy.
+            <br><br>
+            <a class="button button-primary" href="index.html">
+              Back to jobs
+            </a>
+          </div>
+        `;
+
+        return;
+      }
+
+      try {
+        const response = await fetch(JOBS_URL, {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error("Could not load jobs");
+        }
+
+        const data = await response.json();
+
+        allJobs = Array.isArray(data)
+          ? data
+          : Array.isArray(data.jobs)
+            ? data.jobs
+            : [];
+
+        currentJob = allJobs.find(
+          job => String(job.id) === String(jobId)
+        );
+
+        if (!currentJob) {
+          page.innerHTML = `
+            <div class="error">
+              <strong>Vacancy not found</strong>
+              This job may have been removed or its link is incorrect.
+              <br><br>
+              <a class="button button-primary" href="index.html">
+                Back to jobs
+              </a>
+            </div>
+          `;
+
+          return;
+        }
+
+        renderJob(currentJob);
+      } catch (error) {
+        console.error(error);
+
+        page.innerHTML = `
+          <div class="error">
+            <strong>Unable to load this vacancy</strong>
+            Please refresh the page and try again.
+            <br><br>
+            <a class="button button-primary" href="index.html">
+              Back to jobs
+            </a>
+          </div>
+        `;
+      }
+    }
+
+    loadJob();
+  </script>
+</body>
+  </html>
