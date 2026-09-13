@@ -828,12 +828,6 @@
             ${locationTag}
             ${categoryTags}
           </div>
-
-          <div class="hero-actions">
-            ${sourceButton}
-            ${shareButton}
-            ${reportButton}
-          </div>
         </section>
 
         <div class="content-layout">
@@ -946,7 +940,16 @@
             ${relatedHtml}
           </aside>
         </div>
-      `;
+
+        <section class="job-hero" style="margin-top: 24px;">
+          <h2 style="margin: 0 0 4px; font-size: 1.1rem;">Ready to apply?</h2>
+          <div class="hero-actions" style="margin-top: 14px;">
+            ${sourceButton}
+            ${shareButton}
+            ${reportButton}
+          </div>
+        </section>
+      `; 
 
       document
         .getElementById("share-button")
