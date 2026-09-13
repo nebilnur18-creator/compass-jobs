@@ -830,118 +830,46 @@
           </div>
         </section>
 
-        <div class="content-layout">
-          <div>
-            ${
-              job.about
-                ? `
-                  <div class="content-card">
-                    <h2>About the vacancy</h2>
-                    <div class="job-about">
-                      ${safeText(job.about)}
-                    </div>
-                  </div>
-                `
-                : ""
-            }
+        <div class="meta-card">
+          <h3>Vacancy summary</h3>
 
-            ${positionsHtml}
-
-            ${
-              job.text
-                ? `
-                  <div class="content-card">
-                    <h2>Full vacancy information</h2>
-                    <div class="job-text">${safeText(job.text)}</div>
-                  </div>
-                `
-                : ""
-            }
-
-            ${
-              job.contact
-                ? `
-                  <div class="content-card">
-                    <h2>Contact information</h2>
-                    <div class="job-text">${safeText(job.contact)}</div>
-                  </div>
-                `
-                : ""
-            }
-
-            ${
-              link
-                ? `
-                  <div class="content-card">
-                    <h2>Original application source</h2>
-                    <div class="job-text">${safeText(link)}</div>
-                    <br>
-                    <a
-                      class="button button-primary"
-                      href="${safeText(link)}"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      Open application source ↗
-                    </a>
-                  </div>
-                `
-                : ""
-            }
+          <div class="meta-row">
+            <div class="meta-label">Company</div>
+            <div class="meta-value">
+              ${safeText(job.company || "Not specified")}
+            </div>
           </div>
 
-          <aside class="side-column">
-            <div class="meta-card">
-              <h3>Vacancy summary</h3>
-
-              <div class="meta-row">
-                <div class="meta-label">Company</div>
-                <div class="meta-value">
-                  ${safeText(job.company || "Not specified")}
-                </div>
-              </div>
-
-              <div class="meta-row">
-                <div class="meta-label">Location</div>
-                <div class="meta-value">
-                  ${safeText(location || "Not specified")}
-                </div>
-              </div>
-
-              <div class="meta-row">
-                <div class="meta-label">Deadline</div>
-                <div class="meta-value">
-                  ${safeText(deadlineText(job))}
-                </div>
-              </div>
-
-              <div class="meta-row">
-                <div class="meta-label">Category</div>
-                <div class="meta-value">
-                  ${safeText(categories.join(", ") || "Not specified")}
-                </div>
-              </div>
-
-              <div class="meta-row">
-                <div class="meta-label">Published</div>
-                <div class="meta-value">
-                  ${safeText(job.posted || "Not specified")}
-                </div>
-              </div>
+          <div class="meta-row">
+            <div class="meta-label">Location</div>
+            <div class="meta-value">
+              ${safeText(location || "Not specified")}
             </div>
+          </div>
 
-            <div class="warning-card">
-              <strong>Important application notice</strong>
-              Compass Jobs organizes vacancy information. Always confirm
-              the employer, deadline, requirements, and application method
-              through the original source before applying.
+          <div class="meta-row">
+            <div class="meta-label">Deadline</div>
+            <div class="meta-value">
+              ${safeText(deadlineText(job))}
             </div>
+          </div>
 
-            ${relatedHtml}
-          </aside>
+          <div class="meta-row">
+            <div class="meta-label">Category</div>
+            <div class="meta-value">
+              ${safeText(categories.join(", ") || "Not specified")}
+            </div>
+          </div>
+
+          <div class="meta-row">
+            <div class="meta-label">Published</div>
+            <div class="meta-value">
+              ${safeText(job.posted || "Not specified")}
+            </div>
+          </div>
         </div>
 
-        <section class="job-hero" style="margin-top: 24px;">
+        <section class="job-hero">
           <h2 style="margin: 0 0 4px; font-size: 1.1rem;">Ready to apply?</h2>
           <div class="hero-actions" style="margin-top: 14px;">
             ${sourceButton}
@@ -949,7 +877,73 @@
             ${reportButton}
           </div>
         </section>
-      `; 
+
+        ${
+          job.about
+            ? `
+              <div class="content-card">
+                <h2>About the vacancy</h2>
+                <div class="job-about">
+                  ${safeText(job.about)}
+                </div>
+              </div>
+            `
+            : ""
+        }
+
+        ${positionsHtml}
+
+        ${
+          job.text
+            ? `
+              <div class="content-card">
+                <h2>Full vacancy information</h2>
+                <div class="job-text">${safeText(job.text)}</div>
+              </div>
+            `
+            : ""
+        }
+
+        ${
+          job.contact
+            ? `
+              <div class="content-card">
+                <h2>Contact information</h2>
+                <div class="job-text">${safeText(job.contact)}</div>
+              </div>
+            `
+            : ""
+        }
+
+        ${
+          link
+            ? `
+              <div class="content-card">
+                <h2>Original application source</h2>
+                <div class="job-text">${safeText(link)}</div>
+                <br>
+                <a
+                  class="button button-primary"
+                  href="${safeText(link)}"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Open application source ↗
+                </a>
+              </div>
+            `
+            : ""
+        }
+
+        <div class="warning-card">
+          <strong>Important application notice</strong>
+          Compass Jobs organizes vacancy information. Always confirm
+          the employer, deadline, requirements, and application method
+          through the original source before applying.
+        </div>
+
+        ${relatedHtml}
+      `;
 
       document
         .getElementById("share-button")
