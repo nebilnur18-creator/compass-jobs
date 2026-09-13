@@ -708,7 +708,24 @@
         `
         : "";
 
-      const method = job.application_method || "";
+    const method = job.application_method || "";
+      const contact = String(job.contact || "").trim();
+
+      function contactActionUrl(value) {
+        if (!value) return "";
+        if (value.startsWith("@")) {
+          return `https://t.me/${value.slice(1)}`;
+        }
+        if (value.includes("@")) {
+          return `mailto:${value}`;
+        }
+        if (/^\+?\d[\d\s-]{6,}$/.test(value)) {
+          return `tel:${value.replace(/[\s-]/g, "")}`;
+        }
+        return "";
+      }
+
+      const contactUrl = contactActionUrl(contact);
 
       const sourceButton = link
         ? `
@@ -721,18 +738,27 @@
             Apply through original source ↗
           </a>
         `
-        : method
+        : contactUrl
           ? `
-            <span class="button button-outline" style="cursor:default;">
-              📝 ${safeText(method)}
-            </span>
+            <a
+              class="button button-primary"
+              href="${safeText(contactUrl)}"
+            >
+              ${safeText(method || "Contact to apply")} ↗
+            </a>
           `
-          : `
-            <span class="button button-outline">
-              See full details below for how to apply
-            </span>
-          `;
-
+          : method
+            ? `
+              <span class="button button-outline" style="cursor:default;">
+                📝 ${safeText(method)}
+              </span>
+            `
+            : `
+              <span class="button button-outline">
+                See full details below for how to apply
+              </span>
+            `;
+      
       const shareButton = `
         <button class="button button-outline" id="share-button">
           Share vacancy
