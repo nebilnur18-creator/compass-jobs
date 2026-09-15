@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-15T04:28:20.432709Z",
+  "updated": "2026-09-15T04:28:34.153200Z",
   "jobs": [
+    {
+      "id": "2d10c1275c1b4c9bf02a8b84f7ccb3bf2e463603d53adb7a9812140adbee9e03",
+      "company": "HABTE",
+      "about": "A private Ethiopian company specializing in advertising and marketing services.",
+      "positions": [
+        "sales officer",
+        "junior accountant"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "Bekelelidia20@gmail.com",
+      "application_method": "Send your CV/application via email",
+      "text": "🏷️ Private Sector\n\n🏢 Company: HABTE  \n🏬 About: A private Ethiopian company specializing in advertising and marketing services.  \n\n💼 Positions:  \n1. Sales Officer  \n   📍 Location: Gerji  \n   🎓 Requirements:  \n   - Degree in Marketing, Sales, Business Administration or related field  \n   - Minimum 1 year sales or customer‑service experience  \n   - Strong negotiation and customer service skills  \n\n2. Junior Accountant  \n   📍 Location: Bole Bulbula  \n   🎓 Requirements:  \n   - Diploma in Accounting or related field  \n   - At least 6 months accounting experience  \n   - Female candidates only  \n\n📊 Vacancy Count: 2\n\n📝 Application Method: Send your CV/application via email\n📞 Contact: Bekelelidia20@gmail.com",
+      "posted": "2026-09-15T04:28:31.930896Z"
+    },
     {
       "id": "9ef68d3bca0712b384badc703e61a549a02963c75fee0a5f91513e8520e98912",
       "company": "Cottex Textile Industry Plc",
@@ -5091,23 +5109,6 @@
       "contact": "",
       "text": "🏷️ Private Sector\n\n🏢 Company: LULA GARMENTS & EMBROIDERY SERVICES  \n🏬 About: A private company operating in the garment manufacturing sector in Ethiopia.\n\n💼 Positions:\n1. Sewing Supervisor / Lead  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:\n   - Certificate/Diploma in Garment Making, Tailoring, or related field  \n   - 3+ years industrial sewing experience with supervisory duties  \n   - Strong technical sewing skills and ability to coach operators  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 04, 2026  \n📝 Description: Oversees sewing operators, ensures product quality and workflow efficiency.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-06T10:41:49.454391Z"
-    },
-    {
-      "id": "8f1235404639e3547dcd8a2c778a14f7c40fae225e512fab21697476890aeb47",
-      "company": "ZamZam Bank",
-      "about": "A private bank operating in Ethiopia, offering a range of financial services.",
-      "positions": [
-        "soc analyst i"
-      ],
-      "category": [
-        "Banking & Finance",
-        "Construction & Engineering"
-      ],
-      "deadline": "Sep 10 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Technology & IT\n\n🏢 Company: ZamZam Bank  \n🏬 About: A private bank operating in Ethiopia, offering a range of financial services.  \n\n💼 Positions:  \n1. SOC Analyst I  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Cyber Security, Computer Science, IT or related field  \n   - ≥2 years experience in SOC monitoring, SIEM, EDR/XDR  \n   - Knowledge of network security, incident triage and MITRE ATT&CK  \n\n📅 Deadline: Sep 10 2026  \n📊 Vacancy Count: 1  \n\n📝 Description: Monitor security events and respond to incidents in the bank’s Security Operations Center.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-06T10:41:32.577499Z"
     }
   ]
 }
