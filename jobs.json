@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-15T04:27:40.370749Z",
+  "updated": "2026-09-15T04:27:53.389433Z",
   "jobs": [
+    {
+      "id": "75cf12dcfcd6f4072f1f122cf2a1e77b10d83a3333204eac89ac9bae364d691a",
+      "company": "Photoplusst",
+      "about": "A private recruitment service connecting job seekers with employers in Ethiopia.",
+      "positions": [
+        "photographer & photo editor",
+        "housekeeper (stewardess)"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "@Photoplusst",
+      "application_method": "Apply by contacting via Telegram",
+      "text": "🏷️ Private Sector\n\n🏢 Company: Photoplusst  \n🏬 About: A private recruitment service connecting job seekers with employers in Ethiopia.  \n\n💼 Positions:  \n1. Photographer & Photo Editor  \n   📍 Location: Goro area & Semit Condominium  \n   🎓 Requirements:  \n   - Minimum 2 years relevant experience  \n   - Proficiency with camera and photo‑editing software  \n   - Open to any gender  \n\n2. Housekeeper (Stewardess)  \n   📍 Location: Semit Condominium  \n   🎓 Requirements:  \n   - Minimum 2 years experience  \n   - At least 10th‑grade education  \n   - Female  \n\n💰 Salary: Negotiable  \n💼 Employment Type: Full‑time\n\n📝 Application Method: Apply by contacting via Telegram\n📞 Contact: @Photoplusst",
+      "posted": "2026-09-15T04:27:51.211233Z"
+    },
     {
       "id": "61c8fde8f42131b699de620ae98466a41e6248c0a3254ee408f2a08f01ba22d9",
       "company": "B Double Juice Bar & Restaurant",
@@ -5083,23 +5101,6 @@
       "contact": "",
       "text": "🏷️ NGO / International\n\n🏢 Company: YADAM Foundation  \n🏬 About: A non‑profit organization focused on social entrepreneurship and community development in Ethiopia.  \n\n💼 Positions:  \n1. Social Enterprise Strategy Consultant  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Master’s degree in Economics, Social Entrepreneurship, Development Studies, Finance or related field  \n   - 7–10 years experience designing or launching social enterprises  \n   - Strong skills in business modeling, financial projections and costing for impact ventures  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Sep 12 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-06T10:35:31.754183Z"
-    },
-    {
-      "id": "44a4d531e66ec277e35bb00733bc4389ce8e63bcabfc87159e38f5f517d9a180",
-      "company": "ELFORA AGRO INDUSTRY PLC",
-      "about": "A private agro‑industry company producing agricultural products in Ethiopia.",
-      "positions": [
-        "senior electrical & utility maintenance technician"
-      ],
-      "category": [
-        "Construction & Engineering",
-        "Education"
-      ],
-      "deadline": "Sep 11, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Construction & Engineering | Private Sector\n\n🏢 Company: ELFORA AGRO INDUSTRY PLC  \n🏬 About: A private agro‑industry company producing agricultural products in Ethiopia.  \n\n💼 Positions:  \n1. Senior Electrical & Utility Maintenance Technician  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Diploma in Electricity/Industrial Electronics & Control (Level IV)  \n   - 6–8 years relevant experience  \n   - From a recognized college/TVET  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Sep 11, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-06T10:35:05.879287Z"
     }
   ]
 }
