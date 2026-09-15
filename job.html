@@ -340,21 +340,6 @@
       overflow-wrap: anywhere;
     }
 
-    .warning-card {
-      background: #fff9e8;
-      border: 1px solid #f4df9a;
-      color: #765b13;
-      border-radius: 15px;
-      padding: 17px;
-      font-size: 0.78rem;
-      line-height: 1.6;
-    }
-
-    .warning-card strong {
-      display: block;
-      margin-bottom: 5px;
-    }
-
     .related-list {
       display: flex;
       flex-direction: column;
@@ -430,8 +415,7 @@
         align-items: start;
       }
 
-      .meta-card,
-      .warning-card {
+      .meta-card {
         margin-bottom: 0;
       }
     }
@@ -454,8 +438,7 @@
         display: block;
       }
 
-      .meta-card,
-      .warning-card {
+      .meta-card {
         margin-bottom: 18px;
       }
 
@@ -712,7 +695,7 @@
         `
         : "";
 
-    const method = job.application_method || "";
+      const method = job.application_method || "";
       const contact = String(job.contact || "").trim();
 
       function contactActionUrl(value) {
@@ -739,7 +722,7 @@
             target="_blank"
             rel="noopener"
           >
-            Apply through original source ↗
+            ${safeText(method || "Apply now")} ↗
           </a>
         `
         : contactUrl
@@ -762,7 +745,7 @@
                 See full details below for how to apply
               </span>
             `;
-      
+
       const shareButton = `
         <button class="button button-outline" id="share-button">
           Share vacancy
@@ -935,16 +918,9 @@
             : ""
         }
 
-        <div class="warning-card">
-          <strong>Important application notice</strong>
-          Compass Jobs organizes vacancy information. Always confirm
-          the employer, deadline, requirements, and application method
-          through the original source before applying.
-        </div>
-
         ${relatedHtml}
       `;
-      
+
       document
         .getElementById("share-button")
         .addEventListener("click", async () => {
@@ -1051,4 +1027,4 @@
     loadJob();
   </script>
 </body>
-  </html>
+</html>
