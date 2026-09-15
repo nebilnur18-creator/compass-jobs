@@ -1,6 +1,26 @@
 {
-  "updated": "2026-09-15T04:28:06.758239Z",
+  "updated": "2026-09-15T04:28:20.432709Z",
   "jobs": [
+    {
+      "id": "9ef68d3bca0712b384badc703e61a549a02963c75fee0a5f91513e8520e98912",
+      "company": "Cottex Textile Industry Plc",
+      "about": "Cottex Textile Industry Plc is a private Ethiopian textile manufacturing company.",
+      "positions": [
+        "fashion designer",
+        "middle manager (garment engineering)",
+        "it specialist"
+      ],
+      "category": [
+        "Construction & Engineering",
+        "Executive"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "0987357735",
+      "application_method": "Call or send your CV to this number",
+      "text": "🏷️ Private Sector | Fresh Graduate\n\n🏢 Company: Cottex Textile Industry Plc  \n🏬 About: Cottex Textile Industry Plc is a private Ethiopian textile manufacturing company.  \n\n💼 Positions:  \n1. Fashion Designer  \n   📍 Location: Saris Kadisco Industry Zone  \n   🎓 Requirements:  \n   - BSc or MA in Fashion Design  \n   - No experience required  \n   - Salary by contract  \n\n2. Middle Manager (Garment Engineering)  \n   📍 Location: Saris Kadisco Industry Zone  \n   🎓 Requirements:  \n   - BSc or MA in Garment Engineering  \n   - ≥2 years experience  \n   - Salary by contract  \n\n3. IT Specialist  \n   📍 Location: Saris Kadisco Industry Zone  \n   🎓 Requirements:  \n   - BSc or MA in IT/Computer Science  \n   - ≥2 years experience  \n   - Salary by contract  \n\n…and 2 more positions — full list on our website.  \n\n📝 Description: Various roles in design, management, IT and HR at a leading textile firm.  \n💰 Salary: By contract\n\n📝 Application Method: Call or send your CV to this number\n📞 Contact: 0987357735",
+      "posted": "2026-09-15T04:28:17.328863Z"
+    },
     {
       "id": "ceee3f7a0f8acb294b5bed83a900e7b94fa6bf8d81d2af33fdcf328a3c0a3a3c",
       "company": "Barak Youth Academy",
@@ -5088,23 +5108,6 @@
       "contact": "",
       "text": "🏷️ Technology & IT\n\n🏢 Company: ZamZam Bank  \n🏬 About: A private bank operating in Ethiopia, offering a range of financial services.  \n\n💼 Positions:  \n1. SOC Analyst I  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Cyber Security, Computer Science, IT or related field  \n   - ≥2 years experience in SOC monitoring, SIEM, EDR/XDR  \n   - Knowledge of network security, incident triage and MITRE ATT&CK  \n\n📅 Deadline: Sep 10 2026  \n📊 Vacancy Count: 1  \n\n📝 Description: Monitor security events and respond to incidents in the bank’s Security Operations Center.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-06T10:41:32.577499Z"
-    },
-    {
-      "id": "ef66c5e627b9ba842c6c549f72e4d51efd4054249357652f17a47f457610d1d4",
-      "company": "ZamZam Bank",
-      "about": "A private bank operating in Ethiopia's financial sector.",
-      "positions": [
-        "cyber security grc officer i"
-      ],
-      "category": [
-        "Banking & Finance",
-        "Construction & Engineering"
-      ],
-      "deadline": "Sep 10, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Technology & IT | Banking & Finance\n\n🏢 Company: ZamZam Bank  \n🏬 About: A private bank operating in Ethiopia's financial sector.  \n\n💼 Positions:  \n1. Cyber Security GRC Officer I  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Cyber Security, Computer Science, IT or related field  \n   - Minimum 2 years experience in IT/cyber security risk management or compliance  \n   - Knowledge of ISO 27001, NIST, PCI DSS, COBIT frameworks  \n\n📅 Deadline: Sep 10, 2026  \n📊 Vacancy Count: 1  \n\n📝 Description: Oversees governance, risk and compliance for the bank’s cyber security program.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-06T10:41:16.253192Z"
     }
   ]
 }
