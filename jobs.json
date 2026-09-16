@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T12:39:58.097427Z",
+  "updated": "2026-09-16T12:54:20.686071Z",
   "jobs": [
+    {
+      "id": "0b93db4fdb65b44c809bf2aa354f4ac4d16f728085412e4dbe40a6228aeb5f5c",
+      "company": "Planet Development Consultant PLC",
+      "about": "A consulting firm offering development and engineering services in Ethiopia.",
+      "positions": [
+        "gis and rs expert"
+      ],
+      "category": [
+        "Construction & Engineering"
+      ],
+      "deadline": "Sep 29, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "Browse open positions on https://ethiojobs.net",
+      "image": null,
+      "text": "🏷️ Construction & Engineering\n\n🏢 Company: Planet Development Consultant PLC\n🏬 About: A consulting firm offering development and engineering services in Ethiopia.\n\n💼 Positions:\n1. GIS and RS Expert\n   📍 Location: Addis Ababa, Ethiopia\n   🎓 Requirements:\n   - MSc/BSc in Geographic Information System (GIS) and Remote Sensing (RS) or related field\n   - Minimum 6–8 years of experience in mapping and modelling using ArcGIS, Python, and remote sensing for satellite image processing and analysis\n   - Experience with projects such as water resources potential evaluation, land use/landcover mapping and classification, and infrastructure mapping and analysis\n\n📊 Vacancy Count: 2\n📅 Deadline: Sep 29, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T12:54:16.716821Z"
+    },
     {
       "id": "2f931fd9f8253b126d227c62927db1fcd05498f7579af323346fc5c444d1ea4a",
       "company": "Awash Wine Share Company",
@@ -5302,22 +5320,6 @@
       "contact": "",
       "text": "🏷️ Banking & Finance | Private Sector\n\n🏢 Company: Boston Partners PLC / Kuriftu Resorts  \n🏬 About: Boston Partners PLC operates Kuriftu Resorts, a leading hospitality chain in Ethiopia.\n\n💼 Positions:\n1. Finance Manager – Kuriftu Resort Awash  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:\n   - Bachelor’s degree in Accounting, Finance or related field  \n   - Minimum 5 years finance/accounting experience, preferably in hospitality  \n   - Proven ability to manage financial reporting and controls  \n\n📊 Vacancy Count: 1  \n🗓️ Deadline: Oct 09, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-08T12:33:05.185926Z"
-    },
-    {
-      "id": "1c63c3d20e806eb220c16a33173a112e19656590f7e70879bf030d076cb98d1f",
-      "company": "JICA (Japan International Cooperation Agency)",
-      "about": "A Japanese government agency delivering international development assistance projects, including in Ethiopia.",
-      "positions": [
-        "coffee development strategy support"
-      ],
-      "category": [
-        "Executive"
-      ],
-      "deadline": "Oct 09, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ NGO / International | Executive\n\n🏢 Company: JICA (Japan International Cooperation Agency)  \n🏬 About: A Japanese government agency delivering international development assistance projects, including in Ethiopia.  \n\n💼 Positions:  \n1. Coffee Development Strategy Support  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Master’s degree in Agriculture, Plant Science, Food Science, Agricultural Economics, Biology or related field.  \n   - Minimum 15 years experience in the Ethiopian coffee sector or related research.  \n   - Experience with coffee quality assessment, cupping (Q‑Grader certification a plus).  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 09, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-08T12:30:32.815456Z"
     }
   ]
 }
