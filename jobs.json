@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T05:35:54.160091Z",
+  "updated": "2026-09-16T06:24:17.145058Z",
   "jobs": [
+    {
+      "id": "c4692e588b43d74f39792941772b8c54d330335b80a54406a02fb0cf0c269169",
+      "company": "Yehulu Saving & Loan Cooperative",
+      "about": "A financial cooperative founded in 2015 EC that provides accessible saving and loan services to Ethiopian communities.",
+      "positions": [
+        "receptionist"
+      ],
+      "category": [
+        "Executive"
+      ],
+      "deadline": "September 21, 2026",
+      "link": "https://ethiojobshub.com/yehulu-saving-for-fresh-graduates/",
+      "contact": "",
+      "application_method": "Apply via source job page",
+      "image": "https://ethiojobshub.com/wp-content/uploads/2026/06/Yehulu-Money.webp",
+      "text": "🏷️ Fresh Graduate | Banking & Finance\n\n🏢 Company: Yehulu Saving & Loan Cooperative  \n🏬 About: A financial cooperative founded in 2015 EC that provides accessible saving and loan services to Ethiopian communities.  \n\n💼 Positions:  \n1. Receptionist  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in any field  \n   - Graduation year 2016‑2018 EC  \n   - No prior experience required  \n\n📍 Location: Addis Ababa  \n💰 Salary: According to organization’s scale  \n📝 Description: Provides direct saving and credit services to all communities.  \n📊 Vacancy Count: 1  \n📅 Deadline: September 21, 2026  \n\n📝 Application Method: Apply via source job page  \n🔗 Link: https://ethiojobshub.com/yehulu-saving-for-fresh-graduates/",
+      "posted": "2026-09-16T06:24:07.103517Z"
+    },
     {
       "id": "97993eabb82dc8670feb7cc306ca8534610a5be0c1cbeaf558208efb22bab637",
       "company": "Blue Elephant Fiberboard Manufacturing Plc",
@@ -5259,22 +5277,6 @@
       "contact": "",
       "text": "🏷️ Construction & Engineering | Fresh Graduate\n\n🏢 Company: Tibeb Design & Build PLC  \n🏬 About: A private Ethiopian firm delivering architectural design and construction services.  \n\n💼 Positions:  \n1. Junior / Fresh Graduate Architect  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor in Architecture with strong Revit skills  \n   - Proficiency in D5 Render  \n   - Ability to develop 3D models and presentations  \n\n📊 Vacancy Count: 4  \n📅 Deadline: Oct 09, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-08T12:01:22.620961Z"
-    },
-    {
-      "id": "b3d516fc28f1db21c1cf58e9397d8b0fee5fcf92e27c09819441ff7d73567d10",
-      "company": "Tibeb Design & Build PLC",
-      "about": "A private company operating in the construction and design sector in Ethiopia.",
-      "positions": [
-        "architect"
-      ],
-      "category": [
-        "Construction & Engineering"
-      ],
-      "deadline": "Oct 09, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Construction & Engineering\n\n🏢 Company: Tibeb Design & Build PLC  \n🏬 About: A private company operating in the construction and design sector in Ethiopia.  \n\n💼 Positions:  \n1. Architect  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Minimum 2 years professional architectural experience.  \n   - Proficiency in Revit and D5 Render.  \n   - Ability to develop projects from concept to detailed design and coordinate BIM models.  \n\n📊 Vacancy Count: 3  \n📅 Deadline: Oct 09, 2026  \n📝 Description: Responsible for architectural design, documentation, and BIM coordination.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-08T12:00:30.025301Z"
     }
   ]
 }
