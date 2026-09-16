@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T01:14:46.654959Z",
+  "updated": "2026-09-16T01:15:00.573959Z",
   "jobs": [
+    {
+      "id": "4aaedb05b9d89e5d50f98c78f5d517f965d1765ff9c6c6c35987af132accb495",
+      "company": "KADISCO General Hospital",
+      "about": "A general hospital delivering medical services in Addis Ababa.",
+      "positions": [
+        "reception cashier"
+      ],
+      "category": [
+        "Healthcare"
+      ],
+      "deadline": "Oct 16 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "Browse open positions on https://ethiojobs.net",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/4aaedb05b9d89e5d50f98c78f5d517f965d1765ff9c6c6c35987af132accb495.jpg",
+      "text": "🏷️ Healthcare\n\n🏢 Company: KADISCO General Hospital  \n🏬 About: A general hospital delivering medical services in Addis Ababa.  \n\n💼 Positions:  \n1. Reception Cashier  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Diploma or Bachelor’s in Accounting, Finance or Business Management  \n   - Minimum 2 years experience in a hospital, clinic or similar customer‑facing role  \n   - Proficiency with POS and cash‑handling systems  \n\n📊 Vacancy Count: 6  \n💼 Employment Type: Junior Level (1‑3 years)  \n📅 Deadline: Oct 16 2026  \n📝 Description: Manages front‑desk cash transactions and patient reception duties.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T01:14:58.808951Z"
+    },
     {
       "id": "4b0fbafe1e8ce45185392c8a8c0fb341b7488e11633393d27ab546889996e062",
       "company": "Teklehaimanot General Hospital",
@@ -5219,23 +5237,6 @@
       "contact": "",
       "text": "🏷️ Banking & Finance | Private Sector\n\n🏢 Company: Infonans Solution PLC  \n🏬 About: A private company operating in the financial services sector in Ethiopia.  \n\n💼 Positions:  \n1. Senior Accountant  \n   📍 Location: Addis Ababa, Ethiopia (Urael, AB Zone Commercial Center)  \n   🎓 Requirements:  \n   - Bachelor’s in Accounting or Finance; ACCA/CPA preferred  \n   - 5+ years accounting experience, 2+ years as Senior Accountant  \n   - Advanced proficiency in accounting software and MS Excel  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 08, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-07T16:01:22.262847Z"
-    },
-    {
-      "id": "0bd2851bd87ff358edd3cbdbc9d5749bdccca7c56d47b1381f9c56afda6d312c",
-      "company": "BGI Ethiopia",
-      "about": "A private engineering firm delivering construction and infrastructure solutions in Ethiopia.",
-      "positions": [
-        "method officer"
-      ],
-      "category": [
-        "Construction & Engineering",
-        "Technology & IT"
-      ],
-      "deadline": "Sep 20, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Construction & Engineering\n\n🏢 Company: BGI Ethiopia  \n🏬 About: A private engineering firm delivering construction and infrastructure solutions in Ethiopia.  \n\n💼 Positions:  \n1. Method Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Mechanical/Electrical/Industrial Engineering or related field  \n   - Minimum 3 years relevant experience  \n   - Proficiency in CAD software  \n\n📝 Description: Develop and manage engineering methods and related documentation.  \n📊 Vacancy Count: 1  \n📅 Deadline: Sep 20, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-07T16:00:51.091498Z"
     }
   ]
 }
