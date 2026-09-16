@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T13:51:20.097296Z",
+  "updated": "2026-09-16T13:52:06.569781Z",
   "jobs": [
+    {
+      "id": "2124e4e90185e97e8583fa5e157b7c3acdc259b706406a93a28f29802ac18172",
+      "company": "At-Con Engineering & Architecture Consultancy PLC",
+      "about": "A private engineering and architecture consultancy providing design, planning, and project management services in Ethiopia.",
+      "positions": [
+        "assistant resident engineer (are)"
+      ],
+      "category": [
+        "Construction & Engineering"
+      ],
+      "deadline": "Oct 17, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "Browse open positions on https://ethiojobs.net",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/2124e4e90185e97e8583fa5e157b7c3acdc259b706406a93a28f29802ac18172.jpg",
+      "text": "🏷️ Construction & Engineering | Private Sector\n\n🏢 Company: At-Con Engineering & Architecture Consultancy PLC\n🏬 About: A private engineering and architecture consultancy providing design, planning, and project management services in Ethiopia.\n\n💼 Positions:\n1. Assistant Resident Engineer (ARE)\n   📍 Location: Alala (Amhara Region), Abala (Afar Region), Omela (Harar Region), Diredawa, Gelemso (Hararge Zone, Habro Woreda, Gelemso Town)\n   🎓 Requirements:\n   - Bachelor’s Degree in Civil Engineering or related field\n   - Strong knowledge of building codes, engineering standards, and construction methodologies\n   - Experience with contract administration (knowledge of FIDIC is an added advantage)\n   - Proficiency in MS Office, AutoCAD, and project management tools\n\n📊 Vacancy Count: 1\n📅 Deadline: Oct 17, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T13:51:48.340141Z"
+    },
     {
       "id": "a0e0741cc34ed062846ef3bacb213de846efeeb0a45cbd73963d829ef729b904",
       "company": "Planet Development Consultant PLC",
@@ -5330,22 +5348,6 @@
       "contact": "",
       "text": "🏷️ Private Sector\n\n🏢 Company: LEOFAM BUSINESS GROUP  \n🏬 About: A private company operating in the hospitality sector in Ethiopia.\n\n💼 Positions:\n1. Cost Controller  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:\n   - Minimum 2 years relevant experience in hospitality  \n   - Strong communication and teamwork skills  \n   - Ability to work effectively in a fast‑paced environment  \n\n📅 Deadline: Oct 09, 2026  \n📊 Vacancy Count: 1  \n📝 Description: Oversees and controls costs within the hospitality operations.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-08T12:53:28.743652Z"
-    },
-    {
-      "id": "cc86c3374a541972db8c4ec2204ae7e2ec92363dd91fb98df800878f35d9a4fe",
-      "company": "LEOFAM BUSINESS GROUP",
-      "about": "A private company operating in the business sector in Ethiopia.",
-      "positions": [
-        "sales and marketing representative"
-      ],
-      "category": [
-        "Private Sector"
-      ],
-      "deadline": "Oct 09, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Private Sector\n\n🏢 Company: LEOFAM BUSINESS GROUP  \n🏬 About: A private company operating in the business sector in Ethiopia.  \n\n💼 Positions:  \n1. Sales and Marketing Representative  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Minimum 2 years relevant experience  \n   - Strong communication skills  \n   - Ability to thrive in a fast‑paced environment  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 09, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-08T12:52:43.303783Z"
     }
   ]
 }
