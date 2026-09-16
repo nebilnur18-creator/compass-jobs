@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T01:06:49.543409Z",
+  "updated": "2026-09-16T01:07:12.631943Z",
   "jobs": [
+    {
+      "id": "48cde1a627751ac68f0fe754e299cbbe35d339f91d7f10d0c7eb07badffd5aec",
+      "company": "Frontieri Consult P.L.C",
+      "about": "A private consulting firm providing HR, administration, and logistics services in Ethiopia.",
+      "positions": [
+        "hr and administration coordinator"
+      ],
+      "category": [
+        "Logistics & Supply Chain"
+      ],
+      "deadline": "September 25th, 2026",
+      "link": "",
+      "contact": "jobs@vastatalent.com",
+      "application_method": "Send your CV/application via email",
+      "image": "https://www.google.com/s2/favicons?domain=elelanajobs.com&sz=256",
+      "text": "🏷️ Private Sector\n\n🏢 Company: Frontieri Consult P.L.C  \n🏬 About: A private consulting firm providing HR, administration, and logistics services in Ethiopia.  \n\n💼 Positions:  \n1. HR and Administration Coordinator  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in HR, Business Administration, Management, Logistics or related field  \n   - 5–8 years relevant experience in HR/administration  \n   - Good knowledge of Ethiopian labor law  \n\n📅 Deadline: September 25th, 2026\n\n📝 Application Method: Send your CV/application via email\n📞 Contact: jobs@vastatalent.com",
+      "posted": "2026-09-16T01:07:09.703671Z"
+    },
     {
       "id": "03b464bf366bcd0222a6bd17a1c7719b8298c2ccc4145cc6ad7cdbe69451315a",
       "company": "Women’s clothing retailer",
@@ -5175,22 +5193,6 @@
       "contact": "",
       "text": "🏷️ Healthcare\n\n🏢 Company: WGGA Medical Services PLC  \n🏬 About: A private company providing medical and eye‑care services in Ethiopia.  \n\n💼 Positions:  \n1. Senior Optometrist  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Optometry with a valid license  \n   - Minimum 3 years relevant experience  \n   - Strong diagnostic and communication skills  \n\n📝 Description: Deliver comprehensive eye examinations and patient care.  \n📊 Vacancy Count: 1  \n💼 Employment Type: Mid Level  \n📅 Deadline: Sep 15, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-07T09:46:32.856095Z"
-    },
-    {
-      "id": "abc87406efda1c2ba9c72ffc427227d2a1d78dc95556a9bac211d8b65240225d",
-      "company": "Deborah Foundation",
-      "about": "A non‑profit organization dedicated to education and community development in Ethiopia.",
-      "positions": [
-        "assistant teacher"
-      ],
-      "category": [
-        "Education"
-      ],
-      "deadline": "Sep 19, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Education | NGO / International\n\n🏢 Company: Deborah Foundation  \n🏬 About: A non‑profit organization dedicated to education and community development in Ethiopia.  \n\n💼 Positions:  \n1. Assistant Teacher  \n   📍 Location: Deborah Academy, Sheger City Administration, Legetafo Legedadi Sub‑City  \n   🎓 Requirements:  \n   - Bachelor’s degree in Education, Social Science or related field  \n   - Strong communication and interpersonal skills  \n   - Ability to handle pressure, meet deadlines and adapt flexibly  \n\n📊 Vacancy Count: 7  \n📅 Deadline: Sep 19, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-07T09:46:16.768000Z"
     }
   ]
 }
