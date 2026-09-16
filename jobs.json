@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T01:29:51.475385Z",
+  "updated": "2026-09-16T05:33:26.121478Z",
   "jobs": [
+    {
+      "id": "663f6fb74c4ec3dfccdee1fc187b07bf8c716977fbba71bf3b67f7bc04c76b71",
+      "company": "Private Company",
+      "about": "A private company operating in the sales sector in Ethiopia.",
+      "positions": [
+        "sales representative"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "@veronikaviki2129",
+      "application_method": "Apply by contacting via Telegram",
+      "image": null,
+      "text": "🏷️ Private Sector | Fresh Graduate\n\n🏢 Company: Private Company\n🏬 About: A private company operating in the sales sector in Ethiopia.\n\n💼 Positions:\n1. Sales Representative\n   📍 Location: Gofa Gebriel\n   🎓 Requirements:\n   - High school diploma or higher\n   - Basic computer and accounting skills\n   - Ability to attract and serve customers (experience preferred)\n\n💰 Salary: Negotiable\n📝 Description: Handles customer acquisition and service.\n\n📊 Vacancy Count: 1\n\n📝 Application Method: Apply by contacting via Telegram\n📞 Contact: @veronikaviki2129",
+      "posted": "2026-09-16T05:33:07.143317Z"
+    },
     {
       "id": "fbcbe205692bd98b1f5a564897632f6d62abc0c729c4705488630aa122f5f6da",
       "company": "Go Super App (Bridge Communication Plc)",
@@ -5253,23 +5271,6 @@
       "contact": "",
       "text": "🏷️ Executive | Private Sector\n\n🏢 Company: Premier Switch Solutions S. Co.  \n🏬 About: Premier Switch Solutions S. Co. is a private company providing technology and business solutions in Ethiopia.  \n\n💼 Positions:  \n1. Manager, Research, Product & Business Development Division  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Business Administration, Marketing, Economics or related field  \n   - ≥8 years experience in business development, partnerships or strategic management  \n   - Strong research, analysis and product development skills  \n\n📅 Deadline: Sep 16 2026  \n📊 Vacancy Count: 1  \n💼 Employment Type: Executive\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-08T11:59:19.350230Z"
-    },
-    {
-      "id": "aa3f6aaaf264512438ab094702130822ceb32d21b5e1eeacc4c044f48a0870cd",
-      "company": "JTI",
-      "about": "A multinational FMCG company specializing in tobacco products and related services.",
-      "positions": [
-        "it support specialist"
-      ],
-      "category": [
-        "Construction & Engineering",
-        "Technology & IT"
-      ],
-      "deadline": "Oct 09, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Technology & IT | Private Sector\n\n🏢 Company: JTI  \n🏬 About: A multinational FMCG company specializing in tobacco products and related services.  \n\n💼 Positions:  \n1. IT Support Specialist  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - University degree in Computer Science/IT or strong IT background  \n   - 3–5 years of professional IT experience  \n   - Experience supporting enterprise IT infrastructure  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 09, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-08T11:58:16.257516Z"
     }
   ]
 }
