@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T06:24:17.145058Z",
+  "updated": "2026-09-16T06:29:48.701729Z",
   "jobs": [
+    {
+      "id": "07d25af3b62311c078ac3412a6a7ee6af64b5726f99d0391b5ae401a8bfd0104",
+      "company": "Bero Mining and Trading PLC",
+      "about": "A mining and trading company operating in Ethiopia.",
+      "positions": [
+        "hr officer"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "Sep 20, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "Browse open positions on https://ethiojobs.net",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/07d25af3b62311c078ac3412a6a7ee6af64b5726f99d0391b5ae401a8bfd0104.jpg",
+      "text": "🏷️ Private Sector\n\n🏢 Company: Bero Mining and Trading PLC\n🏬 About: A mining and trading company operating in Ethiopia.\n\n💼 Positions:\n1. HR Officer\n   📍 Location: South West Ethiopia, Bero Woreda\n   🎓 Requirements:\n   - 2 years of work experience\n   - Junior level (1‑3 years)\n\n📅 Deadline: Sep 20, 2026\n📊 Vacancy Count: 1\n\n📝 Description: Manages recruitment, employee relations, and HR administration.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T06:29:42.748249Z"
+    },
     {
       "id": "c4692e588b43d74f39792941772b8c54d330335b80a54406a02fb0cf0c269169",
       "company": "Yehulu Saving & Loan Cooperative",
@@ -5260,23 +5278,6 @@
       "contact": "",
       "text": "🏷️ Private Sector\n\n🏢 Company: Sibhatu General Trading PLC  \n🏬 About: A private trading company in Ethiopia that supplies solar water pumps, motors and related equipment.  \n\n💼 Positions:  \n1. Sales Executive – Solar Water Pumps & Motors Specialist  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Experience in sales of solar, pumps, motors or electrical products  \n   - Strong communication and negotiation skills  \n   - Valid driving license (advantage)  \n\n📝 Description: Promote and sell solar water pump and motor solutions, handling customer visits and negotiations.  \n📊 Vacancy Count: 1  \n📅 Deadline: Oct 09 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-08T12:01:53.048717Z"
-    },
-    {
-      "id": "54ec7366049a265733b22fc175fbd68af478b9e5bf45ea31645b81d7b7c5aa88",
-      "company": "Tibeb Design & Build PLC",
-      "about": "A private Ethiopian firm delivering architectural design and construction services.",
-      "positions": [
-        "junior / fresh graduate architect"
-      ],
-      "category": [
-        "Fresh Graduate",
-        "Construction & Engineering"
-      ],
-      "deadline": "Oct 09, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Construction & Engineering | Fresh Graduate\n\n🏢 Company: Tibeb Design & Build PLC  \n🏬 About: A private Ethiopian firm delivering architectural design and construction services.  \n\n💼 Positions:  \n1. Junior / Fresh Graduate Architect  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor in Architecture with strong Revit skills  \n   - Proficiency in D5 Render  \n   - Ability to develop 3D models and presentations  \n\n📊 Vacancy Count: 4  \n📅 Deadline: Oct 09, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-08T12:01:22.620961Z"
     }
   ]
 }
