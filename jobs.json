@@ -1,6 +1,25 @@
 {
-  "updated": "2026-09-16T01:14:05.402348Z",
+  "updated": "2026-09-16T01:14:18.914913Z",
   "jobs": [
+    {
+      "id": "6314bd65592324e1238b2c965519465e821da1878cc4ace0a3fce02b63993500",
+      "company": "Washington Healthcare PLC",
+      "about": "A private company operating in the healthcare sector in Ethiopia.",
+      "positions": [
+        "associate project manager"
+      ],
+      "category": [
+        "Construction & Engineering",
+        "Executive"
+      ],
+      "deadline": "Sep 20, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "Browse open positions on https://ethiojobs.net",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/6314bd65592324e1238b2c965519465e821da1878cc4ace0a3fce02b63993500.jpg",
+      "text": "🏷️ Construction & Engineering | Private Sector\n\n🏢 Company: Washington Healthcare PLC  \n🏬 About: A private company operating in the healthcare sector in Ethiopia.  \n\n💼 Positions:  \n1. Associate Project Manager  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Civil Engineering, Construction Management, Architecture or related field  \n   - 7–8+ years experience in construction/project management  \n   - Experience managing medium to large‑scale construction projects  \n\n📊 Vacancy Count: 1  \n💼 Employment Type: Senior (5-8 years)  \n📅 Deadline: Sep 20, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T01:14:16.670548Z"
+    },
     {
       "id": "194c705545a5c45ec4c3f0605993979aaf6b678bc43ea4323e026a6a25d54c07",
       "company": "Eco Justice Ethiopia",
@@ -5214,23 +5233,6 @@
       "contact": "",
       "text": "🏷️ Logistics & Supply Chain | Private Sector\n\n🏢 Company: Ahfa PLC  \n🏬 About: A private Ethiopian company engaged in distribution and supply chain services.  \n\n💼 Positions:  \n1. Storekeeper  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Diploma in Material Management, Purchase & Supply Management or related field  \n   - Up to 2 years of relevant work experience  \n   - Ability to manage stock levels, receive and issue materials  \n\n📅 Deadline: Sep 11 2026  \n📊 Vacancy Count: 1  \n📝 Description: Manages store inventory, receives and issues materials, and maintains stock records.\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-07T15:59:04.299722Z"
-    },
-    {
-      "id": "f05605010509ac4f01ce21b84bff320d44459b23c39aa96f73d6dae4768e8f1e",
-      "company": "Opian Health",
-      "about": "Opian Health is a healthcare provider delivering medical services in Ethiopia.",
-      "positions": [
-        "senior finance and operations officer"
-      ],
-      "category": [
-        "Government",
-        "Technology & IT"
-      ],
-      "deadline": "Oct 08 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Healthcare | Private Sector\n\n🏢 Company: Opian Health  \n🏬 About: Opian Health is a healthcare provider delivering medical services in Ethiopia.  \n\n💼 Positions:  \n1. Senior Finance and Operations Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Accounting, Finance or related field.  \n   - Minimum 5 years accounting experience, including 2 years in a supervisory role.  \n   - Expert knowledge of Ethiopian tax laws and ERP systems (e.g., Dynamics 365, QuickBooks).  \n\n📊 Vacancy Count: 1  \n📝 Description: Oversees finance and operations functions, ensuring compliance and efficiency.  \n📅 Deadline: Oct 08 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-07T15:58:33.759396Z"
     }
   ]
 }
