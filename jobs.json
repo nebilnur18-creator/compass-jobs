@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-16T01:14:32.429006Z",
+  "updated": "2026-09-16T01:14:46.654959Z",
   "jobs": [
+    {
+      "id": "4b0fbafe1e8ce45185392c8a8c0fb341b7488e11633393d27ab546889996e062",
+      "company": "Teklehaimanot General Hospital",
+      "about": "A general hospital delivering comprehensive medical services in Addis Ababa.",
+      "positions": [],
+      "category": [
+        "Fresh Graduate",
+        "Healthcare"
+      ],
+      "deadline": "Sep 30, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/4b0fbafe1e8ce45185392c8a8c0fb341b7488e11633393d27ab546889996e062.jpg",
+      "text": "🏷️ Fresh Graduate | Healthcare\n\n🏢 Company: Teklehaimanot General Hospital  \n🏬 About: A general hospital delivering comprehensive medical services in Addis Ababa.  \n\n💼 Positions:  \n1️⃣ Customer Service / Physician Attendant  \n   📍 Location: Somale Tera, Addis Ababa (Estimated)  \n   🎓 Requirements:  \n   - Patient check‑in & flow management  \n   - Empathy & active listening  \n   - Accurate record‑keeping  \n\n2️⃣ Senior Nurse  \n   📍 Location: Somale Tera, Addis Ababa (Estimated)  \n   🎓 Requirements:  \n   - Advanced clinical knowledge in surgical nursing and patient management  \n   - Ability to assess and interpret patient health information for decision‑making  \n   - Conduct training sessions for staff on new procedures and technologies  \n\n📅 Deadline: Sep 30, 2026  \n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T01:14:43.648916Z"
+    },
     {
       "id": "bfd8e927f33d008444e533ed72b149e25dd9aa54677db1c9b23dee48cfb31671",
       "company": "Yeteref Bet Pharmaceutical",
@@ -5219,23 +5236,6 @@
       "contact": "",
       "text": "🏷️ Construction & Engineering\n\n🏢 Company: BGI Ethiopia  \n🏬 About: A private engineering firm delivering construction and infrastructure solutions in Ethiopia.  \n\n💼 Positions:  \n1. Method Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Mechanical/Electrical/Industrial Engineering or related field  \n   - Minimum 3 years relevant experience  \n   - Proficiency in CAD software  \n\n📝 Description: Develop and manage engineering methods and related documentation.  \n📊 Vacancy Count: 1  \n📅 Deadline: Sep 20, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-07T16:00:51.091498Z"
-    },
-    {
-      "id": "99d052b7d52275ed150eee39325dc4797e8ab04ed2c30a0f11a1f239672a7eca",
-      "company": "Organization For Welfare and Development in Action (OWDA)",
-      "about": "A non‑government organization focused on welfare and development, providing health and social services in Ethiopia.",
-      "positions": [
-        "psychiatric nurse"
-      ],
-      "category": [
-        "NGO / International",
-        "Healthcare"
-      ],
-      "deadline": "Sep 10, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Healthcare | NGO / International\n\n🏢 Company: Organization For Welfare and Development in Action (OWDA)  \n🏬 About: A non‑government organization focused on welfare and development, providing health and social services in Ethiopia.  \n\n💼 Positions:  \n1. Psychiatric Nurse  \n   📍 Location: Melkadida, Halloweyn, Kobo, Buramino, Bokolmayo Refugee Health Centers  \n   🎓 Requirements:  \n   - Degree in psychiatry  \n   - ≥4 years humanitarian experience  \n   - Fluent in written and spoken English  \n\n📅 Deadline: Sep 10, 2026  \n📊 Vacancy Count: 5\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-07T15:59:40.778909Z"
     }
   ]
 }
