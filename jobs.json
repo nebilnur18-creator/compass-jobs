@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T00:49:36.398287Z",
+  "updated": "2026-09-16T00:49:56.051599Z",
   "jobs": [
+    {
+      "id": "bcab87993a1107f19e947f3006b9ed418d085979c669600d1cba3f4a31779f20",
+      "company": "Retail Company",
+      "about": "A retail business operating in Ethiopia, selling goods to customers.",
+      "positions": [
+        "shop sales clerk"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "0987040304",
+      "application_method": "Call or send your CV to this number",
+      "image": null,
+      "text": "🏷️ Private Sector\n\n🏢 Company: Retail Company  \n🏬 About: A retail business operating in Ethiopia, selling goods to customers.\n\n💼 Positions:  \n1. Shop Sales Clerk  \n   📍 Location: Bole  \n   🎓 Requirements:  \n   - Sales experience  \n   - Ability to work morning (02:30) and evening (13:30) shifts  \n   - Good communication skills  \n\n💰 Salary: 5000 ETB + commission  \n📊 Vacancy Count: 1  \n📝 Description: Sales staff needed for Bole shop.\n\n📝 Application Method: Call or send your CV to this number\n📞 Contact: 0987040304",
+      "posted": "2026-09-16T00:49:53.726881Z"
+    },
     {
       "id": "f51e1ca6891c51abb004a756fa11b5feef8d4b77009e6e32ee1ce5b69ac83d65",
       "company": "(Not disclosed)",
@@ -5124,24 +5142,6 @@
       "contact": "",
       "text": "🏷️ Fresh Graduate | Banking & Finance\n\n🏢 Company: Tsehay Bank S.C.  \n🏬 About: A share‑holding bank founded in 2022, delivering sustainable financial services with modern technology.  \n\n💼 Positions:  \n1. IT Trainee  \n   📍 Location: Head Office  \n   🎓 Requirements:  \n   - BSc in Computer Science, IT or related field  \n   - CGPA 2.75+ (2025/2026 graduates)  \n   - No experience required  \n\n💰 Salary: As per bank’s salary scale & benefits package  \n📝 Description: Supports the bank’s IT operations and technology projects.  \n📅 Deadline: September 12, 2026  \n📝 Application Method: Apply via online form  \n🔗 Link: https://forms.gle/u87SUEM6yAieN7gPA",
       "posted": "2026-09-07T06:07:55.567253Z"
-    },
-    {
-      "id": "9076e7511a39170066dc3d323ac837b0e8b5e4935320f5743a9bb48c5294990d",
-      "company": "Tsehay Bank SC",
-      "about": "A commercial bank operating in Ethiopia, providing a range of banking services nationwide.",
-      "positions": [
-        "senior hr business partner",
-        "it trainee"
-      ],
-      "category": [
-        "Fresh Graduate",
-        "Banking & Finance"
-      ],
-      "deadline": "September 10, 2026",
-      "link": "https://kebenajobs.com/job/tsehay-bank-sc-sept-7-26/",
-      "contact": "",
-      "text": "🏷️ Banking & Finance | Fresh Graduate\n\n🏢 Company: Tsehay Bank SC  \n🏬 About: A commercial bank operating in Ethiopia, providing a range of banking services nationwide.  \n\n💼 Positions:  \n1. Senior HR Business Partner  \n   📍 Location: Southwest and Bahir Dar Districts  \n   🎓 Requirements:  \n   - Bachelor’s degree in HR or related field; HR certification desirable  \n   - Minimum 4 years HR experience, 2 years as HRBP or Senior HR Officer  \n   - Experience managing remote or multi‑site teams  \n\n2. IT Trainee  \n   📍 Location: Head Office  \n   🎓 Requirements:  \n   - BSc in Computer Science or related discipline, graduating 2025‑2026  \n   - CGPA 2.75+; must pass exit exam  \n   - No prior experience required  \n\n💰 Salary: As per the Bank’s salary scale  \n📅 Deadline: September 10, 2026  \n\n📝 Application Method: Apply via source job page  \n🔗 Link: https://kebenajobs.com/job/tsehay-bank-sc-sept-7-26/",
-      "posted": "2026-09-07T05:24:38.191736Z"
     }
   ]
 }
