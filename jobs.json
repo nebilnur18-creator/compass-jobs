@@ -1,6 +1,25 @@
 {
-  "updated": "2026-09-16T01:07:12.631943Z",
+  "updated": "2026-09-16T01:07:27.630729Z",
   "jobs": [
+    {
+      "id": "12fded4a459b5890323e36a8f61fa0ff44fe36ef34fc02922bc2aca53fd2d62f",
+      "company": "AY Noble Inspection Surveillance Service",
+      "about": "A private company providing inspection and surveillance services in Ethiopia.",
+      "positions": [
+        "junior commodity inspector",
+        "office secretary"
+      ],
+      "category": [
+        "Fresh Graduate"
+      ],
+      "deadline": "October 16th, 2026",
+      "link": "",
+      "contact": "aberaabegaz@gmail.com",
+      "application_method": "Send your CV/application via email",
+      "image": "https://www.google.com/s2/favicons?domain=elelanajobs.com&sz=256",
+      "text": "🏷️ Fresh Graduate | Private Sector\n\n🏢 Company: AY Noble Inspection Surveillance Service  \n🏬 About: A private company providing inspection and surveillance services in Ethiopia.  \n\n💼 Positions:  \n1. Junior Commodity Inspector  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Agriculture (fresh graduates accepted)  \n   - Adaptability  \n   - Attention to detail  \n\n2. Office Secretary  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BA in Accounting, Marketing or related (fresh graduates accepted)  \n   - Communication skills  \n   - Proficiency in Microsoft Office  \n\n📅 Deadline: October 16th, 2026\n\n📝 Application Method: Send your CV/application via email\n📞 Contact: aberaabegaz@gmail.com",
+      "posted": "2026-09-16T01:07:24.196023Z"
+    },
     {
       "id": "48cde1a627751ac68f0fe754e299cbbe35d339f91d7f10d0c7eb07badffd5aec",
       "company": "Frontieri Consult P.L.C",
@@ -5177,22 +5196,6 @@
       "contact": "",
       "text": "🏷️ Banking & Finance | Private Sector\n\n🏢 Company: Droga Pharma PLC  \n🏬 About: A leading Ethiopian pharmaceutical company manufacturing and distributing medicines.  \n\n💼 Positions:  \n1. Cashier Accountant  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - B.Sc. or Diploma in Accounting & Finance  \n   - 1‑3 years relevant experience  \n   - Basic computer skills  \n\n📊 Vacancy Count: 1  \n📝 Description: Manages cash transactions and accounting records.  \n📅 Deadline: Oct 07, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-07T09:46:50.679183Z"
-    },
-    {
-      "id": "7f2a0f515a809a039c296e86c35f7f45120b9d13921bbb614a00e37adde79ef1",
-      "company": "WGGA Medical Services PLC",
-      "about": "A private company providing medical and eye‑care services in Ethiopia.",
-      "positions": [
-        "senior optometrist"
-      ],
-      "category": [
-        "Healthcare"
-      ],
-      "deadline": "Sep 15, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Healthcare\n\n🏢 Company: WGGA Medical Services PLC  \n🏬 About: A private company providing medical and eye‑care services in Ethiopia.  \n\n💼 Positions:  \n1. Senior Optometrist  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Optometry with a valid license  \n   - Minimum 3 years relevant experience  \n   - Strong diagnostic and communication skills  \n\n📝 Description: Deliver comprehensive eye examinations and patient care.  \n📊 Vacancy Count: 1  \n💼 Employment Type: Mid Level  \n📅 Deadline: Sep 15, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-07T09:46:32.856095Z"
     }
   ]
 }
