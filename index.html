@@ -573,7 +573,7 @@
       box-shadow: 0 5px 18px rgba(7, 21, 37, 0.035);
       border-left: 4px solid var(--green);
       transition: 0.2s ease;
-      }
+    }
 
     .job-card:hover {
       transform: translateY(-2px);
@@ -2406,14 +2406,16 @@
             </span>
           `;
 
+      const logoSrc = safeUrl(job.image) || COMPASS_LOGO;
+
       return `
         <article class="job-card ${expired ? "expired" : ""}">
           <div class="job-header">
             <img
               class="job-logo"
-              src="${COMPASS_LOGO}"
-              alt="Compass Jobs"
-              onerror="this.style.display='none'"
+              src="${safeText(logoSrc)}"
+              alt="${safeText(company)}"
+              onerror="this.onerror=null;this.src='${COMPASS_LOGO}';"
             >
 
             <div class="job-heading">
@@ -2579,4 +2581,4 @@
     setInterval(loadJobs, 60000);
   </script>
 </body>
-  </html>
+</html>
