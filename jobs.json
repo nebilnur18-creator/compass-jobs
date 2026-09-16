@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T00:49:56.051599Z",
+  "updated": "2026-09-16T00:50:15.279699Z",
   "jobs": [
+    {
+      "id": "ba9ef2452f795bdeee46d6f5bf557d2f6b4f4321d590c6c9eeb7c1dcd607ff21",
+      "company": "Tiny Treasures",
+      "about": "Tiny Treasures is a private childcare service provider in Ethiopia.",
+      "positions": [
+        "nanny"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "",
+      "contact": "+251 91 161 7030",
+      "application_method": "",
+      "image": null,
+      "text": "🏷️ Private Sector\n\n🏢 Company: Tiny Treasures  \n🏬 About: Tiny Treasures is a private childcare service provider in Ethiopia.  \n\n💼 Positions:  \n1. Nanny  \n   📍 Location: Addis Ababa, Salitemihiret  \n   🎓 Requirements:  \n   - Experience as a nanny or with young children  \n   - Loving, patient, attentive and reliable  \n   - Good communication and personal hygiene  \n\n📝 Description: Provide a safe, happy, and nurturing environment for children.  \n📞 Contact: +251 91 161 7030",
+      "posted": "2026-09-16T00:50:12.403060Z"
+    },
     {
       "id": "bcab87993a1107f19e947f3006b9ed418d085979c669600d1cba3f4a31779f20",
       "company": "Retail Company",
@@ -5125,23 +5143,6 @@
       "contact": "",
       "text": "🏷️ Fresh Graduate | Technology & IT\n\n🏢 Company: Kenera International Trading PLC  \n🏬 About: Kenera International Trading PLC (KIT) is an ICT company promoting the development and effective use of ICT technologies in Ethiopia.  \n\n💼 Positions:  \n1. Cashier Accountant  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Degree in Accounting or Finance  \n   - Minimum 1 year relevant experience  \n\n2. Junior Sales Lady  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Computer Hardware, Electrical Engineering, Computer Science or related field  \n   - Recent 2018 E.C. graduate (no experience required)  \n\n3. Senior Sales Lady  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Degree in Computer Hardware, Electrical Engineering, Computer Science or related field  \n   - Minimum 3 years relevant experience  \n\n…and 1 more position — full list on our website.  \n\n💰 Salary: Attractive and negotiable package  \n📅 Deadline: September 20, 2026  \n📝 Application Method: Apply via online portal  \n🔗 Link: https://ethiojobshub.com/kenera-international-trading/",
       "posted": "2026-09-07T09:36:51.500686Z"
-    },
-    {
-      "id": "cb5d8f2e5685c25c0a34c690d2b23d12ba6c9ea9211ebd68e6d98b6b4faeddb0",
-      "company": "Tsehay Bank S.C.",
-      "about": "A share‑holding bank founded in 2022, delivering sustainable financial services with modern technology.",
-      "positions": [
-        "it trainee"
-      ],
-      "category": [
-        "Fresh Graduate",
-        "Banking & Finance"
-      ],
-      "deadline": "September 12, 2026",
-      "link": "https://forms.gle/u87SUEM6yAieN7gPA",
-      "contact": "",
-      "text": "🏷️ Fresh Graduate | Banking & Finance\n\n🏢 Company: Tsehay Bank S.C.  \n🏬 About: A share‑holding bank founded in 2022, delivering sustainable financial services with modern technology.  \n\n💼 Positions:  \n1. IT Trainee  \n   📍 Location: Head Office  \n   🎓 Requirements:  \n   - BSc in Computer Science, IT or related field  \n   - CGPA 2.75+ (2025/2026 graduates)  \n   - No experience required  \n\n💰 Salary: As per bank’s salary scale & benefits package  \n📝 Description: Supports the bank’s IT operations and technology projects.  \n📅 Deadline: September 12, 2026  \n📝 Application Method: Apply via online form  \n🔗 Link: https://forms.gle/u87SUEM6yAieN7gPA",
-      "posted": "2026-09-07T06:07:55.567253Z"
     }
   ]
 }
