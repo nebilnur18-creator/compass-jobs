@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-16T13:13:21.467023Z",
+  "updated": "2026-09-16T13:19:02.377642Z",
   "jobs": [
+    {
+      "id": "dca44ecb8eab8149ab7f4c3527220124111e4ff52db4f63759d9c27fe2630515",
+      "company": "Village Enterprise",
+      "about": "Village Enterprise is a social enterprise focused on empowering communities through business development and training programs in Ethiopia.",
+      "positions": [
+        "instructional design coordinator"
+      ],
+      "category": [
+        "Education"
+      ],
+      "deadline": "Sep 28, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "Browse open positions on https://ethiojobs.net",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/dca44ecb8eab8149ab7f4c3527220124111e4ff52db4f63759d9c27fe2630515.jpg",
+      "text": "🏷️ Education\n\n🏢 Company: Village Enterprise\n🏬 About: Village Enterprise is a social enterprise focused on empowering communities through business development and training programs in Ethiopia.\n\n💼 Positions:\n1. Instructional Design Coordinator\n   📍 Location: Addis Ababa, Ethiopia\n   🎓 Requirements:\n   - Minimum degree from a recognized university in Instructional Design, Education, Adult Learning, Organizational Learning, Educational Technology, or a related field.\n   - At least 3 years of hands‑on experience in curriculum development and creating blended learning solutions for instructor‑led, low‑literacy audiences and self‑paced training programs.\n   - Experience with Learning Experience Design (LXD) and instructional design is an added advantage.\n   - Ability to lead co‑creation through creative program and product design methodologies to develop impactful programs and products.\n   - Experience in assessing training needs, writing lesson objectives, storyboarding course outlines/learning journeys, and designing visual materials.\n\n📊 Vacancy Count: 1\n📅 Deadline: Sep 28, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T13:18:57.480171Z"
+    },
     {
       "id": "fbddbddd99a3010274a3b32f26437266c2b210be6a5e0c33f0f2c6eeae546377",
       "company": "Emerald Leaf Trading PLC",
@@ -5313,22 +5331,6 @@
       "contact": "",
       "text": "🏷️ Construction & Engineering | Private Sector\n\n🏢 Company: LEOFAM BUSINESS GROUP  \n🏬 About: A private company operating in the construction sector in Ethiopia.  \n\n💼 Positions:  \n1. Construction Foreman  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Minimum 5 years construction experience  \n   - Strong communication skills  \n   - Ability to work effectively in a fast‑paced environment  \n\n📊 Vacancy Count: 1  \n📅 Deadline: Oct 09, 2026\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
       "posted": "2026-09-08T12:44:48.248479Z"
-    },
-    {
-      "id": "fb1d656a83bb98473b758e17b267d75e2f373ba6c0e141d90809705bf13cd37c",
-      "company": "LEOFAM BUSINESS GROUP",
-      "about": "A private company operating in the business sector in Ethiopia.",
-      "positions": [
-        "facility manager"
-      ],
-      "category": [
-        "Executive"
-      ],
-      "deadline": "Oct 09, 2026",
-      "link": "https://ethiojobs.net",
-      "contact": "",
-      "text": "🏷️ Private Sector | Executive\n\n🏢 Company: LEOFAM BUSINESS GROUP\n🏬 About: A private company operating in the business sector in Ethiopia.\n\n💼 Positions:\n1. Facility Manager\n   📍 Location: Addis Ababa\n   🎓 Requirements:\n   - Minimum 5 years relevant experience\n   - Professionalism, integrity and strong communication skills\n   - Ability to work effectively in a fast‑paced environment\n\n📅 Deadline: Oct 09, 2026\n📊 Vacancy Count: 1\n\n📝 Application Method: Browse open positions on https://ethiojobs.net\n🔗 Link: https://ethiojobs.net",
-      "posted": "2026-09-08T12:41:41.123979Z"
     }
   ]
 }
