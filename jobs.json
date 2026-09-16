@@ -1,6 +1,26 @@
 {
-  "updated": "2026-09-16T00:50:37.514088Z",
+  "updated": "2026-09-16T00:51:20.910113Z",
   "jobs": [
+    {
+      "id": "53bfc18d4f7fd9b8e348c8eedfe79c52acf974fa6c536ac183c289a479c3c1eb",
+      "company": "Elon Academy",
+      "about": "Elon Academy is a private Ethiopian institution delivering the national curriculum and hiring academic and administrative staff.",
+      "positions": [
+        "property manager",
+        "english teacher"
+      ],
+      "category": [
+        "Construction & Engineering",
+        "Executive"
+      ],
+      "deadline": "September 25, 2026",
+      "link": "",
+      "contact": "elonhr9@gmail.com",
+      "application_method": "Send your CV/application via email",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/53bfc18d4f7fd9b8e348c8eedfe79c52acf974fa6c536ac183c289a479c3c1eb.jpg",
+      "text": "🏷️ Education\n\n🏢 Company: Elon Academy  \n🏬 About: Elon Academy is a private Ethiopian institution delivering the national curriculum and hiring academic and administrative staff.  \n\n💼 Positions:  \n1. Property Manager  \n   📍 Location: Haya Hulet, behind Bata Complex, near Misrak Dil School  \n   🎓 Requirements:  \n   - Bachelor’s or Advanced Diploma in relevant field  \n   - 4‑6 years property/facilities management experience  \n   - Fluency in Amharic & English  \n\n2. English Teacher  \n   📍 Location: Campus 1 (Winget), road to 18th Avenue  \n   🎓 Requirements:  \n   - MA/BA/BSc/B.Ed in English  \n   - 0‑10 years teaching experience  \n   - Female, caring attitude  \n\n💰 Salary: Highly attractive and negotiable  \n📅 Deadline: September 25, 2026\n\n📝 Application Method: Send your CV/application via email\n📞 Contact: elonhr9@gmail.com",
+      "posted": "2026-09-16T00:51:17.055532Z"
+    },
     {
       "id": "5ee5f9ed927e32cefc51eedff8de297a7b916a59fc1da4ae766202670e7f0be8",
       "company": "Guo Peiyun Manufacturing",
@@ -5127,23 +5147,6 @@
       "contact": "+251 93 910 9110",
       "text": "🏷️ Private Sector\n\n🏢 Company: Arbasa Bakery\n🏬 About: A local bakery serving the Arbasa area in Addis Ababa.\n\n💼 Positions:\n1. Bakery Cashier (female, contract)\n   📍 Location: Arbasa, Shale (Tankar)\n\n2. Bakery Cleaner (female, contract)\n   📍 Location: Arbasa, Shale (Tankar)\n\n💼 Employment Type: Contract\n📞 Contact: +251 93 910 9110",
       "posted": "2026-09-07T09:40:35.703416Z"
-    },
-    {
-      "id": "e24854239129ec055efd5d0a916daef08b441978745fa319f52b05c77f8cd4d8",
-      "company": "Ayat Share Company",
-      "about": "Ayat Share Company is an Ethiopian real estate and property development firm creating residential, commercial and mixed‑use projects.",
-      "positions": [
-        "data collector"
-      ],
-      "category": [
-        "Construction & Engineering",
-        "Education"
-      ],
-      "deadline": "September 15, 2026",
-      "link": "https://ethiojobshub.com/ayat-share-company-vacancy/",
-      "contact": "011-854-71-99",
-      "text": "🏷️ Private Sector | Construction & Engineering\n\n🏢 Company: Ayat Share Company  \n🏬 About: Ayat Share Company is an Ethiopian real estate and property development firm creating residential, commercial and mixed‑use projects.  \n\n💼 Positions:  \n1. Data Collector  \n   📍 Location: Addis Ababa and surrounding areas  \n   🎓 Requirements:  \n   - Bachelor’s degree in Civil Engineering, Construction Management or related field  \n   - No prior experience required  \n   - Ability to work in Addis Ababa area  \n\n💰 Salary: According to the company’s salary scale.  \n📊 Vacancy Count: 3  \n📅 Deadline: September 15, 2026  \n📞 Contact: 011-854-71-99  \n\n📝 Application Method: Bring original and photocopies of educational and work‑experience documents to Ayat Share Company Head Office, near Michael traffic light, Megenagna‑Wosen road.  \n🔗 Link: https://ethiojobshub.com/ayat-share-company-vacancy/",
-      "posted": "2026-09-07T09:39:24.608312Z"
     }
   ]
 }
