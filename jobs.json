@@ -1,6 +1,23 @@
 {
-  "updated": "2026-09-16T11:44:39.256335Z",
+  "updated": "2026-09-16T11:46:53.648283Z",
   "jobs": [
+    {
+      "id": "42c325f51ed5a4e713ce84d03083d02e78607ccbe88e2252c2eb5dd2a03ae3e1",
+      "company": "Kerchanshe Trading Company",
+      "about": "Private trading firm operating in Ethiopia, importing and distributing various goods.",
+      "positions": [],
+      "category": [
+        "Construction & Engineering",
+        "Technology & IT"
+      ],
+      "deadline": "Sep 24, 2026",
+      "link": "https://ethiojobs.net",
+      "contact": "",
+      "application_method": "",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/42c325f51ed5a4e713ce84d03083d02e78607ccbe88e2252c2eb5dd2a03ae3e1.jpg",
+      "text": "🏷️ Construction & Engineering | Technology & IT\n\n🏢 Company: Kerchanshe Trading Company  \n🏬 About: Private trading firm operating in Ethiopia, importing and distributing various goods.  \n\n💼 Positions:  \n1️⃣ IT Support Supervisor  \n   📍 Location: Guangua (Dilla Area) (Estimated)  \n   🎓 Requirements:  \n   - Bachelor’s degree in Computer Science, Information Technology, or a related field.  \n   - Certifications such as CompTIA A+/Network+, Microsoft Certified: Windows Server, or Cisco CCNA are a strong advantage.  \n   - Minimum 6 years of experience in IT support/infrastructure, including 1–2 years in a supervisory or team‑lead role.  \n   - Experience supporting multi‑site or remote operations preferred.  \n\n2️⃣ Full Stack Developer / Programmer I  \n   📍 Location: Addis Ababa, Ethiopia (Estimated)  \n   🎓 Requirements:  \n   - Bachelor’s degree in Computer Science, Software Engineering, Information Technology, or a related field.  \n   - Certifications in relevant programming languages, cloud platforms, or Microsoft Dynamics development are an advantage.  \n   - 1–2 years of experience in software development/programming.  \n   - Proficiency in one or more languages such as C#, .NET, JavaScript, Python, or SQL.  \n   - Exposure to ERP (D365FO) customization/development is an advantage.  \n\n📅 Deadline: Sep 24, 2026  \n🔗 Link: https://ethiojobs.net",
+      "posted": "2026-09-16T11:46:40.811715Z"
+    },
     {
       "id": "2b76dc17cfa2b1d3bb30acda754331d7141256a7ad573d0c5982c039fa2982c5",
       "company": "New Leaf Medical Complex",
@@ -5286,22 +5303,6 @@
       "contact": "@Bakiallmart",
       "text": "🏷️ Technology & IT\n\n🏢 Company: Data Incoder  \n🏬 About: A technology firm specializing in data encoding and related services.  \n\n💼 Positions:  \n1. Accountant (Female)  \n   📍 Location: Gergi, Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s degree in Accounting or related field  \n   - Strong knowledge of accounting principles  \n   - Proficiency in Excel and accounting software  \n\n📝 Description: Handles detailed accounting tasks with high accuracy, full‑time on‑site.  \n💼 Employment Type: Full-time  \n📞 Contact: @Bakiallmart  \n\n📝 Application Method: Send CV via DM to @Bakiallmart",
       "posted": "2026-09-08T12:21:51.148871Z"
-    },
-    {
-      "id": "6d0caf5992c0cd548b8d9e9c6ecd27e00ec8345409c6140cada322719ee1cbc9",
-      "company": "Educational Institution",
-      "about": "A private school offering primary education in Addis Ababa.",
-      "positions": [
-        "assistant teacher"
-      ],
-      "category": [
-        "Private Sector"
-      ],
-      "deadline": "",
-      "link": "",
-      "contact": "@Seifemichael1212 (Telegram)",
-      "text": "🏷️ Education\n\n🏢 Company: Educational Institution  \n🏬 About: A private school offering primary education in Addis Ababa.  \n\n💼 Positions:  \n1. Assistant Teacher  \n   📍 Location: Sarbet, near the Vatican Embassy  \n   🎓 Requirements:  \n   - Bachelor’s degree in any field  \n\n📞 Contact: @Seifemichael1212 (Telegram)  \n\n📝 Application Method: Send CV via Telegram.",
-      "posted": "2026-09-08T12:18:20.306176Z"
     }
   ]
 }
