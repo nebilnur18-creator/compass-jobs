@@ -1,6 +1,28 @@
 {
-  "updated": "2026-09-16T01:09:03.323119Z",
+  "updated": "2026-09-16T01:11:41.865194Z",
   "jobs": [
+    {
+      "id": "a9e72a7e68dee47dad4d9b4bec2d118992daaabf9b4532c611554e67e2bd94bf",
+      "company": "TalentConnect",
+      "about": "TalentConnect is a research initiative linking job seekers with employment opportunities in Ethiopia.",
+      "positions": [
+        "marketing",
+        "accounting",
+        "reception/secretarial service",
+        "human resources management",
+        "sales and related roles"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "",
+      "link": "https://accounts.google.com/AccountChooser?continue=https://docs.google.com/forms/d/e/1FAIpQLSdFp9CT5SjgYN9bkjTuxuypljyQ3g3xvabJ3oZ5ti8xAl8AWQ/viewform&service=wise",
+      "contact": "",
+      "application_method": "Apply by filling out the Google Form",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/a9e72a7e68dee47dad4d9b4bec2d118992daaabf9b4532c611554e67e2bd94bf.jpg",
+      "text": "🏷️ Private Sector\n\n🏢 Company: TalentConnect\n🏬 About: TalentConnect is a research initiative linking job seekers with employment opportunities in Ethiopia.\n\n💼 Positions:\n1. Marketing\n2. Accounting\n3. Reception/Secretarial Service\n4. Human Resources Management\n5. Sales and related roles\n…and 0 more positions — full list on our website.\n\n📝 Description: Participants will join a study to improve job matching processes and will receive transport allowance.\n\n📝 Application Method: Apply by filling out the Google Form\n🔗 Link: https://accounts.google.com/AccountChooser?continue=https://docs.google.com/forms/d/e/1FAIpQLSdFp9CT5SjgYN9bkjTuxuypljyQ3g3xvabJ3oZ5ti8xAl8AWQ/viewform&service=wise",
+      "posted": "2026-09-16T01:11:39.398446Z"
+    },
     {
       "id": "11141cf10388a3104c8d4b5bb26b11762438fe6e5f08dab522cdd484c4753c01",
       "company": "Wegagen Bank SC",
@@ -5198,25 +5220,6 @@
       "contact": "recruitment@sequoiaconsultancy.et",
       "text": "🏷️ Private Sector | Construction & Engineering\n\n🏢 Company: Empolo Addis Trading PLC  \n🏬 About: A private Ethiopian company engaged in trading and property management.  \n\n💼 Positions:  \n1. HR & General Service Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - Bachelor’s in HRM, Management or Business Administration  \n   - 2‑4 years HR & administration experience  \n   - Knowledge of Ethiopian labor law and HR practices  \n\n2. Office Engineer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BSc in Civil Engineering  \n   - 3‑5 years construction experience, preferably real estate  \n   - Proficiency in AutoCAD and MS Office  \n\n📝 Description: Manage HR functions and oversee engineering tasks for real‑estate projects.  \n📅 Deadline: September 15th, 2026  \n📞 Contact: recruitment@sequoiaconsultancy.et  \n\n📝 Application Method: Send your updated CV and application letter to recruitment@sequoiaconsultancy.et  \n🔗 Link: https://elelanajobs.com/2026/09/07/empolo-addis-trading-plc-4/",
       "posted": "2026-09-07T15:51:53.675986Z"
-    },
-    {
-      "id": "8a107696ac4b7cb3a3c888473b1715846aa3e90db2ea0d03dae5161759222925",
-      "company": "Abyssinia Bank",
-      "about": "A private Ethiopian bank offering a full range of banking services and innovative digital solutions.",
-      "positions": [
-        "trainee e‑learning designer and developer",
-        "associate foreclosure & debt litigation officer",
-        "foreclosure and debt litigation officer"
-      ],
-      "category": [
-        "Fresh Graduate",
-        "Banking & Finance"
-      ],
-      "deadline": "09/11/2026 (trainee) / 09/04/2026 (legal)",
-      "link": "https://effoysira.com/abyssinia-bank-job-vacancy-2026/",
-      "contact": "",
-      "text": "🏷️ Banking & Finance | Fresh Graduate\n\n🏢 Company: Abyssinia Bank  \n🏬 About: A private Ethiopian bank offering a full range of banking services and innovative digital solutions.  \n\n💼 Positions:  \n1. Trainee E‑Learning Designer and Developer  \n   🎓 Requirements:  \n   - BSc in CS, Software Engineering, IS, EECE or related field  \n   - Certification in Graphic Design, Instructional Design or Video Editing (advantageous)  \n   - No experience required  \n\n2. Associate Foreclosure & Debt Litigation Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - LLB degree  \n   - Minimum 4 years legal experience, 2 years in banking  \n   - Ability to handle complex litigation  \n\n3. Foreclosure and Debt Litigation Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - LLB degree  \n   - Minimum 4‑6 years legal experience, 3 years in banking  \n   - Expertise in loan‑default legal analysis  \n\n💰 Salary: As per the Bank’s Salary Scale & Benefits Package  \n📅 Deadline: 09/11/2026 (trainee) / 09/04/2026 (legal)  \n\n📝 Application Method: Apply via source job page  \n🔗 Link: https://effoysira.com/abyssinia-bank-job-vacancy-2026/",
-      "posted": "2026-09-07T15:51:17.726639Z"
     }
   ]
 }
