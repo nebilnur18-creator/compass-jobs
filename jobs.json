@@ -1,6 +1,26 @@
 {
-  "updated": "2026-09-16T00:48:02.970468Z",
+  "updated": "2026-09-16T00:48:17.875656Z",
   "jobs": [
+    {
+      "id": "71b0f2821893e4d69dbbd2b328f3b4b2895a70561776092b112f1e72f0c8879e",
+      "company": "Urji Beri School",
+      "about": "A private primary school in Addis Ababa offering bilingual education.",
+      "positions": [
+        "english teacher",
+        "computer teacher",
+        "amharic teacher"
+      ],
+      "category": [
+        "Education"
+      ],
+      "deadline": "08 Meskerem 2019 (E.C.)",
+      "link": "https://vacancy.urjiberischool.com/#positions",
+      "contact": "",
+      "application_method": "Apply using the link below",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/71b0f2821893e4d69dbbd2b328f3b4b2895a70561776092b112f1e72f0c8879e.jpg",
+      "text": "🏷️ Education\n\n🏢 Company: Urji Beri School\n🏬 About: A private primary school in Addis Ababa offering bilingual education.\n\n💼 Positions:\n1. English Teacher  \n   📍 Location: Alem Gena road, opposite WAS gas station, Sheger City, Oromia  \n   🎓 Requirements:\n   - Degree/Diploma in English or TESOL  \n   - Ability to teach elementary learners  \n   - Willingness to work on campus  \n\n2. Computer Teacher  \n   📍 Location: Alem Gena road, opposite WAS gas station, Sheger City, Oromia  \n   🎓 Requirements:\n   - Degree/Diploma in Computer Science or ICT  \n   - Ability to teach children basic computer skills  \n   - Maintain a safe lab environment  \n\n3. Amharic Teacher  \n   📍 Location: Alem Gena road, opposite WAS gas station, Sheger City, Oromia  \n   🎓 Requirements:\n   - Degree/Diploma in Amharic or related field  \n   - Strong Amharic language skills  \n   - Ability to teach elementary grades  \n\n…and 4 more positions — full list on our website.\n\n📍 Location: Alem Gena road, opposite WAS gas station, Sheger City, Oromia  \n💰 Salary: By agreement  \n📝 Description: Teaching roles for elementary students in core subjects.  \n📊 Vacancy Count: 7  \n📅 Deadline: 08 Meskerem 2019 (E.C.)\n\n📝 Application Method: Apply using the link below\n🔗 Link: https://vacancy.urjiberischool.com/#positions",
+      "posted": "2026-09-16T00:48:15.653183Z"
+    },
     {
       "id": "177f5b885e551b0feae591429299ed7dcd0fffd2311157030036b8fc289641fe",
       "company": "Abiy Masresha Construction & Import Export",
@@ -5116,23 +5136,6 @@
       "contact": "",
       "text": "🏷️ Fresh Graduate | Banking & Finance\n\n🏢 Company: Tsehay Bank S.C.  \n🏬 About: A private Ethiopian bank delivering sustainable value with modern digital services.  \n\n💼 Positions:  \n1. IT Trainee  \n   📍 Location: Head Office  \n   🎓 Requirements:  \n   - BSc in Computer Science or related field  \n   - CGPA ≥ 2.75, graduation 2025/2026; must pass exit exam  \n\n2. Senior HR Business Partner  \n   📍 Location: Southwest & Bahir Dar Districts  \n   🎓 Requirements:  \n   - Bachelor’s in Management/HR or related field  \n   - ≥4 years HR experience, 2 years as HRBP; HR certification preferred  \n\n💰 Salary: As per the Bank’s scale & benefits  \n📝 Description: Contribute to a technology‑driven banking environment.  \n📅 Deadline: Sep 11, 2026  \n\n📝 Application Method: Apply via source job page  \n🔗 Link: https://effoysira.com/tsehay-bank-vacancy-fresh-graduates/",
       "posted": "2026-09-07T05:11:47.125581Z"
-    },
-    {
-      "id": "33d31b3813554d3d673b6537335e77cff7e438cd401c8f63ffa491cd47db8331",
-      "company": "Goh Betoch Bank S.C.",
-      "about": "A private mortgage‑focused bank, the 21st bank in Ethiopia, with over 6,600 shareholders and a paid‑up capital exceeding 500 m Birr.",
-      "positions": [
-        "information system trainee"
-      ],
-      "category": [
-        "Fresh Graduate",
-        "Banking & Finance"
-      ],
-      "deadline": "September 12, 2026",
-      "link": "https://ethiojobshub.com/goh-betoch-graduate-trainee/",
-      "contact": "",
-      "text": "🏷️ Fresh Graduate | Banking & Finance\n\n🏢 Company: Goh Betoch Bank S.C.  \n🏬 About: A private mortgage‑focused bank, the 21st bank in Ethiopia, with over 6,600 shareholders and a paid‑up capital exceeding 500 m Birr.  \n\n💼 Positions:  \n1. Information System Trainee  \n   📍 Location: Addis Ababa (Estimated)  \n   🎓 Requirements:  \n   - BSc in Computer Science, Network/Computer Engineering or related field  \n   - No prior experience required  \n\n💰 Salary: As per the Bank’s salary scale (competitive)  \n💼 Employment Type: Permanent  \n📅 Deadline: September 12, 2026  \n📝 Application Method: Apply via source job page  \n🔗 Link: https://ethiojobshub.com/goh-betoch-graduate-trainee/",
-      "posted": "2026-09-07T05:11:32.980860Z"
     }
   ]
 }
