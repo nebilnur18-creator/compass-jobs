@@ -1,6 +1,28 @@
 {
-  "updated": "2026-09-17T13:50:31.720565Z",
+  "updated": "2026-09-17T13:59:15.027724Z",
   "jobs": [
+    {
+      "id": "e74bd956fb38c7d561fc1559ab4a881da2ccf903ec9bb1678a6c9a2cd63bbf51",
+      "company": "Elon Academy",
+      "about": "Elon Academy is a private educational institution in Ethiopia that provides K‑12 education aligned with the national curriculum.",
+      "positions": [
+        "school director",
+        "driver",
+        "property manager",
+        "english teacher (female)"
+      ],
+      "category": [
+        "Education",
+        "Executive"
+      ],
+      "deadline": "September 25, 2026",
+      "link": "",
+      "contact": "elonhr9@gmail.com",
+      "application_method": "Send your CV/application via email",
+      "image": "https://raw.githubusercontent.com/nebilnur18-creator/compass-jobs/main/logos/e74bd956fb38c7d561fc1559ab4a881da2ccf903ec9bb1678a6c9a2cd63bbf51.jpg",
+      "text": "🏷️ Education | Logistics & Supply Chain\n\n🏢 Company: Elon Academy\n🏬 About: Elon Academy is a private educational institution in Ethiopia that provides K‑12 education aligned with the national curriculum.\n\n💼 Positions:\n1. School Director\n   📍 Location: Campus 1 (Winget), on the road to 18th Avenue, second pedestrian crossing bridge\n   🎓 Requirements:\n   - MA/BA/B.Ed in Educational Leadership, School Management, Curriculum & Instruction, or related field\n   - 0–10 years experience; senior leadership or administrative experience in an educational institution is a plus\n   - Strong leadership and organizational skills, caring attitude, attentiveness to child safety, high sense of responsibility\n\n2. Driver\n   📍 Location: Campus 1 (Winget), on the road to 18th Avenue, second pedestrian crossing bridge\n   🎓 Requirements:\n   - Completed Grade 8/10/12 with a valid Third‑Grade (or equivalent Light/Public Vehicle) Driving License\n   - 2–5+ years safe driving experience; experience with school or passenger vehicles is a plus\n   - Clean driving record, exceptional punctuality, strict adherence to traffic and child safety regulations, strong vehicle maintenance awareness\n\n3. Property Manager\n   📍 Location: Haya Hulet, behind the Bata Complex building, adjacent to Misrak Dil School\n   🎓 Requirements:\n   - Bachelor’s Degree or Advanced Diploma in Property Management, Facilities Management, Civil Engineering, Construction Management, Business Administration, or related field\n   - Minimum 4–6 years professional experience in property or facilities management\n   - Ability to read architectural/engineering drawings, basic knowledge of electrical, plumbing, and HVAC systems, proficiency in MS Office or facility management software\n   - Excellent problem‑solving, negotiation, vendor management, and organizational skills; high integrity\n   - Fluency in Amharic and English (written and spoken)\n\n4. English Teacher (Female)\n   📍 Location: Campus 1 (Winget), on the road to 18th Avenue, second pedestrian crossing bridge\n   🎓 Requirements:\n   - MA/BA/BSc/B.Ed in English Language and Literature\n   - 0–10 years teaching experience; senior experience is a plus\n   - Caring and nurturing attitude, attentiveness to child safety, high sense of responsibility\n   - Formal cover letter, updated CV, copies of academic credentials and transcripts, relevant teaching licenses or recommendation letters\n\n📅 Deadline: September 25, 2026\n\n📝 Application Method: Send your CV/application via email\n📞 Contact: elonhr9@gmail.com",
+      "posted": "2026-09-17T13:58:26.178717Z"
+    },
     {
       "id": "6af959fa51bae5f2dbca194cd4dee73b713892c740bfd02ba46ad2438092255b",
       "company": "Fetno Derash Microfinance S.C.",
@@ -5366,22 +5388,6 @@
       "contact": "",
       "text": "🏷️ Logistics & Supply Chain | Private Sector\n\n🏢 Company: Kelem Ethiopia  \n🏬 About: A private organization operating in procurement and general services in Ethiopia.  \n\n💼 Positions:  \n1. Junior General Service & Procurement Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BA in Management, Procurement, Supply Chain or related field  \n   - Minimum 1 year relevant experience  \n   - Good communication and organizational skills  \n\n📅 Deadline: September 14th, 2026  \n📝 Application Method: Apply via application form link  \n🔗 Link: https://forms.gle/dzwzPnd6fCo9ZuA98",
       "posted": "2026-09-09T10:49:04.133582Z"
-    },
-    {
-      "id": "22337d972f13c54cfc6b7e964569ce5d9575aa7d5a18384ce06bae580ed799a0",
-      "company": "Larsat Post Partum Care",
-      "about": "Provides dual postpartum support and care for new mothers and infants.",
-      "positions": [
-        "chef / food preparation specialist"
-      ],
-      "category": [
-        "Private Sector"
-      ],
-      "deadline": "",
-      "link": "",
-      "contact": "@Lilireta1111",
-      "text": "🏷️ Healthcare | Private Sector\n\n🏢 Company: Larsat Post Partum Care  \n🏬 About: Provides dual postpartum support and care for new mothers and infants.  \n\n💼 Positions:  \n1. Chef / Food Preparation Specialist  \n   🎓 Requirements:  \n   - Completed food‑preparation training  \n   - Minimum 6 months experience in food preparation  \n   - Able to prepare local & foreign dishes (e.g., Atmit, Bula, Genfo)  \n\n💰 Salary: 10,000 ETB per month  \n💼 Employment Type: Day shift  \n📞 Contact: @Lilireta1111  \n\n📝 Application Method: Send CV via Telegram",
-      "posted": "2026-09-09T10:48:39.633314Z"
     }
   ]
 }
