@@ -1,6 +1,24 @@
 {
-  "updated": "2026-09-17T13:59:15.027724Z",
+  "updated": "2026-09-17T13:59:53.925237Z",
   "jobs": [
+    {
+      "id": "8c2ae6f0ec367349f0a048b229face9e4610f064f107cd5506eb3d5654dc44ca",
+      "company": "Ruth Stationery",
+      "about": "A retail business specializing in stationery products in Addis Ababa.",
+      "positions": [
+        "typist and copy clerk"
+      ],
+      "category": [
+        "Private Sector"
+      ],
+      "deadline": "September 20, 2026",
+      "link": "",
+      "contact": "0912281811",
+      "application_method": "Call or send your CV to this number",
+      "image": null,
+      "text": "🏷️ Private Sector\n\n🏢 Company: Ruth Stationery\n🏬 About: A retail business specializing in stationery products in Addis Ababa.\n\n💼 Positions:\n1. Typist and Copy Clerk\n   📍 Location: Four Kilometers area, Addis Ababa\n   🎓 Requirements:\n   - More than one year of experience in typing and online services.\n   - Good computer and internet usage skills.\n   - Ability to build good relationships with customers.\n   - Reliable, punctual, and responsible.\n   - Able to work in the Four Kilometers area.\n\n📝 Description: Responsible for various typing tasks, handling online business licenses, scheduling passport appointments online, providing other online services, and delivering excellent customer service.\n\n📅 Deadline: September 20, 2026\n\n📝 Application Method: Call or send your CV to this number\n📞 Contact: 0912281811",
+      "posted": "2026-09-17T13:59:27.617211Z"
+    },
     {
       "id": "e74bd956fb38c7d561fc1559ab4a881da2ccf903ec9bb1678a6c9a2cd63bbf51",
       "company": "Elon Academy",
@@ -5372,22 +5390,6 @@
       "contact": "",
       "text": "🏷️ Private Sector | Technology & IT\n\n🏢 Company: EthioChicken  \n🏬 About: EthioChicken is a leading poultry producer in Ethiopia, supplying chicken meat and related products.  \n\n💼 Positions:  \n1. Reporting Analyst  \n2. Senior Reporting Analyst  \n3. Data and Reporting Manager  \n\n📅 Deadline: September 15th, 2026  \n\n📝 Application Method: Apply via source job page  \n🔗 Link: https://elelanajobs.com/2026/09/09/ethiochicken-10/",
       "posted": "2026-09-09T10:49:23.569270Z"
-    },
-    {
-      "id": "b5bdbd01dc48160f2fdd2b8a1a9e7b26f905f29c54ed798b501e90f17189a5c9",
-      "company": "Kelem Ethiopia",
-      "about": "A private organization operating in procurement and general services in Ethiopia.",
-      "positions": [
-        "junior general service & procurement officer"
-      ],
-      "category": [
-        "Logistics & Supply Chain"
-      ],
-      "deadline": "September 14th, 2026",
-      "link": "https://forms.gle/dzwzPnd6fCo9ZuA98",
-      "contact": "",
-      "text": "🏷️ Logistics & Supply Chain | Private Sector\n\n🏢 Company: Kelem Ethiopia  \n🏬 About: A private organization operating in procurement and general services in Ethiopia.  \n\n💼 Positions:  \n1. Junior General Service & Procurement Officer  \n   📍 Location: Addis Ababa  \n   🎓 Requirements:  \n   - BA in Management, Procurement, Supply Chain or related field  \n   - Minimum 1 year relevant experience  \n   - Good communication and organizational skills  \n\n📅 Deadline: September 14th, 2026  \n📝 Application Method: Apply via application form link  \n🔗 Link: https://forms.gle/dzwzPnd6fCo9ZuA98",
-      "posted": "2026-09-09T10:49:04.133582Z"
     }
   ]
 }
